@@ -16,6 +16,14 @@ Each notes folder is a **workspace** with its own settings, kept inside it in `.
 
 > **Tip:** Jetfold reads `.md` and `.txt` files. Other files in the folder (PDFs, images and so on) are left alone and don't appear in the note list.
 
+## The free trial
+
+Everything in Jetfold works for 14 days, free. The first time you open it, Jetfold offers the trial; start it from **Start Free Trial**. After 14 days, unlock Jetfold with a single purchase to keep writing. There's no subscription.
+
+If you haven't started the trial, or it has ended, nothing is taken away: you can still open, read, search and export every note. Editing, creating, moving and deleting notes wait until you unlock. Your notes are ordinary files, so they're always yours either way.
+
+**Jetfold → Unlock Jetfold…** and **Settings → General** show how many trial days are left and have the unlock. **Restore Purchases** there brings back an unlock bought on another Mac with the same Apple Account.
+
 ## The main window
 
 The main window has three columns:

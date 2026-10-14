@@ -113,6 +113,7 @@ function page(path, meta, body) {
     content: body,
     appstore: appStore,
     email: config.supportEmail,
+    price: config.price,
     themes: readFileSync(join(root, 'data/themes.json'), 'utf8').replace(/</g, '\\u003c'),
     url: `https://${config.domain}/${path.replace(/index\.html$/, '')}`,
     year: String(new Date().getFullYear()),
