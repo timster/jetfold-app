@@ -67,8 +67,15 @@ Make views of your own: work tasks, this week's dates, notes whose front matter 
 The editor has:
 
 - **An icon and a name.** Click the icon to choose another, or type the name of any SF Symbol.
-- **What it lists:** **Tasks** (open tasks, grouped by when they're due), **Agenda** (dated lines) or **Notes** (whole notes, listed like a folder).
-- **Filters.** Add **Tags** and **Folders** as chips: type and press Return, pick a suggestion, or choose from the ▾ menu of everything in your notes. With two or more tags, choose whether a note needs **any** of them or **all** of them. **Title** finds words in the note's name, **Text** in the line or note, and **Property** matches a note's [front matter](writing.md#front-matter-properties) (`status` is `active, waiting`). A note or line has to match every filter, and a filter with several values matches any of them.
+- **What it lists:** 
+  - **Tasks**: open tasks, grouped by when they're due
+  - **Agenda**: dated lines
+  - **Notes**: whole notes, listed like a folder
+- **Filters.** Add **Tags** and **Folders** as chips: type and press Return, pick a suggestion, or choose from the ▾ menu of everything in your notes. With two or more tags, choose whether a note needs **any** of them or **all** of them. 
+  - **Title** finds words in the note's name
+  - **Text** finds words in the note itself
+  - **Property** matches a note's [front matter](writing.md#front-matter-properties) (`status` is `active, waiting`)
+  - A note or line has to match every filter, and a filter with several values matches any of them.
 - **Options:** for tasks and dates, only the next few days or weeks; for tasks, done ones too; for notes, their own order.
 - **A live preview** of what the view will list, with a count, updating as you type.
 
