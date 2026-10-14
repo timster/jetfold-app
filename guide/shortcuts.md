@@ -15,6 +15,7 @@ Every command is also in the command palette (⌘P), including the ones without 
 | Commit changes | ⇧⌘K |
 | Export as PDF | ⇧⌘E |
 | Save now (Jetfold also saves automatically) | ⌘S |
+| Move selected notes to another folder | ⇧⌘M |
 | Move selected notes to Trash (in the note list) | ⌘⌫ |
 | Move the selected folder to Trash, or remove the selected tag (in the sidebar) | ⌘⌫ |
 | Rename the selected folder (in the sidebar) | Return |

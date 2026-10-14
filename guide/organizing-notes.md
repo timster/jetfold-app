@@ -218,6 +218,8 @@ Drag one or more notes from the list onto a folder in the sidebar. If you drag a
 
 Hover over a collapsed folder while dragging, and it springs open after a moment so you can drop into a subfolder.
 
+From the keyboard, choose **Note → Move to Folder…** (⇧⌘M): it lists every folder; type a few letters of one and press **Return** to move the selected notes there. In a note window it moves that window's note.
+
 Jetfold checks every note before moving any, so a name clash in the destination stops the whole move rather than leaving half of it done. Moved notes keep their "last edited" dates, and links to them are updated.
 
 ## Deleting notes

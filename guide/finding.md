@@ -23,8 +23,8 @@ Every command in the app, including ones that aren't in any menu. With nothing t
 
 The list depends on what you're doing:
 
-- **With a note selected:** Rename Note…, Pin/Unpin Note, Make Note Read-Only/Editable, Duplicate Note, Move Note to Trash, Reveal Note in Finder, Export Note as HTML…/PDF…/EPUB…/TextBundle…/Plain Text…, Show Note History….
-- **With several notes selected:** Pin, Duplicate and Move to Trash for all of them ("Duplicate 3 Notes").
+- **With a note selected:** Rename Note…, Pin/Unpin Note, Make Note Read-Only/Editable, Duplicate Note, Move Note to Folder…, Move Note to Trash, Reveal Note in Finder, Export Note as HTML…/PDF…/EPUB…/TextBundle…/Plain Text…, Show Note History….
+- **With several notes selected:** Pin, Duplicate, Move to Folder… and Move to Trash for all of them ("Duplicate 3 Notes").
 - **With a folder selected:** New Note, New Folder, Rename Folder…, Move Folder to Trash, Reveal Folder in Finder.
 - **When opened from inside a note:** every Format command ("Format: Bold", "Format: Heading 2" and so on) and the folding commands ("View: Fold All"). When the cursor is on a task, **Complete Task** or **Uncomplete Task** is listed first.
 - **In a git repository:** Git: Commit…, and showing or hiding the git status and changed lines.
