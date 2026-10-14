@@ -45,6 +45,10 @@ function renderGuide(md) {
     slug === 'index' ? `href="/guide/${hash}"` : slugs.has(slug) ? `href="/guide/${slug}/${hash}"` : whole)
   html = html.replace(/src="screenshots\//g, 'src="/assets/screenshots/')
   html = html.replace(/<a href="(https?:)/g, '<a rel="noopener" href="$1')
+  // The contents page's chapter list becomes a grid of cards: the title, and a line about it.
+  html = html.replace(/<ol>\n((?:<li><a href="\/guide\/[\w-]+\/">[^<]+<\/a>: .*<\/li>\n)+)<\/ol>/, (_, items) =>
+    '<ol class="chapters">\n' + items.replace(/<li><a href="([^"]+)">([^<]+)<\/a>: (.*)<\/li>/g,
+      '<li><a href="$1"><b>$2</b><span>$3</span></a></li>') + '</ol>')
   // "> **Tip:** …" quotes are tips.
   html = html.replace(/<blockquote>\s*<p><strong>Tip:<\/strong>/g, '<blockquote class="tip"><p><strong>Tip:</strong>')
   return html
