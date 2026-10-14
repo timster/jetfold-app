@@ -31,7 +31,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 25 | partial | Search in Notes with results for "load test", each with a snippet and the matched words highlighted | finding.md |
 | 26 | partial | Go to Heading over Atlas Launch Plan, listing its headings | finding.md |
 | 28 | partial | A task list with @dates shown as chips, one ticked | finding.md |
-| 29 | partial | The Agenda view: dated tasks and events grouped under Overdue, Today, Tomorrow, Next 7 days and Later | index.html |
+| 29 | partial | The Agenda view: dated tasks and events grouped under Overdue, Today, Tomorrow and Next 7 days (cropped just above Later, without the divider on the right) | home |
 | 30 | partial | Note Info open on its Statistics tab: words, characters, paragraphs, read time, and the created and modified dates | finding.md |
 | 31 | partial | Note Info open on its Table of Contents tab, with the heading the cursor is in highlighted | finding.md |
 | 32 | partial | Settings → Notes: the Daily note path field with its hint, and the resulting path for today below it | daily-notes-and-inbox.md |

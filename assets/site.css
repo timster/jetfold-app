@@ -218,6 +218,7 @@ figcaption { margin-top: 12px; font: 14px/1.45 var(--sans); color: var(--muted);
 .row p { margin: 0 0 14px; }
 .row p:last-child { margin-bottom: 0; }
 .row .shot { justify-self: center; }
+.row .shot.slim { max-width: 250px; }
 
 .keys { list-style: none; margin: 20px 0 0; padding: 0; font: 15px var(--sans); }
 .keys li { display: flex; align-items: baseline; gap: 12px; padding: 4px 0; }
