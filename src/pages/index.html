@@ -1,0 +1,119 @@
+<!-- {"title": "", "description": "Jetfold is a Mac notes app for a folder of plain Markdown files. It renders as you write, keeps every file exactly as you typed it, and has git built in.", "head": "<script src=\"/assets/home.js\" defer></script>"} -->
+<div class="hero-wrap">
+  <section class="wrap hero">
+    <div>
+      <!-- Like the editor: markup stays hidden until the cursor is inside it (or you point at it). -->
+      <h1 id="headline">Notes in <span class="f" tabindex="0"><span class="mk">**</span><strong>plain Markdown</strong><span class="mk">**</span></span>, with the markup <span class="f" tabindex="0"><span class="mk">*</span><em>out of sight</em><span class="mk">*</span></span>.</h1>
+      <p class="lede">Jetfold is a Mac notes app for a folder of <strong>plain .md files</strong>. It renders as you write, saves every file exactly as you typed it, and has git built in.</p>
+      <div class="actions">
+        {{appstore}}
+        <a class="button" href="/guide/">Read the guide</a>
+      </div>
+    </div>
+    <div class="jet-home" aria-hidden="true"></div>
+  </section>
+  <canvas class="sky" aria-hidden="true"></canvas>
+  <button class="jet" type="button" aria-label="Fly the jet"><img src="/assets/jet.png" alt="" width="480" height="408" loading="eager"></button>
+</div>
+
+<div class="shot-main">
+  <img class="shot" src="/assets/screenshots/01-main-window.png" loading="eager" alt="The main window in its three-column layout: the sidebar with views, folders and the calendar, the notes in the Projects folder, and the Garden Redesign note with a picture, a task list and a tag">
+</div>
+
+<section class="wrap rows" aria-label="Highlights">
+  <div class="row">
+    <div class="copy">
+      <h2>Everything is a keystroke away</h2>
+      <p>Jump to any note, search every word you've written, or run any command without touching the mouse.</p>
+      <ul class="keys">
+        <li><kbd>⌘P</kbd>Run a command</li>
+        <li><kbd>⌘O</kbd>Go to any note or folder</li>
+        <li><kbd>⇧⌘F</kbd>Search inside every note</li>
+        <li><kbd>⇧⌘O</kbd>Jump to a heading</li>
+        <li><kbd>⌘T</kbd>Open today's note</li>
+        <li><kbd>⌘[</kbd>Go back to the last note</li>
+      </ul>
+    </div>
+    <img class="shot" src="/assets/screenshots/23-command-palette.png" alt="The command palette open over a note, listing commands with their shortcuts">
+  </div>
+
+  <div class="row flip">
+    <div class="copy">
+      <h2>Links that never break</h2>
+      <p>Type <code>[[</code> and pick a note or one of its headings. Rename or move a note and every link to it is rewritten for you.</p>
+      <p>Note Info shows every note that links back to the one you're reading, and pointing at a link previews the note.</p>
+    </div>
+    <img class="shot" src="/assets/screenshots/21-wikilink-autocomplete.png" alt="Wikilink autocomplete after typing [[Or: Orbital Mechanics, or a new note called Or">
+  </div>
+
+  <div class="row">
+    <div class="copy">
+      <h2>Tasks and dates that turn into an agenda</h2>
+      <p>Type <code>@friday</code> anywhere in a note and it becomes <code>@2026-10-16</code>. Jetfold gathers every date into one list: overdue, today, tomorrow, the next seven days and later.</p>
+      <p>Put a date on a task and it stays overdue until you tick it off. Save your own views of tasks and notes in the sidebar.</p>
+    </div>
+    <img class="shot" src="/assets/screenshots/29-agenda.png" alt="The Agenda view: dated tasks and events grouped under Overdue, Today, Tomorrow, Next 7 days and Later">
+  </div>
+
+  <div class="row flip">
+    <div class="copy">
+      <h2>Git, without the terminal</h2>
+      <p>Changed lines are marked as you type and badges show what's uncommitted. Every note has a full history, even across renames, and any version is one click from coming back.</p>
+      <p>Commit from the palette when you're ready.</p>
+    </div>
+    <img class="shot" src="/assets/screenshots/37-history.png" alt="The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green">
+  </div>
+
+  <div class="row">
+    <div class="copy">
+      <h2>As much or as little as you like</h2>
+      <p>Tasks, agenda, tags, the calendar and your own views are all switches. Turn them off and Jetfold is a folder of notes and an editor.</p>
+      <p>Every switch turns its part back on, right where it was.</p>
+    </div>
+    <img class="shot" src="/assets/screenshots/61-minimal.png" alt="Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note">
+  </div>
+</section>
+
+<section class="band" aria-labelledby="themes-title">
+  <div class="wrap themes-band">
+    <div>
+      <h2 class="section-title" id="themes-title">Five themes, each light and dark</h2>
+      <p>A theme colors the whole window: sidebar, note list, selection and editor alike.</p>
+      <ul class="swatches" aria-label="Themes">
+        <li><i style="background:#2f6fde"></i>Jetfold</li>
+        <li><i style="background:#268bd2"></i>Solarized</li>
+        <li><i style="background:#5e81ac"></i>Nord</li>
+        <li><i style="background:#8839ef"></i>Catppuccin</li>
+        <li><i style="background:#0040c0"></i>High Contrast</li>
+      </ul>
+      <a class="button" href="/themes/">Try them on</a>
+    </div>
+    <div class="pair">
+      <img class="shot" src="/assets/screenshots/41-theme-catppuccin.png" alt="The main window in the Catppuccin theme, light">
+      <img class="shot" src="/assets/screenshots/42-theme-nord.png" alt="The main window in the Nord theme, dark">
+    </div>
+  </div>
+</section>
+
+<section class="wrap files" aria-labelledby="files-title">
+  <div>
+    <blockquote id="files-title">Your notes are just files.</blockquote>
+    <p>Open them in any editor, sync them with any service, keep them in git. Jetfold never adds metadata or rewrites your formatting, so you can leave whenever you like and take everything with you.</p>
+  </div>
+<pre class="tree" aria-label="A notes folder"><b>Notes/</b>
+├── <b>Inbox.md</b>
+├── Journal/
+│   └── <b>2026-10-14.md</b>
+├── Projects/
+│   ├── <b>Atlas Launch Plan.md</b>
+│   └── <b>Garden Redesign.md</b>
+├── .assets/garden-layout.png
+└── .jetfold/settings.json</pre>
+</section>
+
+<section class="wrap closing">
+  <img src="/assets/icon.png" alt="" width="96" height="96">
+  <h2>Write it down. Keep it forever.</h2>
+  <p>Jetfold is for macOS 14 and later. Everything it does is in the <a href="/features/">feature tour</a> and the <a href="/guide/">guide</a>.</p>
+  <div class="actions">{{appstore}}</div>
+</section>

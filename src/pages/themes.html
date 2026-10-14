@@ -1,0 +1,112 @@
+<!-- {"title": "Themes", "description": "Jetfold's five themes, each with a light and a dark look. Try them on a Jetfold window.", "section": "themes"} -->
+<section class="wrap intro">
+  <h1>Try on a theme</h1>
+  <p>Each theme colors the whole window, from the sidebar to the editor, and comes in light and dark. This window uses the same colors as the app.</p>
+</section>
+
+<section class="wrap" aria-label="Theme preview">
+  <div class="picker">
+    <div class="choices" role="group" aria-label="Theme" id="choices"></div>
+    <div class="mode" role="group" aria-label="Appearance">
+      <button type="button" data-mode="light">Light</button>
+      <button type="button" data-mode="dark">Dark</button>
+    </div>
+  </div>
+
+  <div class="window" id="window" role="img" aria-label="A Jetfold window in the chosen theme: the sidebar, the Projects folder's notes, and the Garden Redesign note">
+    <div class="w-side">
+      <div class="lights"><i></i><i></i><i></i></div>
+      <div class="w-item">Tasks <span>6</span></div>
+      <div class="w-item">Agenda <span>4</span></div>
+      <div class="w-group">Folders</div>
+      <div class="w-item">Notes <span>42</span></div>
+      <div class="w-item in">Inbox <span>3</span></div>
+      <div class="w-item in">Journal <span>18</span></div>
+      <div class="w-item in sel">Projects <span>9</span></div>
+      <div class="w-item in">Recipes <span>7</span></div>
+      <div class="w-group">Tags</div>
+      <div class="w-item">#garden <span>4</span></div>
+      <div class="w-item">#atlas <span>6</span></div>
+      <div class="w-item">#reading <span>5</span></div>
+    </div>
+    <div class="w-list">
+      <div class="w-head">Projects <span>9 notes</span></div>
+      <div class="w-note sel"><b>Garden Redesign <span>9:41 AM</span></b><p>Raised beds along the south fence, a path of reclaimed brick, and garlic in before the frost.</p></div>
+      <div class="w-note"><b>Atlas Launch Plan <span>Yesterday</span></b><p>Milestones, owners and the open questions for the October review.</p></div>
+      <div class="w-note"><b>Q3 Plan <span>Oct 9</span></b><p>Budget, hiring and the three bets for the quarter.</p></div>
+      <div class="w-note"><b>Reading List <span>Oct 2</span></b><p>Books to finish before the end of the year, and what to read next.</p></div>
+      <div class="w-note"><b>Kitchen Shelves <span>Sep 28</span></b><p>Measurements, the oak supplier and a sketch of the brackets.</p></div>
+    </div>
+    <div class="w-edit">
+      <h3 class="w-title">Garden Redesign</h3>
+      <p>Raised beds along the south fence, a path of <a href="#" tabindex="-1">reclaimed brick</a>, and <mark>garlic in before the first frost</mark>.</p>
+      <h4>This week</h4>
+      <div class="w-task done"><i></i><em>Order the cedar boards</em> <span class="chip">@2026-10-12</span></div>
+      <div class="w-task"><i></i>Lay out the beds with string <span class="chip late">@2026-10-13</span></div>
+      <div class="w-task"><i></i>Plant the garlic <span class="chip">@2026-10-16</span></div>
+      <p style="margin-top:14px">Soil mix is <code>60% topsoil, 40% compost</code>. #garden</p>
+      <p class="w-quote">The best time to plant a tree was twenty years ago.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap theme-notes" aria-label="About themes">
+  <div>
+    <h2>Light, dark or automatic</h2>
+    <p>Follow your Mac's appearance, or keep a theme light or dark all the time. Pick both in <a href="/guide/settings/#appearance-and-theme">Settings → General</a>.</p>
+  </div>
+  <div>
+    <h2>Everything matches</h2>
+    <p>Selections, palettes, popups and git colors all take the theme's colors, so nothing looks borrowed.</p>
+  </div>
+  <div>
+    <h2>A theme of your own</h2>
+    <p>Give a notes folder its own colors with a <code>.jetfold/theme.json</code> that changes any theme. It travels with the folder.</p>
+  </div>
+</section>
+
+<script id="themes" type="application/json">{{themes}}</script>
+<script>
+// Paints the window above in the picked theme, from the same themes.json the app uses.
+(function () {
+  var themes = JSON.parse(document.getElementById('themes').textContent)
+  var win = document.getElementById('window')
+  var choices = document.getElementById('choices')
+  var modes = document.querySelectorAll('.mode button')
+  var pick = { id: themes[0].id, mode: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' }
+  try {
+    var saved = JSON.parse(localStorage.getItem('jetfold-theme') || 'null')
+    if (saved && themes.some(function (t) { return t.id === saved.id })) pick = saved
+  } catch (e) {}
+
+  themes.forEach(function (t) {
+    var b = document.createElement('button')
+    b.type = 'button'
+    b.dataset.id = t.id
+    var dot = document.createElement('i')
+    dot.style.background = 'linear-gradient(135deg, ' + t.light.bg + ' 50%, ' + t.light.accent + ' 50%)'
+    b.append(dot, t.name)
+    choices.append(b)
+  })
+
+  function paint() {
+    var theme = themes.find(function (t) { return t.id === pick.id })
+    var colors = theme[pick.mode]
+    Object.keys(colors).forEach(function (key) { win.style.setProperty('--t-' + key, colors[key]) })
+    // A clear sidebar shows the desktop through it in the app; here, a plain tint stands in.
+    var clear = /rgba\([^)]*,\s*0\)$/.test(colors.sidebar)
+    win.style.setProperty('--t-sidebar-fill', clear ? (pick.mode === 'dark' ? '#262629' : '#e9e9ec') : colors.sidebar)
+    choices.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.id === pick.id)) })
+    modes.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === pick.mode)) })
+    win.setAttribute('aria-label', 'A Jetfold window in ' + theme.name + ', ' + pick.mode + ': the sidebar, the Projects folder’s notes, and the Garden Redesign note')
+    try { localStorage.setItem('jetfold-theme', JSON.stringify(pick)) } catch (e) {}
+  }
+
+  choices.addEventListener('click', function (e) {
+    var b = e.target.closest('button')
+    if (b) { pick.id = b.dataset.id; paint() }
+  })
+  modes.forEach(function (b) { b.addEventListener('click', function () { pick.mode = b.dataset.mode; paint() }) })
+  paint()
+})()
+</script>
