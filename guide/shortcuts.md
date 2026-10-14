@@ -21,6 +21,7 @@ Every command is also in the command palette (⌘P), including the ones without 
 | Close window | ⌘W |
 | Show the main window | ⌘0 |
 | Settings | ⌘, |
+| Jetfold Guide (Help menu) | ⌘? |
 | Quit | ⌘Q |
 
 ## Finding
