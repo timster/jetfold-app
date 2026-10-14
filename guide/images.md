@@ -77,6 +77,6 @@ Deleting a note leaves its images and files behind. **File → Find Unused Attac
 
 ## Supported formats
 
-PNG, JPEG, GIF, WebP, SVG, AVIF, TIFF, BMP and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size). (HEIC photos from an iPhone aren't supported yet; export them as JPEG first.)
+PNG, JPEG, HEIC, GIF, WebP, SVG, AVIF, TIFF, BMP and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size).
 
 Next: [Git Integration](git.md)
