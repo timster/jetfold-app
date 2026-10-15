@@ -236,6 +236,7 @@ Double-click a note (or choose **Open in New Window**) to open it in a window of
 - Edits in a note window appear in the main window at once, and the other way round.
 - Following a link from a note window opens the linked note in another note window.
 - The palettes (⌘P, ⌘O and the rest) work in note windows too.
+- **Window → Keep on Top** keeps the note window in front of other apps' windows, even a full-screen one. An icon in its title bar shows it's on; click the icon to turn it off.
 - **⌘W** saves and closes the note window.
 
 Next: [Writing and Formatting](writing.md)
