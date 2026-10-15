@@ -6,7 +6,7 @@ Jetfold's editor is a **live preview** Markdown editor. You write ordinary Markd
 
 Your file always contains exactly the characters you typed. Jetfold never rewrites your Markdown, so it's safe to use alongside other editors, git, or any sync service.
 
-Prose uses a serif font (Charter 16 by default), and code uses a monospace font (Menlo 14). You can change both in [Settings](settings.md#editor).
+Prose uses the system font (16 point by default), and code uses its monospaced version (14 point). You can change both in [Settings](settings.md#editor).
 
 ## How formatting is revealed
 

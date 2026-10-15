@@ -96,13 +96,13 @@ The notes folder Jetfold is showing. Click **Open Folder…** to open another on
 
 ### Editor font
 
-The font for your writing. The default is **Charter 16**, a comfortable serif. Click **Change…** to choose a font and size in the standard macOS Fonts panel.
+The font for your writing. The default is **System 16**, the font macOS uses for its own text. Click **Change…** to choose a font and size in the standard macOS Fonts panel.
 
 ### Monospace font
 
-The font for code, tables while you edit them, and other fixed-width text. The default is **Menlo 14**.
+The font for code, tables while you edit them, and other fixed-width text. The default is **System 14**, the monospaced version of the system font.
 
-Click **Restore default fonts** to go back to Charter 16 and Menlo 14.
+Click **Restore default fonts** to go back to System 16 and System 14.
 
 ### Text width
 
