@@ -1,8 +1,7 @@
-/* Prose and headlines are in a serif that gives the site a voice of its own beside the app's
-   screenshots: New York, the system's serif, where the browser offers it (ui-serif), else Charter.
-   The system font (the app's) is for chrome and the drawn window, monospace for Markdown markup.
-   The colors come from the app icon: its paper-white and navy backgrounds, and the blues of the
-   folded jet. */
+/* Prose and headlines are in Charter, a serif that gives the site a voice of its own beside the
+   app's screenshots. The system font (the app's) is for chrome and the drawn window, monospace
+   for Markdown markup. The colors come from the app icon: its paper-white and navy backgrounds,
+   and the blues of the folded jet. */
 :root {
   --paper: #fbfcfe;
   --fold: #eff1f7;
@@ -15,7 +14,7 @@
   --sky: #73bfff;
   --kbd-bg: #f2f4f9;
   --shadow: rgba(20, 40, 90, 0.16);
-  --serif: ui-serif, Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   color-scheme: light;
