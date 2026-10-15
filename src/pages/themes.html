@@ -13,38 +13,56 @@
     </div>
   </div>
 
+  <!-- Line icons for the window below, drawn to stand in for the app's system symbols. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-tasks" viewBox="0 0 16 16"><circle cx="3.5" cy="4.5" r="1.8"/><circle cx="3.5" cy="11.5" r="1.8"/><path d="M7.5 4.5h7M7.5 11.5h7"/></symbol>
+    <symbol id="i-agenda" viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="12" rx="2"/><path d="M1.5 6h13M5 9h1M8 9h1M11 9h1M5 11.5h1M8 11.5h1"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 16 16"><path d="M1.5 4a1.5 1.5 0 0 1 1.5-1.5h3l1.5 1.5h5.5a1.5 1.5 0 0 1 1.5 1.5v6.5a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 12z"/><path d="M1.5 6h13"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 16 16"><path d="M6 2 4.5 14M11.5 2 10 14M2.5 5.5h11.5M2 10.5h11.5"/></symbol>
+    <symbol id="i-tags" viewBox="0 0 16 16"><path d="M1.5 2.5h6l7 7-5 5-7-7z"/><circle cx="5" cy="6" r="1"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></symbol>
+    <symbol id="i-sidebar" viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 2.5v11M3 5h1.5M3 7h1.5"/></symbol>
+    <symbol id="i-sort" viewBox="0 0 16 16"><path d="M5 14V2M2 5l3-3 3 3M11 2v12M8 11l3 3 3-3"/></symbol>
+    <symbol id="i-compose" viewBox="0 0 16 16"><path d="M13.5 8.5v4a1.5 1.5 0 0 1-1.5 1.5H4a1.5 1.5 0 0 1-1.5-1.5V4A1.5 1.5 0 0 1 4 2.5h4"/><path d="m7 9 .5-2L13 1.5 14.5 3 9 8.5z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4.5M7 11.5h2M7 7h1"/><circle cx="8" cy="4.8" r=".4"/></symbol>
+    <symbol id="i-more" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><circle cx="5" cy="8" r=".4"/><circle cx="8" cy="8" r=".4"/><circle cx="11" cy="8" r=".4"/></symbol>
+  </svg>
+
   <div class="window" id="window" role="img" aria-label="A Jetfold window in the chosen theme: the sidebar, the Projects folder's notes, and the Garden Redesign note">
     <div class="w-side">
-      <div class="lights"><i></i><i></i><i></i></div>
-      <div class="w-item">Tasks <span>6</span></div>
-      <div class="w-item">Agenda <span>4</span></div>
-      <div class="w-group">Folders</div>
-      <div class="w-item">Notes <span>42</span></div>
-      <div class="w-item in">Inbox <span>3</span></div>
-      <div class="w-item in">Journal <span>18</span></div>
-      <div class="w-item in sel">Projects <span>9</span></div>
-      <div class="w-item in">Recipes <span>7</span></div>
-      <div class="w-group">Tags</div>
-      <div class="w-item">#garden <span>4</span></div>
-      <div class="w-item">#atlas <span>6</span></div>
-      <div class="w-item">#reading <span>5</span></div>
+      <div class="w-panel">
+        <div class="w-top"><span class="lights"><i></i><i></i><i></i></span><svg class="ic"><use href="#i-sidebar"/></svg></div>
+        <div class="w-item"><svg class="ic"><use href="#i-tasks"/></svg>Tasks<span>32</span></div>
+        <div class="w-item"><svg class="ic"><use href="#i-agenda"/></svg>Agenda<span>9</span></div>
+        <div class="w-item open"><svg class="ic"><use href="#i-folder"/></svg>Jetfold Demo<span>3</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Daily<span><b class="dot"></b>6</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Inbox<span>1</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Learning<span>2</span></div>
+        <div class="w-item in open sel"><svg class="ic"><use href="#i-folder"/></svg>Projects<span><b class="dot"></b>4</span></div>
+        <div class="w-item in in2"><svg class="ic"><use href="#i-folder"/></svg>Atlas<span><b class="dot"></b>7</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Reading<span>2</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Recipes<span>2</span></div>
+        <div class="w-item open"><svg class="ic"><use href="#i-tags"/></svg>Tags<span>11</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-tag"/></svg>garden<span>4</span></div>
+        <div class="w-item in"><svg class="ic"><use href="#i-tag"/></svg>work<span>6</span></div>
+      </div>
     </div>
     <div class="w-list">
-      <div class="w-head">Projects <span>9 notes</span></div>
+      <div class="w-head">Projects <span><svg class="ic"><use href="#i-sort"/></svg><svg class="ic"><use href="#i-compose"/></svg></span></div>
       <div class="w-note sel"><b>Garden Redesign <span>9:41 AM</span></b><p>Raised beds along the south fence, a path of reclaimed brick, and garlic in before the frost.</p></div>
-      <div class="w-note"><b>Atlas Launch Plan <span>Yesterday</span></b><p>Milestones, owners and the open questions for the October review.</p></div>
-      <div class="w-note"><b>Q3 Plan <span>Oct 9</span></b><p>Budget, hiring and the three bets for the quarter.</p></div>
-      <div class="w-note"><b>Reading List <span>Oct 2</span></b><p>Books to finish before the end of the year, and what to read next.</p></div>
-      <div class="w-note"><b>Kitchen Shelves <span>Sep 28</span></b><p>Measurements, the oak supplier and a sketch of the brackets.</p></div>
+      <div class="w-note"><b>Budget Review <span>Yesterday</span></b><p>Monthly budget check-in with Priya and Sam. Hosting is under, contractors over.</p></div>
+      <div class="w-note"><b>Q3 Plan <span>Oct 9</span></b><p>What the team is aiming for this quarter. Ship the Atlas beta, cut load time.</p></div>
+      <div class="w-note"><b>Website Refresh <span>Oct 2</span></b><p>New homepage, pricing page and docs layout, launching with general availability.</p></div>
     </div>
     <div class="w-edit">
+      <div class="w-tools"><svg class="ic"><use href="#i-info"/></svg><svg class="ic"><use href="#i-more"/></svg></div>
       <h3 class="w-title">Garden Redesign</h3>
-      <p>Raised beds along the south fence, a path of <a href="#" tabindex="-1">reclaimed brick</a>, and <mark>garlic in before the first frost</mark>.</p>
+      <p>Raised beds along the south fence, a path of <a href="#" tabindex="-1">reclaimed brick</a>, and <mark>garlic in before the first frost</mark>. <span class="chip">#garden</span></p>
       <h4>This week</h4>
       <div class="w-task done"><i></i><em>Order the cedar boards</em> <span class="chip">@2026-10-12</span></div>
-      <div class="w-task"><i></i>Lay out the beds with string <span class="chip late">@2026-10-13</span></div>
+      <div class="w-task"><i></i>Lay out the beds with string <span class="chip">@2026-10-13</span></div>
       <div class="w-task"><i></i>Plant the garlic <span class="chip">@2026-10-16</span></div>
-      <p style="margin-top:14px">Soil mix is <code>60% topsoil, 40% compost</code>. #garden</p>
+      <p style="margin-top:14px">Soil mix is <code>60% topsoil, 40% compost</code>, about a cubic metre a bed.</p>
       <p class="w-quote">The best time to plant a tree was twenty years ago.</p>
     </div>
   </div>
@@ -95,7 +113,7 @@
     Object.keys(colors).forEach(function (key) { win.style.setProperty('--t-' + key, colors[key]) })
     // A clear sidebar shows the desktop through it in the app; here, a plain tint stands in.
     var clear = /rgba\([^)]*,\s*0\)$/.test(colors.sidebar)
-    win.style.setProperty('--t-sidebar-fill', clear ? (pick.mode === 'dark' ? '#262629' : '#e9e9ec') : colors.sidebar)
+    win.style.setProperty('--t-sidebar-fill', clear ? (pick.mode === 'dark' ? '#2a2a2d' : '#f1f1f4') : colors.sidebar)
     choices.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.id === pick.id)) })
     modes.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === pick.mode)) })
     win.setAttribute('aria-label', 'A Jetfold window in ' + theme.name + ', ' + pick.mode + ': the sidebar, the Projects folder’s notes, and the Garden Redesign note')
