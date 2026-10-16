@@ -51,18 +51,21 @@
   }
 
   // The figure eight at `elapsed` seconds into the flight: the offset from home and the turn.
-  // The jet leaves along its nose, banks right in a full circle back through home, then left in
-  // another, and lands where it started, easing in and out.
+  // The jet leaves along its nose, banks right round one loop back through home, then left round
+  // the other, and lands where it started, easing in and out. The curve (x = sin t,
+  // y = -sin t cos t) flies straight through the crossing, so the bank eases from one side to the
+  // other rather than flipping.
   function figureEight(elapsed) {
     var s = Math.min(Math.max(elapsed / LOOP, 0), 1)
-    var eased = s * s * (3 - 2 * s)
-    var radius = Math.min(home.w * 0.5, Math.max(60, (home.y - 20) / (2 * Math.cos(NOSE))))
-    var right = eased < 0.5
-    var theta = (right ? eased : eased - 0.5) * 4 * Math.PI
-    var side = right ? 1 : -1
-    var x = radius * Math.sin(theta), y = side * radius * (1 - Math.cos(theta))
-    var c = Math.cos(NOSE), d = Math.sin(NOSE)
-    return { x: x * c - y * d, y: x * d + y * c, turn: side * theta }
+    var t = s * s * (3 - 2 * s) * 2 * Math.PI
+    var size = 1.8 * Math.min(home.w * 0.5, Math.max(60, (home.y - 20) / (2 * Math.cos(NOSE))))
+    var x = size * Math.sin(t), y = -size * Math.sin(t) * Math.cos(t)
+    // Turned so the jet sets off along its nose (the curve leaves home at -45 degrees).
+    var angle = NOSE + Math.PI / 4
+    var c = Math.cos(angle), d = Math.sin(angle)
+    // The heading measured from straight down, where it never reaches ±π, so it doesn't wrap.
+    var turn = Math.atan2(-Math.cos(t), -Math.cos(2 * t)) - Math.atan2(-1, -1)
+    return { x: x * c - y * d, y: x * d + y * c, turn: turn }
   }
 
   function draw(t) {
@@ -121,6 +124,8 @@
   }
 
   jet.addEventListener('click', takeOff)
+  // A click doesn't focus it, so no focus ring flies along; the keyboard still can.
+  jet.addEventListener('mousedown', function (e) { e.preventDefault() })
   jet.addEventListener('pointerenter', function () { hovering = true })
   jet.addEventListener('pointerleave', function () { hovering = false })
   window.addEventListener('resize', measure)
