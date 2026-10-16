@@ -78,6 +78,7 @@ Every command is also in the command palette (⌘P), including the ones without 
 | Add next occurrence | ⌘D |
 | Add every occurrence | ⇧⌘L |
 | Remove last occurrence | ⌘U |
+| Move line up / down (a list item with its sub-items, a callout from its first line, a folded section) | ⌥↑ / ⌥↓ |
 | Add a cursor above / below | ⌥⌘↑ / ⌥⌘↓ |
 | Add a cursor | ⌘-click |
 | Column selection | ⌥-drag |

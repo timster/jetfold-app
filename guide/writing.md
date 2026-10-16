@@ -134,6 +134,7 @@ Start a line with `1. ` (or any number). Numbers are shown exactly as you typed 
 - **Return** continues the list with a new bullet, the next number, or a new empty task (and continues quotes too). Press Return on an empty item to end the list.
 - **Tab** indents the current list item one level; **⇧Tab** outdents it. Numbered items are renumbered to fit their new level: an item that starts a new sublist becomes `1.`, and one that joins an existing level continues its numbering.
 - With several lines selected (or several cursors), Tab and ⇧Tab move every item at once.
+- **⌥↑ / ⌥↓** moves the item up or down, taking its sub-items with it, past the whole item next to it. Numbered items swap numbers so the list still counts up. The same keys move a callout whole from its `> [!type]` line, and a folded section with everything hidden under it. Select several lines to move just those lines.
 
 ## Task lists
 
