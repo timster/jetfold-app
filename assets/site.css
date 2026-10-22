@@ -438,7 +438,7 @@ figcaption { margin-top: 12px; font: 14px/1.45 var(--sans); color: var(--muted);
 /* ---- smaller screens ---- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 24px; }
-  .jet-home { order: -1; width: 150px; justify-self: end; margin-bottom: -16px; }
+  .jet-home { order: -1; width: 150px; justify-self: center; margin-bottom: -16px; }
   .row, .row.flip, .themes-band, .files, .chapter { grid-template-columns: 1fr; gap: 28px; }
   .row.flip .copy { order: 0; }
   .chapter .copy { position: static; }
