@@ -42,7 +42,7 @@ Jetfold's actions are in the Shortcuts app, under Apps → Jetfold. They work on
 | **Create Note** | Makes a note with a title and text, in the inbox folder or a folder you pick. A taken name becomes `Name 2`. Returns the note. |
 | **Add to Note** | Adds text on a line of its own at the end of a note. |
 | **Add to Daily Note** | Adds text at the end of today's (or yesterday's, or tomorrow's) note, making it from your daily template if it's missing. |
-| **Open Note** / **Open Daily Note** | Opens a note, or a day's note, in the main window. |
+| **Open Note** / **Open Today's Note** / **Open Daily Note** | Opens a note, today's note, or yesterday's or tomorrow's, in the main window. |
 | **Get Note Text** | Returns a note's Markdown. |
 | **Find Notes** | Returns the notes containing all the words, best matches first, like Search in Notes. |
 | **Get Open Tasks** | Returns the unticked tasks as the Tasks view lists them: all, or just the overdue, due today, upcoming or undated ones. |
