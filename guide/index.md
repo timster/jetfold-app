@@ -17,7 +17,7 @@ Nothing is locked away in a database or some cloud service: every note is an ord
 7. [Images and Attachments](images.md): Adding images and files, and tidying up
 8. [Git Integration](git.md): Status, changed lines, history and commits
 9. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle and plain text
-10. [Opening Jetfold from Other Apps](url-scheme.md): `jetfold://` links for Shortcuts and scripts
+10. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, `jetfold://` links and the Service
 11. [Settings and Themes](settings.md): Every option in the Settings window
 12. [Keyboard Shortcuts](shortcuts.md): The complete list
 
