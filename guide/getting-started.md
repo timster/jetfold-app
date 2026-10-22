@@ -34,11 +34,11 @@ The main window has three columns:
 | **Notes** | The notes in the selected folder or tag, with titles, dates and a short preview |
 | **Editor** | The selected note (or notes), ready to edit |
 
-![The three columns with their headers: the window buttons and the hide-folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor](screenshots/03-columns.png)
+![The three columns under the toolbar: the window buttons and the folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor](screenshots/03-columns.png)
 
-Each column has its own header:
+The toolbar along the top keeps each column's buttons over it:
 
-- **Sidebar:** the **◧** button hides the folders.
+- **Sidebar:** the **◧** button next to the window buttons hides the folders, and shows them again.
 - **Note list:** the name of the folder or tag you're looking at, a **Sort** menu, and a **New Note** button.
 - **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note. A small status icon also appears there if a save is taking a while.
 
@@ -48,7 +48,7 @@ You can hide columns when you want to focus:
 - **View → Editor, Files** (⌘2) shows the note list and the editor.
 - **View → Editor, Files, Folders** (⌘3) shows all three.
 
-The number is how many columns you'll see. Drag the borders between columns to resize them; Jetfold remembers the widths for each workspace. Jetfold never resizes your window: when the window is too narrow for all three columns, the folders step aside, and come back when there's room again.
+The number is how many columns you'll see. Drag the borders between columns to resize them (dragging the sidebar's border all the way to the left hides the folders, like ⌘2); Jetfold remembers the widths for each workspace. Jetfold never resizes your window: when the window is too narrow for all three columns, the folders step aside, and come back when there's room again.
 
 ### As simple as you like
 
@@ -60,7 +60,7 @@ Everything beyond your folders and notes is a switch. Turn off Tasks, Agenda, Ta
 
 Press **⌘N** (File → New Note) or click the **New Note** button above the note list. Jetfold creates `Untitled.md` in the current folder and puts your cursor in its title so you can name it straight away. Type a title, press **Return**, and the cursor moves into the note so you can start writing.
 
-There's no Save button to remember. Jetfold saves automatically a moment after you stop typing, and again whenever you switch notes, switch apps, or quit. **⌘S** saves right away if you like. If a save is ever slow or fails, an icon appears in the editor's header; hover over it for details.
+There's no Save button to remember. Jetfold saves automatically a moment after you stop typing, and again whenever you switch notes, switch apps, or quit. **⌘S** saves right away if you like. If a save is ever slow or fails, an icon appears in the toolbar over the editor; hover over it for details.
 
 ## Saving and outside changes
 

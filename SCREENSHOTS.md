@@ -6,7 +6,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 |---|---|---|---|
 | 01 | full app | The main window in its three-column layout: the sidebar with views, folders and the calendar, the notes in the Projects folder, and the Garden Redesign note with a picture, a task list and a tag | index.md, home |
 | 02 | window | The welcome screen in a small window: the origami jet floating above "Choose the folder that holds your notes." and the Open Folder… button | getting-started.md |
-| 03 | full app | The three columns with their headers: the window buttons and the hide-folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor | getting-started.md |
+| 03 | full app | The three columns under the toolbar: the window buttons and the folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor | getting-started.md |
 | 04 | partial | The "This note changed on disk." bar above a note, with the Keep Mine and Use Disk Version buttons | getting-started.md |
 | 05 | partial | The sidebar: the notes folder expanded into its folders with note counts, a collapsed folder with a dimmed total, dots on folders with uncommitted changes, and the Tags group below | organizing-notes.md |
 | 06 | partial | The Tags group in the sidebar, expanded: tags with their note counts, and a nested tag opened under its parent | organizing-notes.md |
