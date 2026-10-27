@@ -67,7 +67,7 @@ and shows as a card: the file's name, what kind of file it is and its size, and 
 
 ## Unused attachments
 
-Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**; Finder's **Put Back** restores any you want back.
+Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**. They go where deleted notes go ([Settings → Notes → Deleted notes](settings.md#deleted-notes)), so you can move any you want back.
 
 ![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked](screenshots/59-unused-attachments.png)
 

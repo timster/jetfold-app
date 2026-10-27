@@ -33,7 +33,7 @@ Right-click a folder for:
 
 **Moving folders:** drag a folder onto another folder. You can't move a folder into itself or one of its own subfolders, and Jetfold won't move a folder somewhere that already has one with the same name.
 
-Folders deleted with **Move to Trash** go to the macOS Trash, so you can use Finder's **Put Back** to restore them.
+Folders deleted with **Move to Trash** go to the trash folder (`.trash` in your notes folder), or to the macOS Trash if you chose that in [Settings → Notes → Deleted notes](settings.md#deleted-notes).
 
 > Renaming or moving a folder updates every [wikilink](links.md) that points into it, so your links keep working.
 
@@ -224,7 +224,7 @@ Jetfold checks every note before moving any, so a name clash in the destination 
 
 ## Deleting notes
 
-Choose **Move to Trash**, or select notes in the list and press **⌘⌫**. Notes go to the macOS Trash, so you can restore them with Finder's **Put Back**. Jetfold doesn't ask for confirmation, because nothing is permanently deleted.
+Choose **Move to Trash**, or select notes in the list and press **⌘⌫**. Notes move into the trash folder, `.trash` in your notes folder, keeping their place, so you can move them back in Finder. To use the macOS Trash and Finder's **Put Back** instead, change [Settings → Notes → Deleted notes](settings.md#deleted-notes). Jetfold doesn't ask for confirmation, because nothing is permanently deleted.
 
 ## Note windows
 
