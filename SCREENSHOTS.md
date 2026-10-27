@@ -62,3 +62,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 59 | partial | The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked | images.md |
 | 60 | partial | The view editor: an icon and name, Tasks / Agenda / Notes, tag and folder chips, and a live preview listing the matching tasks with a count | organizing-notes.md |
 | 61 | full app | Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note | getting-started.md |
+
+## Themes page
+
+`assets/screenshots/themes/<theme>-<light|dark>.webp`, one for each theme in each appearance (ten in all), shown by the themes page's picker. The main window at 1024×640 with the Projects folder open and the Garden Redesign note selected in the list, the note list focused. For these shots, Garden Redesign's text is swapped for a short note without the picture: a sentence with a link, a highlight and a tag; a "This week" heading with three dated tasks, one ticked; a line with inline code; a quote. Git Status and Git Changes are off, and the app is relaunched for each theme, so no stale bold row shows in the sidebar. Saved from the PNG captures with `cwebp -q 90`. Restore the demo's note and settings afterwards.

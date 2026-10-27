@@ -143,7 +143,7 @@ function sizeImages(html) {
 console.log(`Built ${chapters.length + 1} guide pages and ${readdirSync(join(root, 'src/pages')).length} pages into dist/`)
 
 if (process.argv.includes('--serve')) {
-  const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.svg': 'image/svg+xml', '.json': 'application/json' }
+  const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.json': 'application/json' }
   createServer((req, res) => {
     let file = join(out, decodeURIComponent(req.url.split(/[?#]/)[0]))
     if (existsSync(file) && statSync(file).isDirectory()) file = join(file, 'index.html')

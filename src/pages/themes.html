@@ -1,7 +1,7 @@
-<!-- {"title": "Themes", "description": "Jetfold's five themes, each with a light and a dark look. Try them on a Jetfold window.", "section": "themes"} -->
+<!-- {"title": "Themes", "description": "Jetfold's five themes, each with a light and a dark look.", "section": "themes"} -->
 <section class="wrap intro">
   <h1>Try on a theme</h1>
-  <p>Each theme colors the whole window, from the sidebar to the editor, and comes in light and dark. This window uses the same colors as the app.</p>
+  <p>Each theme colors the whole window, from the sidebar to the editor, and comes in light and dark.</p>
 </section>
 
 <section class="wrap" aria-label="Theme preview">
@@ -13,59 +13,8 @@
     </div>
   </div>
 
-  <!-- Line icons for the window below, drawn to stand in for the app's system symbols. -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-tasks" viewBox="0 0 16 16"><circle cx="3.5" cy="4.5" r="1.8"/><circle cx="3.5" cy="11.5" r="1.8"/><path d="M7.5 4.5h7M7.5 11.5h7"/></symbol>
-    <symbol id="i-agenda" viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="12" rx="2"/><path d="M1.5 6h13M5 9h1M8 9h1M11 9h1M5 11.5h1M8 11.5h1"/></symbol>
-    <symbol id="i-folder" viewBox="0 0 16 16"><path d="M1.5 4a1.5 1.5 0 0 1 1.5-1.5h3l1.5 1.5h5.5a1.5 1.5 0 0 1 1.5 1.5v6.5a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 12z"/><path d="M1.5 6h13"/></symbol>
-    <symbol id="i-tag" viewBox="0 0 16 16"><path d="M6 2 4.5 14M11.5 2 10 14M2.5 5.5h11.5M2 10.5h11.5"/></symbol>
-    <symbol id="i-tags" viewBox="0 0 16 16"><path d="M1.5 2.5h6l7 7-5 5-7-7z"/><circle cx="5" cy="6" r="1"/></symbol>
-    <symbol id="i-chevron" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></symbol>
-    <symbol id="i-sidebar" viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 2.5v11M3 5h1.5M3 7h1.5"/></symbol>
-    <symbol id="i-sort" viewBox="0 0 16 16"><path d="M5 14V2M2 5l3-3 3 3M11 2v12M8 11l3 3 3-3"/></symbol>
-    <symbol id="i-compose" viewBox="0 0 16 16"><path d="M13.5 8.5v4a1.5 1.5 0 0 1-1.5 1.5H4a1.5 1.5 0 0 1-1.5-1.5V4A1.5 1.5 0 0 1 4 2.5h4"/><path d="m7 9 .5-2L13 1.5 14.5 3 9 8.5z"/></symbol>
-    <symbol id="i-info" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4.5M7 11.5h2M7 7h1"/><circle cx="8" cy="4.8" r=".4"/></symbol>
-    <symbol id="i-more" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><circle cx="5" cy="8" r=".4"/><circle cx="8" cy="8" r=".4"/><circle cx="11" cy="8" r=".4"/></symbol>
-  </svg>
-
-  <div class="window" id="window" role="img" aria-label="A Jetfold window in the chosen theme: the sidebar, the Projects folder's notes, and the Garden Redesign note">
-    <div class="w-side">
-      <div class="w-panel">
-        <div class="w-top"><span class="lights"><i></i><i></i><i></i></span><svg class="ic"><use href="#i-sidebar"/></svg></div>
-        <div class="w-item"><svg class="ic"><use href="#i-tasks"/></svg>Tasks<span>32</span></div>
-        <div class="w-item"><svg class="ic"><use href="#i-agenda"/></svg>Agenda<span>9</span></div>
-        <div class="w-item open"><svg class="ic"><use href="#i-folder"/></svg>Jetfold Demo<span>3</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Daily<span><b class="dot"></b>6</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Inbox<span>1</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Learning<span>2</span></div>
-        <div class="w-item in open sel"><svg class="ic"><use href="#i-folder"/></svg>Projects<span><b class="dot"></b>4</span></div>
-        <div class="w-item in in2"><svg class="ic"><use href="#i-folder"/></svg>Atlas<span><b class="dot"></b>7</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Reading<span>2</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-folder"/></svg>Recipes<span>2</span></div>
-        <div class="w-item open"><svg class="ic"><use href="#i-tags"/></svg>Tags<span>11</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-tag"/></svg>garden<span>4</span></div>
-        <div class="w-item in"><svg class="ic"><use href="#i-tag"/></svg>work<span>6</span></div>
-      </div>
-    </div>
-    <div class="w-list">
-      <div class="w-head">Projects <span><svg class="ic"><use href="#i-sort"/></svg><svg class="ic"><use href="#i-compose"/></svg></span></div>
-      <div class="w-note sel"><b>Garden Redesign <span>9:41 AM</span></b><p>Raised beds along the south fence, a path of reclaimed brick, and garlic in before the frost.</p></div>
-      <div class="w-note"><b>Budget Review <span>Yesterday</span></b><p>Monthly budget check-in with Priya and Sam. Hosting is under, contractors over.</p></div>
-      <div class="w-note"><b>Q3 Plan <span>Oct 9</span></b><p>What the team is aiming for this quarter. Ship the Atlas beta, cut load time.</p></div>
-      <div class="w-note"><b>Website Refresh <span>Oct 2</span></b><p>New homepage, pricing page and docs layout, launching with general availability.</p></div>
-    </div>
-    <div class="w-edit">
-      <div class="w-tools"><svg class="ic"><use href="#i-info"/></svg><svg class="ic"><use href="#i-more"/></svg></div>
-      <h3 class="w-title">Garden Redesign</h3>
-      <p>Raised beds along the south fence, a path of <a href="#" tabindex="-1">reclaimed brick</a>, and <mark>garlic in before the first frost</mark>. <span class="chip">#garden</span></p>
-      <h4>This week</h4>
-      <div class="w-task done"><i></i><em>Order the cedar boards</em> <span class="chip">@2026-10-12</span></div>
-      <div class="w-task"><i></i>Lay out the beds with string <span class="chip">@2026-10-13</span></div>
-      <div class="w-task"><i></i>Plant the garlic <span class="chip">@2026-10-16</span></div>
-      <p style="margin-top:14px">Soil mix is <code>60% topsoil, 40% compost</code>, about a cubic metre a bed.</p>
-      <p class="w-quote">The best time to plant a tree was twenty years ago.</p>
-    </div>
-  </div>
+  <img class="shot theme-shot" id="shot" src="/assets/screenshots/themes/jetfold-light.webp" width="1024" height="640"
+       alt="Jetfold in the Jetfold theme, light: the sidebar, the Projects folder's notes, and the Garden Redesign note">
 </section>
 
 <section class="wrap theme-notes" aria-label="About themes">
@@ -85,10 +34,10 @@
 
 <script id="themes" type="application/json">{{themes}}</script>
 <script>
-// Paints the window above in the picked theme, from the same themes.json the app uses.
+// Shows the screenshot of the picked theme and appearance; the swatches come from the app's themes.json.
 (function () {
   var themes = JSON.parse(document.getElementById('themes').textContent)
-  var win = document.getElementById('window')
+  var shot = document.getElementById('shot')
   var choices = document.getElementById('choices')
   var modes = document.querySelectorAll('.mode button')
   var pick = { id: themes[0].id, mode: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' }
@@ -107,24 +56,26 @@
     choices.append(b)
   })
 
-  function paint() {
+  function src(id, mode) { return '/assets/screenshots/themes/' + id + '-' + mode + '.webp' }
+
+  function show() {
     var theme = themes.find(function (t) { return t.id === pick.id })
-    var colors = theme[pick.mode]
-    Object.keys(colors).forEach(function (key) { win.style.setProperty('--t-' + key, colors[key]) })
-    // A clear sidebar shows the desktop through it in the app; here, a plain tint stands in.
-    var clear = /rgba\([^)]*,\s*0\)$/.test(colors.sidebar)
-    win.style.setProperty('--t-sidebar-fill', clear ? (pick.mode === 'dark' ? '#2a2a2d' : '#f1f1f4') : colors.sidebar)
+    shot.src = src(pick.id, pick.mode)
+    shot.alt = 'Jetfold in the ' + theme.name + ' theme, ' + pick.mode + ': the sidebar, the Projects folder’s notes, and the Garden Redesign note'
     choices.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.id === pick.id)) })
     modes.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === pick.mode)) })
-    win.setAttribute('aria-label', 'A Jetfold window in ' + theme.name + ', ' + pick.mode + ': the sidebar, the Projects folder’s notes, and the Garden Redesign note')
     try { localStorage.setItem('jetfold-theme', JSON.stringify(pick)) } catch (e) {}
   }
 
   choices.addEventListener('click', function (e) {
     var b = e.target.closest('button')
-    if (b) { pick.id = b.dataset.id; paint() }
+    if (b) { pick.id = b.dataset.id; show() }
   })
-  modes.forEach(function (b) { b.addEventListener('click', function () { pick.mode = b.dataset.mode; paint() }) })
-  paint()
+  modes.forEach(function (b) { b.addEventListener('click', function () { pick.mode = b.dataset.mode; show() }) })
+  show()
+  // The others load once the page has, so switching is instant.
+  addEventListener('load', function () {
+    themes.forEach(function (t) { ['light', 'dark'].forEach(function (m) { new Image().src = src(t.id, m) }) })
+  })
 })()
 </script>
