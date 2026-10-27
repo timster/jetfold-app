@@ -26,6 +26,8 @@ Every theme has a light and a dark look, and **Appearance** decides which one yo
 
 A theme colors the whole window, not just the note: the sidebar, the note list and its selection, the column dividers, the palettes, Note Info, the history window, the git badges and changed-line marks, and the conflict bar. Jetfold keeps the standard Mac sidebar look; the other themes fill the sidebar with their own color so it reads as one surface with the note list.
 
+The Jetfold theme also takes your Mac's accent color, the **Color** under **System Settings → Appearance → Theme**: links, selected rows and buttons follow it, and change when you change it. Where a color is too light for white text or links to stay readable (yellow, for instance), Jetfold uses a slightly deeper shade of it. The other themes keep their own accent.
+
 ![The main window in the Catppuccin theme, light: sidebar, note list and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
 ![The same window in the Nord theme, dark](screenshots/42-theme-nord.png)
