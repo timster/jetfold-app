@@ -62,4 +62,19 @@ A `.txt` file with the note as it reads, for pasting into places that don't unde
 - An image leaves a placeholder where it was: `[Image: garden plan]`, from its description, or the file name if it has none.
 - Code blocks keep their code, without the fences. Comments are left out.
 
+## Canvases
+
+A canvas has its own formats in **File → Export** (and the palette's "Export Canvas as…"):
+
+| Format | What you get | Shortcut |
+|---|---|---|
+| **PDF** | The whole board on one page, its text sharp and selectable | ⇧⌘E |
+| **PNG Image** | The board as a picture, at twice its size, for chats and slides | |
+| **HTML** | A stand-alone web page of the board, images embedded; long cards scroll | |
+| **Markdown** | The cards as a document: see below | |
+
+The PDF, image and web page show the board as it looks, always on white and without the dot grid. A note card shows what fits in it, as on the canvas (in the web page you can scroll it). A very large board is scaled down to fit.
+
+The Markdown document has the canvas's name as its title, then the cards in reading order, top to bottom and left to right: the cards outside groups first, then each group under its name as a heading. Text cards keep their Markdown, notes become `[[links]]`, images are embedded and other files linked, and web cards give their address. The arrows come last, as a list of connections ("Atlas launch → Q3 Plan: details").
+
 Next: [Opening Jetfold from Other Apps](url-scheme.md)

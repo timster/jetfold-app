@@ -24,6 +24,7 @@ Right-click a folder for:
 | Item | What it does |
 |---|---|
 | **New Note** | Creates a new note inside this folder |
+| **New Canvas** | Creates an empty canvas in this folder, ready to rename (see [Canvases](canvas.md)) |
 | **New Folder** | Creates "New Folder" inside this folder, ready to rename |
 | **Rename** | Renames the folder in place (or select it and press **Return**) |
 | **Reveal in Finder** | Shows the folder in a Finder window |
@@ -183,7 +184,7 @@ Everything you can do with a note is in the **Note** menu, in the **⋯** menu a
 | Item | What it does |
 |---|---|
 | **Open in New Window** | Opens the note in its own window (see below) |
-| **Rename…** | Puts the cursor in the note's title |
+| **Rename…** | Puts the cursor in the note's title (for a canvas, or a note that isn't open, in its row in the note list) |
 | **Duplicate** | Makes a copy next to the original, named "Name copy" (then "Name copy 2" and so on) |
 | **Pin to Top** / **Unpin** | Keeps the note at the top of its list |
 | **Make Read-Only** / **Make Editable** | Protects the note from edits |

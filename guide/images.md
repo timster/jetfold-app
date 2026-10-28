@@ -79,4 +79,4 @@ Deleting a note leaves its images and files behind. **File → Find Unused Attac
 
 PNG, JPEG, HEIC, GIF, WebP, SVG, AVIF, TIFF, BMP and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size).
 
-Next: [Git Integration](git.md)
+Next: [Canvases](canvas.md)
