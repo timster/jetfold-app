@@ -132,7 +132,7 @@ The folder holding your templates, for **File → New Note from Template…**. T
 
 ### Inbox folder
 
-Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`. See [The Inbox](daily-notes-and-inbox.md#the-inbox-capturing-text-from-any-app).
+Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`; `/` is the notes folder itself. See [The Inbox](daily-notes-and-inbox.md#the-inbox-capturing-text-from-any-app).
 
 ### Image path
 
