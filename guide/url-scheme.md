@@ -14,7 +14,7 @@ The easiest way to get a link to a note is **Note → Copy Link**, which copies 
 
 | Link | Does |
 |---|---|
-| `open?note=Name` | Opens a note, resolved like a `[[wikilink]]` (by name, or by path from the notes folder when it contains `/`). `&heading=Tasks` or `Name%23Tasks` puts the cursor on a heading. `&create=true[&text=…]` makes the note first if it's missing (placed as `new` would); without it an unknown name shows an error. |
+| `open?note=Name` | Opens a note, resolved like a `[[wikilink]]` (by name, or by path from the notes folder when it contains `/`). `&heading=Tasks` or `Name%23Tasks` puts the cursor on a heading. `&create=true[&text=…]` makes the note first if it's missing (placed as `new` would); without it an unknown name shows an error. `&at=N[&length=M]` puts the cursor N characters in (UTF-16 code units), selecting M. |
 | `new?note=…&text=…` | Makes a note. `Name` goes in the inbox folder (Settings, default `Inbox`), `folder/Name` in that folder, `folder/` makes `Untitled` there. Missing folders are created; a taken name becomes `Name 2`. The note opens in its own window. |
 | `new?…&append=true` | If that exact note exists, adds `text` on a line of its own; otherwise creates it. |
 | `new?…&overwrite=true` | If that exact note exists, replaces its text, after a confirmation (always, even with `silent`). Otherwise creates it. |
@@ -58,6 +58,18 @@ Some actions are ready to use without building a shortcut. Ask Siri or type them
 - “Get my tasks from Jetfold”
 
 Actions that change notes need Jetfold unlocked, and leave read-only notes alone. A note that's open in Jetfold saves first and then shows the added text.
+
+## Today widget
+
+Add Jetfold's **Today** widget from the desktop (right-click it and choose **Edit Widgets…**) or Notification Center. It shows what's due in your open workspace, as the Agenda does:
+
+- **Small:** the date, how many tasks are overdue, and the next thing due.
+- **Medium:** the date beside the next few tasks and events.
+- **Large:** Overdue, Today, Tomorrow and Coming Up, each with its tasks and events.
+
+Click a task or event to open its note at that line, or anywhere else to open today's note. The widget updates when your notes change, and moves on to the next day at midnight by itself. It shows the workspace that's open in Jetfold.
+
+![The Today widget on the desktop in its medium and large sizes](screenshots/66-today-widget.png)
 
 ## Focus filters
 
