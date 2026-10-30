@@ -62,6 +62,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 59 | partial | The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked | images.md |
 | 60 | partial | The view editor: an icon and name, Tasks / Agenda / Notes, tag and folder chips, and a live preview listing the matching tasks with a count | organizing-notes.md |
 | 61 | full app | Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note | getting-started.md |
+| 62 | partial | The right-click menu in a note with Insert from iPhone or iPad open: Take Photo, Scan Documents and Add Sketch under the iPhone's name (needs a nearby iPhone or iPad signed in to the same Apple Account; not yet taken) | images.md |
 
 ## Themes page
 

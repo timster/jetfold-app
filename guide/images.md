@@ -17,6 +17,14 @@ Drag image files from Finder (or from most other apps) onto a note. Each image i
 
 Copy an image (for example with ⌃⇧⌘4 for a screenshot to the clipboard) and paste it into a note with **⌘V**. Jetfold saves it to your images folder and inserts the link at the cursor. Pasted images with generic names are saved as "Pasted image.png".
 
+### From your iPhone or iPad
+
+Control-click in a note (or on an empty spot on a canvas) and choose **Insert from iPhone or iPad**, then **Take Photo**, **Scan Documents** or **Add Sketch**. When you're done on the device, the result appears where you clicked: photos are saved as "Photo.jpg", sketches as "Sketch.png", and scanned pages as one "Scan.pdf", shown as a card. They're saved to your images folder, like pasted images.
+
+![The right-click menu in a note with Insert from iPhone or iPad open, offering Take Photo, Scan Documents and Add Sketch](screenshots/62-insert-from-iphone.png)
+
+Your iPhone or iPad needs to be nearby, signed in to the same Apple Account, with Wi‑Fi and Bluetooth on.
+
 ### By hand
 
 Write a standard Markdown image:
