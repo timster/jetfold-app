@@ -73,6 +73,19 @@ and shows as a card: the file's name, what kind of file it is and its size, and 
 - Any line holding only a link to a file in your notes folder becomes a card, so you can also add one by hand. A link in the middle of a sentence stays a link (**⌘-click** it to open the file).
 - Other Markdown apps see a plain link, and exports keep it as one.
 
+## Text in images and PDFs
+
+Jetfold reads the words in your pictures and PDFs (a whiteboard, a receipt, a page you scanned from your iPhone), so [Search in Notes](finding.md#search-in-notes-f) finds the notes that show them.
+
+![Search in Notes with a result found in a picture, its snippet starting with the image's name](screenshots/63-search-image-text.png)
+
+- Right-click a picture or a PDF card and choose **Copy Text from Image** (or **Copy Text from PDF**) to put its words on the clipboard. On a canvas, right-click its card.
+- The text is read on your Mac, in the background, and is never written into your notes folder. The first time, a folder full of pictures can take a few minutes; search gets better as it goes. After that only new or changed files are read.
+- A PDF's own text is used when it has some; a scanned one is read page by page (the first 30 pages).
+- Turn it off in [Settings → Notes → Find text in images and PDFs](settings.md#find-text-in-images-and-pdfs).
+
+![The right-click menu on a picture in a note, with Copy Text from Image at the top](screenshots/64-copy-text-from-image.png)
+
 ## Unused attachments
 
 Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**. They go where deleted notes go ([Settings → Notes → Deleted notes](settings.md#deleted-notes)), so you can move any you want back.

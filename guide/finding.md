@@ -46,6 +46,7 @@ Searches the full text of every note. This is Go to Note with a `/` typed at the
 - Notes with the words in their **title** rank first, then by how often the words appear, then by how recently the note was edited.
 - Each result shows a snippet with the match highlighted.
 - Opening a result opens the note with the match selected and scrolled into view.
+- Words in **pictures and scanned PDFs** count too: a note that shows a photo of a whiteboard is found by what's written on it. Its result shows the file's name and the words around the match, and opening it goes to the picture. See [Text in images](images.md#text-in-images-and-pdfs).
 
 Without the `/`, Go to Note shows name matches first, then an **In notes** section with text matches.
 

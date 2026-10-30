@@ -138,6 +138,10 @@ Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`
 
 Where dropped and pasted images are saved, as a template. The default is `.assets/{original}`: a hidden `.assets` folder at the top of your notes folder, with each image keeping its own name. An example is shown as you type. See [Images](images.md#where-images-are-saved) for the placeholders.
 
+### Find text in images and PDFs
+
+On by default. Jetfold reads the words in your pictures and PDFs on your Mac, so search finds notes by them and you can copy them with **Copy Text from Image**. See [Text in images and PDFs](images.md#text-in-images-and-pdfs).
+
 ### Deleted notes
 
 Where deleted notes, folders and attachments go. **Trash folder** (the default) moves them into a folder inside your notes folder, `.trash` unless you change it, keeping their place: `Ideas/Plan.md` goes to `.trash/Ideas/Plan.md`, and a name that's taken there gets a number. A folder name starting with `.` stays out of the sidebar. To restore something, move it back in Finder. **System Trash** sends them to the macOS Trash instead, where Finder's **Put Back** restores them.
