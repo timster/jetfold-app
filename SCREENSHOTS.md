@@ -65,6 +65,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 62 | partial | The right-click menu in a note with Insert from iPhone or iPad open: Take Photo, Scan Documents and Add Sketch under the iPhone's name (needs a nearby iPhone or iPad signed in to the same Apple Account; not yet taken) | images.md |
 | 63 | partial | Search in Notes for a word that's only in a picture: a result whose snippet starts with the image's name ("Whiteboard.jpg: …"), beside ordinary text results. Needs a demo note showing a photo of handwriting or a whiteboard (the sample notes have none yet; not yet taken) | images.md |
 | 64 | partial | The right-click menu on a picture in a note, with Copy Text from Image at the top (same demo picture as 63; not yet taken) | images.md |
+| 65 | partial | System Settings → Focus → a Focus → Jetfold's filter sheet, with Workspace set to a workspace and Show set to Tasks (a system window: take it by hand and crop to the sheet) | url-scheme.md |
 
 ## Themes page
 

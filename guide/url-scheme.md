@@ -59,6 +59,17 @@ Some actions are ready to use without building a shortcut. Ask Siri or type them
 
 Actions that change notes need Jetfold unlocked, and leave read-only notes alone. A note that's open in Jetfold saves first and then shows the added text.
 
+## Focus filters
+
+A Focus can open a workspace for as long as it's on: your work notes during Work, your own the rest of the time. In **System Settings → Focus**, choose a Focus, then under **Focus Filters** click **Add Filter…** and choose **Jetfold**.
+
+![The Jetfold Focus filter in System Settings, with Workspace and Show set](screenshots/65-focus-filter.png)
+
+- **Workspace** is the one to open. It's one of the workspaces you've opened in Jetfold.
+- **Show** is optional: today's note, Tasks, Agenda, one of your own views, a tag or a folder from that workspace.
+
+When the Focus turns on, Jetfold saves your edits and switches. When it turns off, it goes back to the workspace you had open before, unless you've switched to another one yourself in the meantime. If Jetfold isn't running when the Focus changes, it catches up the next time you open it.
+
 ## Share menu
 
 Jetfold is in the Share menu of Safari and other apps (in the toolbar's Share button, or File → Share). Share a page or some text and a small sheet opens with a link to the page (`[Page Title](https://…)`) and any text, ready to edit. Choose **New Note** to save it in the inbox folder, named after the page, or **Today's Note** to add it at the end of today's note. Jetfold saves it in the background; the note doesn't open.
