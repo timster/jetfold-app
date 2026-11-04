@@ -18,7 +18,7 @@ Nothing is locked away in a database or some cloud service: every note is an ord
 8. [Canvases](canvas.md): Cards, notes and images on a board, joined by arrows
 9. [Git Integration](git.md): Status, changed lines, history and commits
 10. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle and plain text
-11. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, `jetfold://` links and the Service
+11. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, the Today widget, Focus filters, `jetfold://` links and the Service
 12. [Settings and Themes](settings.md): Every option in the Settings window
 13. [Keyboard Shortcuts](shortcuts.md): The complete list
 

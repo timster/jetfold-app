@@ -62,11 +62,12 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 59 | partial | The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked | images.md |
 | 60 | partial | The view editor: an icon and name, Tasks / Agenda / Notes, tag and folder chips, and a live preview listing the matching tasks with a count | organizing-notes.md |
 | 61 | full app | Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note | getting-started.md |
-| 62 | partial | The right-click menu in a note with Insert from iPhone or iPad open: Take Photo, Scan Documents and Add Sketch under the iPhone's name (needs a nearby iPhone or iPad signed in to the same Apple Account; not yet taken) | images.md |
-| 63 | partial | Search in Notes for a word that's only in a picture: a result whose snippet starts with the image's name ("Whiteboard.jpg: …"), beside ordinary text results. Needs a demo note showing a photo of handwriting or a whiteboard (the sample notes have none yet; not yet taken) | images.md |
-| 64 | partial | The right-click menu on a picture in a note, with Copy Text from Image at the top (same demo picture as 63; not yet taken) | images.md |
-| 65 | partial | System Settings → Focus → a Focus → Jetfold's filter sheet, with Workspace set to a workspace and Show set to Tasks (a system window: take it by hand and crop to the sheet) | url-scheme.md |
-| 66 | partial | The Today widget on the desktop, medium and large side by side, from the demo notes (an overdue task, today's standup, tomorrow and later items); take it by hand, not yet taken | url-scheme.md |
+| 62 | partial | The lower part of the right-click menu over the whiteboard photo in Design Principles: Writing Tools, Spelling and Grammar, Share…, AutoFill, then Take Photo, Scan Documents and Add Sketch under the iPhone's name (needs a nearby iPhone or iPad signed in to the same Apple Account) | images.md, features |
+| 63 | partial | Search in Notes for "dark mode": Meeting Notes, Beta Announcement and a daily note match by their text, Design Principles by its whiteboard photo ("whiteboard.jpg: 4. Dark mode by default"), and the Launch Board canvas | images.md |
+| 64 | partial | The right-click menu on the whiteboard photo in Design Principles, with Copy Text from Image at the top and the iPhone's Take Photo, Scan Documents and Add Sketch at the bottom (cropped below the image's revealed markup line) | images.md |
+| 65 | partial | System Settings → Focus → a Focus → Jetfold's filter sheet, with Workspace set to a workspace and Show set to Tasks (a system window: take it by hand and crop to the sheet) | url-scheme.md, features |
+| 66 | partial | The medium Today widget on the desktop, with a little of the wallpaper around it: the date (FRI 30) beside an open task and two events due today, and the workspace name. Take it by hand (desktop widgets must be on: System Settings → Desktop & Dock → Show Widgets) | url-scheme.md, features |
+| 67 | partial | The Launch Board canvas (Projects/Atlas), fitted with ⇧1: the Atlas beta text card joined to the Atlas Launch Plan note card ("the plan"), and the From the design review group holding the whiteboard photo and a checklist, joined to the Meeting Notes card ("discussed in"); the editor column only | features |
 
 ## Themes page
 

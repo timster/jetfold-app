@@ -42,6 +42,8 @@ The toolbar along the top keeps each column's buttons over it:
 - **Note list:** the name of the folder or tag you're looking at, a **Sort** menu, and a **New Note** button.
 - **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note. A small status icon also appears there if a save is taking a while.
 
+To change the toolbar, choose **View → Customize Toolbar…** (or right-click the toolbar). Drag buttons out to remove them, or drag in more: Back and Forward, Search, Command Palette, Today's Note, New Canvas, New Folder, Pin, History, Export, Focus Mode and Move to Trash. Each column keeps the buttons you put over it. Drag the default set back in to reset it. Without the **ⓘ** button, **⌥⌘O** still opens Note Info, at the top right of the editor.
+
 You can hide columns when you want to focus:
 
 - **View → Editor** (⌘1) shows only the editor.

@@ -1,6 +1,6 @@
 # Canvases
 
-A canvas is a board for thinking in space: cards of text, your notes, images and files laid out on an endless surface and joined by arrows. Use one to plan a project, map out an argument, collect research or sketch how things connect.
+A canvas is a board for thinking in space: cards of text, your notes, images and files laid out on an endless surface and joined by arrows. Use one to plan a project, brainstorm, collect research or sketch how things connect.
 
 A canvas is a file in your notes folder like any note, ending in `.canvas`. It's written in the open [JSON Canvas](https://jsoncanvas.org) format, so other apps that read the format can open it, and each card is a line of its own, so its history in git reads cleanly.
 
@@ -17,6 +17,7 @@ A canvas fills the editor without a title of its own. To rename it, choose **Not
 | A text card | **Double-click** an empty spot, or click the card button in the toolbar at the bottom |
 | A note | Drag notes from the note list onto the canvas, or click the note button and pick one in the command palette |
 | An image or other file | Drag files from Finder, paste an image (⌘V), or click the picture button and choose files |
+| A photo, scan or sketch from your iPhone or iPad | Right-click an empty spot and choose **Take Photo**, **Scan Documents** or **Add Sketch** (see [Images](images.md#from-your-iphone-or-ipad)) |
 | A web link | Paste a web address (⌘V) |
 | Text from another app | Paste it, or drag it onto the canvas |
 
@@ -68,6 +69,7 @@ Click an arrow to select it. Double-click it (or press Return) to give it a labe
 - **Convert to Note** turns a text card into a note of its own, in the canvas's folder and named after its first line, and puts that note in its place.
 - **Bring to Front** and **Send to Back** change which cards are on top.
 - **Show in Finder** shows a file card's file.
+- **Copy Text from Image** (or **from PDF**) copies the words in an image or PDF card (see [Text in images and PDFs](images.md#text-in-images-and-pdfs)).
 
 ## Canvases and the rest of Jetfold
 

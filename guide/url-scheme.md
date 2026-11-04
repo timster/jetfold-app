@@ -69,7 +69,7 @@ Add Jetfold's **Today** widget from the desktop (right-click it and choose **Edi
 
 Click a task or event to open its note at that line, or anywhere else to open today's note. The widget updates when your notes change, and moves on to the next day at midnight by itself. It shows the workspace that's open in Jetfold.
 
-![The Today widget on the desktop in its medium and large sizes](screenshots/66-today-widget.png)
+![The medium Today widget on the desktop: the date beside an open task and two events due today](screenshots/66-today-widget.png)
 
 ## Focus filters
 
