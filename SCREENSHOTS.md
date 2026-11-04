@@ -66,7 +66,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 63 | partial | Search in Notes for "dark mode": Meeting Notes, Beta Announcement and a daily note match by their text, Design Principles by its whiteboard photo ("whiteboard.jpg: 4. Dark mode by default"), and the Launch Board canvas | images.md |
 | 64 | partial | The right-click menu on the whiteboard photo in Design Principles, with Copy Text from Image at the top and the iPhone's Take Photo, Scan Documents and Add Sketch at the bottom (cropped below the image's revealed markup line) | images.md |
 | 65 | partial | System Settings → Focus → a Focus → Jetfold's filter sheet, with Workspace set to a workspace and Show set to Tasks (a system window: take it by hand and crop to the sheet) | url-scheme.md, features |
-| 66 | partial | The medium Today widget on the desktop, with a little of the wallpaper around it: the date (FRI 30) beside an open task and two events due today, and the workspace name. Take it by hand (desktop widgets must be on: System Settings → Desktop & Dock → Show Widgets) | url-scheme.md, features |
+| 66 | partial | The medium Today widget on the desktop, with a little of the wallpaper around it: the date (WED 4) beside an open task and an event due today, and the workspace name. Take it by hand (desktop widgets must be on: System Settings → Desktop & Dock → Show Widgets) | url-scheme.md, features |
 | 67 | partial | The Launch Board canvas (Projects/Atlas), fitted with ⇧1: the Atlas beta text card joined to the Atlas Launch Plan note card ("the plan"), and the From the design review group holding the whiteboard photo and a checklist, joined to the Meeting Notes card ("discussed in"); the editor column only | features |
 
 ## Themes page
