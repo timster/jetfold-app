@@ -19,7 +19,7 @@ Copy an image (for example with ⌃⇧⌘4 for a screenshot to the clipboard) an
 
 ### From your iPhone or iPad
 
-Control-click in a note (or on an empty spot on a canvas) and, under your iPhone's or iPad's name near the bottom of the menu, choose **Take Photo**, **Scan Documents**, or **Add Sketch**. (With more than one device, they're under **Insert from iPhone or iPad**.) When you're done on the device, the result appears where you clicked: photos are saved as "Photo.jpg", sketches as "Sketch.png", and scanned pages as one "Scan.pdf", shown as a card. They're saved to your images folder, like pasted images.
+Control-click in a note, or on an empty spot on a canvas, and choose **Take Photo**, **Scan Documents**, or **Add Sketch** under your device's name. The result appears where you clicked and is saved to your images folder.
 
 ![The right-click menu in a note, with Take Photo, Scan Documents, and Add Sketch under the iPhone's name](screenshots/62-insert-from-iphone.png)
 

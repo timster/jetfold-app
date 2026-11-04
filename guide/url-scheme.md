@@ -84,7 +84,7 @@ When the Focus turns on, Jetfold saves your edits and switches. When it turns of
 
 ## Share menu
 
-Jetfold is in the Share menu of Safari and other apps (in the toolbar's Share button, or File → Share). Share a page or some text and a small sheet opens with a link to the page (`[Page Title](https://…)`) and any text, ready to edit. Choose **New Note** to save it in the inbox folder, named after the page, or **Today's Note** to add it at the end of today's note. Jetfold saves it in the background; the note doesn't open.
+Jetfold is in the Share menu of Safari and other apps. Share a page or some text, edit it if you like, then save it as a new note in your inbox or add it to today's note.
 
 If Jetfold isn't in the menu, turn it on in System Settings → General → Login Items & Extensions → Sharing (or the Share menu's Edit Extensions…).
 

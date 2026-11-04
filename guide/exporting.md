@@ -75,6 +75,6 @@ A canvas has its own formats in **File → Export** (and the palette's "Export C
 
 The PDF, image, and web page show the board as it looks, always on white and without the dot grid. A note card shows what fits in it, as on the canvas (in the web page you can scroll it). A very large board is scaled down to fit.
 
-The Markdown document has the canvas's name as its title, then the cards in reading order, top to bottom and left to right: the cards outside groups first, then each group under its name as a heading. Text cards keep their Markdown, notes become `[[links]]`, images are embedded and other files linked, and web cards give their address. The arrows come last, as a list of connections ("Atlas launch → Q3 Plan: details").
+The Markdown document lists the cards in reading order, with each group under its own heading. Text cards keep their Markdown, notes become `[[links]]`, and the arrows come last as a list of connections.
 
 Next: [Opening Jetfold from Other Apps](url-scheme.md)

@@ -11,7 +11,11 @@ Jetfold's palettes are one search box with four modes, all in the **Go** menu. E
 | **Search in Notes** | ⇧⌘F | The text inside every note |
 | **Go to Heading** | ⇧⌘O | The headings in the current note |
 
-In every palette, type to filter, use **↑ / ↓** (or ⌃P / ⌃N) to choose, **Return** to run or open, and **Escape** to close. Matching is fuzzy: letters only need to appear in order, so `dn` finds "**D**aily **N**otes". Separate words can come in any order, so `review 2025` finds "2025 Annual Review"; every word has to match, and names with the words in the order you typed them rank higher. Numbers have to appear whole: `2025` matches "2025-03-21" but not "2024-03-25". Exact substrings and matches at the start of words rank highest, and the matched letters are highlighted.
+In every palette, type to filter, use **↑ / ↓** to choose, **Return** to open, and **Escape** to close.
+
+- Letters only need to appear in order: `dn` finds "**D**aily **N**otes".
+- Words can come in any order: `review 2025` finds "2025 Annual Review".
+- Numbers match whole: `2025` matches "2025-03-21" but not "2024-03-25".
 
 The palettes work in [note windows](organizing-notes.md#note-windows) too.
 
@@ -111,7 +115,7 @@ Pick one from the list with **Return** or **Tab**. For one-word dates you don't 
 
 ## Back and forward
 
-**Go → Back** (⌘[) returns to the note you were in before, scrolled where you left it with the cursor where it was, and **Go → Forward** (⌘]) goes the other way. It works however you moved on: picking another note in the list, following a link, the palettes, a view, or the calendar. Handy after following a [[link]] to check something.
+**Go → Back** (⌘[) returns to the previous note, right where you left it, and **Go → Forward** (⌘]) goes the other way, however you moved on.
 
 If the note is in the list or view showing now, it's picked there; otherwise Jetfold goes to its folder. Notes trashed since are skipped.
 

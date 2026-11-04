@@ -34,7 +34,7 @@ Right-click a folder for:
 
 **Moving folders:** drag a folder onto another folder. You can't move a folder into itself or one of its own subfolders, and Jetfold won't move a folder somewhere that already has one with the same name.
 
-Folders deleted with **Move to Trash** go to the macOS Trash, so you can use Finder's **Put Back** to restore them, or to a trash folder in your notes folder if you chose that in [Settings → Notes → Deleted notes](settings.md#deleted-notes).
+Deleted folders go where deleted notes go: the macOS Trash, or a trash folder if you chose one in [Settings → Notes → Deleted notes](settings.md#deleted-notes).
 
 > Renaming or moving a folder updates every [wikilink](links.md) that points into it, so your links keep working.
 
@@ -47,9 +47,9 @@ At the top of the sidebar, **Tasks** and **Agenda** gather things from all your 
 
 ![The Tasks view in the middle column: overdue, today's, and upcoming tasks with their dates and notes, and the selected task's note open in the editor beside it](screenshots/53-tasks-view.png)
 
-Pick a view and its rows fill the middle column in place of a folder's notes. Click a row, or move through them with ↑ and ↓, and its note opens in the editor at that line, while the view stays, so you can work down a list. Click a task's circle, or press **Space**, to tick it off; it saves like any edit, and leaves the list. Views update as your notes change.
+Pick a view and its rows fill the middle column. Click a row to open its note at that line; the view stays, so you can work down the list. Click a task's circle, or press **Space**, to tick it off.
 
-Right-click a row for **Show in Folder** (leaves the view for the note's folder, with the note picked and the line selected), **Open in New Window**, **Reveal in Finder** and, on a task, **Mark as Done**.
+Right-click a row to show it in its folder, open it in a new window, reveal it in Finder, or mark a task as done.
 
 Pick a folder or a tag to go back to notes. **Go → Tasks** (⌥⌘L) and **Go → Agenda** (⌥⌘A) jump to a view from anywhere, and clicking a date in a note shows [that day](daily-notes-and-inbox.md#the-calendar).
 

@@ -144,7 +144,7 @@ On by default. Jetfold reads the words in your pictures and PDFs on your Mac, so
 
 ### Deleted notes
 
-Where deleted notes, folders, and attachments go. **System Trash** (the default) sends them to the macOS Trash, where Finder's **Put Back** restores them. **Trash folder** moves them into a folder inside your notes folder instead, `.trash` unless you change it, keeping their place: `Ideas/Plan.md` goes to `.trash/Ideas/Plan.md`, and a name that's taken there gets a number. A folder name starting with `.` stays out of the sidebar. To restore something, move it back in Finder.
+Where deleted notes, folders, and attachments go. **System Trash** (the default) uses the macOS Trash, where Finder's **Put Back** restores them. **Trash folder** moves them into `.trash` in your notes folder instead, keeping their place: `Ideas/Plan.md` goes to `.trash/Ideas/Plan.md`.
 
 ## The View menu
 
