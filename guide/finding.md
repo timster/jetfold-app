@@ -21,7 +21,7 @@ The palettes work in [note windows](organizing-notes.md#note-windows) too.
 
 ## Commands (⌘P)
 
-Every command in the app, including ones that aren't in any menu. With nothing typed, the full list is shown, each with its shortcut.
+Every command in the app, including ones that aren't in any menu, with their shortcuts.
 
 ![The command palette open over a note, listing commands with their shortcuts](screenshots/23-command-palette.png)
 
@@ -39,20 +39,19 @@ Jump to any note or folder by name. With nothing typed, it lists your **most rec
 
 ![Go to Note with nothing typed, listing the most recently edited notes with their folders](screenshots/24-go-to-note.png)
 
-Picking a note opens it (expanding its folder in the sidebar and selecting it in the list). Picking a folder opens that folder.
 
 ## Search in Notes (⇧⌘F)
 
-Searches the full text of every note. This is Go to Note with a `/` typed at the start, and you can type `/` in Go to Note yourself to get the same thing.
+Searches the full text of every note.
 
 - A note matches when it contains **every word** you typed, in any order and any case.
-- Notes with the words in their **title** rank first, then by how often the words appear, then by how recently the note was edited.
+
 - Each result shows a snippet with the match highlighted.
 - Opening a result opens the note with the match selected and scrolled into view.
 
 Without the `/`, Go to Note shows name matches first, then an **In notes** section with text matches.
 
-![Search in Notes with results for "load test", each with a snippet and the matched words highlighted](screenshots/25-search.png)
+![Search in Notes with results for "load test", with highlighted snippets](screenshots/25-search.png)
 
 Search is fast, even across thousands of notes, and picks up changes made outside the app.
 
@@ -71,24 +70,24 @@ Your tags are listed in the sidebar, where you can browse them like folders, dra
 - **Click a tag** in a note to list every note that uses it.
 - **Nested tags** (`#project/atlas`) sit under their parent, and picking `#project` includes them.
 - Tags are the same whatever their capitals: `#Work` and `#work` are one tag.
-- A tag starts with a letter and can contain letters, numbers, `_`, `-` and `/`. Headings (`# Heading`, with a space), numbers like `#1`, and `#` inside code or web addresses aren't tags.
+
 
 ## Dates and the agenda
 
-Type `@` and a date, `@2026-10-10`, anywhere in a note to put a date on it: `Standup with Sam @2026-10-10`. Dates show as a small chip, and they're plain text in your notes, nothing hidden. Only real dates count (`@2026-02-30` doesn't), and not inside code or in an email address.
+Type `@` and a date, `@2026-10-10`, anywhere in a note to put a date on it: `Standup with Sam @2026-10-10`. Dates show as a small chip, and they're plain text in your notes, nothing hidden.
 
 ![A task list with @dates shown as chips, one ticked](screenshots/28-dates.png)
 
 ### Writing dates in words
 
-You don't have to type the date out. Type `@` and a word, and Jetfold offers the dates it could mean, each with its day:
+You don't have to type the date out. Type `@` and a word, and Jetfold offers the dates it could mean:
 
 ![Typing "@fr" in a task offers "@friday" with its date, "Fri, Oct 16", in a small list](screenshots/47-natural-dates.png)
 
 | You type | You get (on Tuesday 13 October 2026) |
 |---|---|
 | `@today`, `@tomorrow`, `@yesterday` | `@2026-10-13`, `@2026-10-14`, `@2026-10-12` |
-| `@friday` or `@fri` (any weekday) | the coming one: `@2026-10-16`. Today's weekday means a week from today |
+| `@friday` or `@fri` (any weekday) | the coming one: `@2026-10-16` |
 | `@next week` | next Monday: `@2026-10-19` |
 | `@next month` | the same day next month: `@2026-11-13` |
 | `@in 3 days`, `@in 2 weeks` | `@2026-10-16`, `@2026-10-27` |
@@ -109,20 +108,18 @@ Pick one from the list with **Return** or **Tab**. For one-word dates you don't 
 - **Upcoming:** dated tasks still to come, soonest first
 - **No Date:** the rest, most recently edited notes first
 
-- Click the circle, or press **Space**, to tick a task off. The note saves as usual; read-only notes are left alone.
-- Tasks in code blocks don't count, and a task's due date is the first `@date` on its line (`@tomorrow` works too: see [Writing dates in words](#writing-dates-in-words)).
+- Click the circle, or press **Space**, to tick a task off.
 
 ## Back and forward
 
 **Go → Back** (⌘[) returns to the previous note, right where you left it, and **Go → Forward** (⌘]) goes the other way, however you moved on.
 
-If the note is in the list or view showing now, it's picked there; otherwise Jetfold goes to its folder. Notes trashed since are skipped.
 
 ## Note Info
 
 Click **ⓘ** at the top of the editor, or press **⌥⌘O** (Note → Note Info), to open a panel about the note you're in. It has three tabs:
 
-- **Statistics:** words, characters, paragraphs, and an estimated reading time, plus when the note was created and last modified. Markdown symbols aren't counted as words.
+- **Statistics:** words, characters, paragraphs, and an estimated reading time, plus when the note was created and last modified.
 - **Table of Contents:** the note's headings, indented by level, with the one the cursor is in highlighted. Click one to jump to it.
 - **Backlinks:** the notes that [link to this one](links.md#backlinks), with a snippet of each link. Click one to open it.
 
@@ -130,7 +127,6 @@ Click **ⓘ** at the top of the editor, or press **⌥⌘O** (Note → Note Info
 
 ![Note Info open on its Table of Contents tab, with the heading the cursor is in highlighted](screenshots/31-note-info-contents.png)
 
-Note Info follows whichever note you last typed in or clicked, which is useful when several notes are stacked.
 
 ## Open Random Note
 

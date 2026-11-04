@@ -57,7 +57,7 @@ Some actions are ready to use without building a shortcut. Ask Siri or type them
 - “Open a note in Jetfold”
 - “Get my tasks from Jetfold”
 
-Actions that change notes need Jetfold unlocked, and leave read-only notes alone. A note that's open in Jetfold saves first and then shows the added text.
+Actions that change notes need Jetfold unlocked.
 
 ## Share menu
 
@@ -67,6 +67,6 @@ If Jetfold isn't in the menu, turn it on in System Settings → General → Logi
 
 ## Service: New Jetfold Note with Selection
 
-Select text in any app, then use the app menu → Services → New Jetfold Note with Selection (or the text context menu). It creates `Untitled.md` in the inbox folder holding the text and opens it in a note window. To enable it or give it a shortcut: System Settings → Keyboard → Keyboard Shortcuts → Services → Text → New Jetfold Note with Selection.
+Select text in any app and choose **Services → New Jetfold Note with Selection** to save it as a note in your inbox. To give it a keyboard shortcut, see [The Inbox](daily-notes-and-inbox.md#giving-it-a-keyboard-shortcut).
 
 Next: [Settings and Themes](settings.md)

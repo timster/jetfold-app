@@ -12,7 +12,7 @@ The first time you open Jetfold, it asks for a folder. Choose any folder: an exi
 - If the folder **already has notes**, Jetfold shows them straight away. Nothing is changed or imported.
 - Hidden files and folders (names starting with `.`, such as `.git`) are ignored.
 
-Each notes folder is a **workspace** with its own settings, kept inside it in `.jetfold/settings.json`, so they travel with the folder (and get committed if it's a git repository). Open another folder with **File → Open Folder…**, and switch between the ones you've opened with **File → Open Workspace** or the command palette. **File → Open Workspace → Forget Workspace** removes one from the list; its notes and settings are left untouched.
+Each notes folder is a **workspace**, with settings that travel with the folder. Open another with **File → Open Folder…**, and switch between them with **File → Open Workspace**.
 
 > **Tip:** Jetfold reads `.md` and `.txt` files. Other files in the folder (PDFs, images, and so on) are left alone and don't appear in the note list.
 
@@ -40,7 +40,7 @@ The toolbar along the top keeps each column's buttons over it:
 
 - **Sidebar:** the **◧** button next to the window buttons hides the folders, and shows them again.
 - **Note list:** the name of the folder or tag you're looking at, a **Sort** menu, and a **New Note** button.
-- **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note. A small status icon also appears there if a save is taking a while.
+- **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note.
 
 You can hide columns when you want to focus:
 
@@ -48,7 +48,7 @@ You can hide columns when you want to focus:
 - **View → Editor, Files** (⌘2) shows the note list and the editor.
 - **View → Editor, Files, Folders** (⌘3) shows all three.
 
-The number is how many columns you'll see. Drag the borders between columns to resize them (dragging the sidebar's border all the way to the left hides the folders, like ⌘2); Jetfold remembers the widths for each workspace. Jetfold never resizes your window: when the window is too narrow for all three columns, the folders step aside, and come back when there's room again.
+Drag the borders between columns to resize them. When the window is too narrow for all three, the folders step aside until there's room.
 
 ### As simple as you like
 

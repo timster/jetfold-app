@@ -10,16 +10,15 @@ Daily notes give each day its own note, for a journal, a work log, or a scratchp
 | Go → Yesterday's Note | |
 | Go → Tomorrow's Note | |
 
-Today's note is also in the Dock icon's right-click menu. The note is created the first time you open it (empty, or from your [daily template](#a-template-for-daily-notes)), and opened with the cursor at the end, ready to type. An existing daily note is never overwritten.
+Today's note is also in the Dock icon's right-click menu. The note is created the first time you open it, from your [daily template](#a-template-for-daily-notes) if you have one.
 
 ### The calendar
 
 At the bottom of the sidebar, a small month calendar shows your daily notes at a glance:
 
-- A **dot** under a day means it has a daily note; an **accent-colored dot** means it has open tasks or events with that [@date](finding.md#dates-and-the-agenda).
-- **Today** is in the accent color, and the day of the daily note you have open is highlighted.
-- **Click a day** to see it: the middle column lists its daily note, its tasks (open ones first) and its events, and the daily note opens in the editor. Click a row to open it there, or a task's circle to tick it off. A day in another month takes the calendar there.
-- **Double-click a day** to write in its daily note, starting it (from your [daily template](#a-template-for-daily-notes), if you have one) if there isn't one yet. A day with nothing on it also offers **New Daily Note**.
+- A **dot** under a day means it has a daily note; an **accent-colored dot** means tasks or events are due.
+- **Click a day** to see the daily note, tasks, and events for that day.
+- **Double-click a day** to open that day's daily note, creating it if needed.
 - **‹ ›** step through the months; **Today** comes back to this one.
 
 ![The sidebar calendar under the folders: October with dots under days that have daily notes, accent dots under days with dated tasks, today highlighted, and a picked day's daily note, tasks, and events in the middle column](screenshots/56-calendar.png)
@@ -39,7 +38,7 @@ The path is a template. Text inside `{curly braces}` is a date format; everythin
 | `Journal/{YYYY}/{MM} {MMMM}/{D}` | `Journal/2026/10 October/6.md` |
 | `{dddd, MMMM D, YYYY}` | `Tuesday, October 6, 2026.md` |
 
-Settings shows today's path as you type, so you can check the result; a template that wouldn't work is pointed out instead of saved.
+Settings shows today's path as you type.
 
 ![Settings → Notes: the Daily note path field with its hint, and the resulting path for today below it](screenshots/32-settings-notes.png)
 
@@ -61,9 +60,9 @@ Settings shows today's path as you type, so you can check the result; a template
 
 ## Templates
 
-A template is an ordinary note that new notes start from: a meeting agenda, a book review, a weekly plan. Keep them in a **Templates** folder at the top of your notes folder (the name can be changed in **Settings → Notes → Templates folder**; subfolders are fine).
+A template is an ordinary note that new notes start from: a meeting agenda, a book review, a weekly plan. Keep them in a **Templates** folder at the top of your notes folder (you can rename it in **Settings → Notes → Templates folder**).
 
-To use one, choose **File → New Note from Template…** (⌥⌘N) and pick it. A new note opens in the current folder holding the template's text, with its title ready to type. Press **Return** after the name to start writing.
+To use one, choose **File → New Note from Template…** (⌥⌘N) and pick it. A new note opens in the current folder with the template's text.
 
 To add a template to the note you're in, type `/` and its name: templates are listed last in the [slash menu](writing.md#the-slash-menu).
 
@@ -92,15 +91,15 @@ For example:
 - [ ]
 ```
 
-Templates are left out of the Tasks and Agenda views and the sidebar's tags, so their empty tasks and example dates don't show up as real ones. They're still found by search. Without a Templates folder, nothing changes: the menu item just explains where templates go.
+Templates are left out of the Tasks and Agenda views, so their example tasks and dates don't show up as real ones.
 
 ### A template for daily notes
 
-Choose a template in **Settings → Notes → Daily notes → Template**, and each new daily note starts from it. Its placeholders fill in for that note's day, so tomorrow's note says tomorrow's date, and the cursor starts at `{{cursor}}` if there is one. Notes that already exist are never changed.
+Choose a template in **Settings → Notes → Daily notes → Template**, and each new daily note starts from it. Placeholders fill in for that note's day, so tomorrow's note says tomorrow's date.
 
 ## The Inbox: capturing text from any app
 
-Jetfold adds a macOS Service called **New Jetfold Note with Selection**. Select text in any app (a web page, an email, a PDF), then choose **Services → New Jetfold Note with Selection**, from the app's own menu (*App name* → Services) or by right-clicking the selection. Jetfold opens a new note containing that text in its own window.
+Jetfold adds a macOS Service called **New Jetfold Note with Selection**. Select text in any app, then choose **Services → New Jetfold Note with Selection** from the app menu or by right-clicking the selection. Jetfold opens a new note with that text.
 
 These notes go into your **inbox folder**, `Inbox` by default. Change it in **Settings → Notes → Inbox folder**. The folder is created the first time it's needed, and it can be a subfolder such as `Notes/Inbox`.
 
