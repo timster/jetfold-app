@@ -21,14 +21,13 @@ Every command in the app, including ones that aren't in any menu. With nothing t
 
 ![The command palette open over a note, listing commands with their shortcuts](screenshots/23-command-palette.png)
 
-It offers different commands depending on what you have selected:
+The palette always has the commands for getting around: going to notes and views, opening daily notes, and the View menu's options. It adds more for what you're working on:
 
-- **With a note selected:** commands for that note.
+- **With a note selected:** commands for that note, such as rename, pin, and export.
 - **With several notes selected:** commands for all of them at once.
 - **With a folder selected:** commands for that folder.
 - **When opened from inside a note:** formatting and folding.
-- **In a git repository:** git commands.
-- **Always:** going to notes and views, daily notes, and the View menu's options.
+- **In a git repository:** git commands, such as commit.
 
 ## Go to Note (⌘O)
 
