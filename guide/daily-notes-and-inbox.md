@@ -102,7 +102,7 @@ Choose a template in **Settings → Notes → Daily notes → Template**, and ea
 
 Jetfold adds a macOS Service called **New Jetfold Note with Selection**. Select text in any app (a web page, an email, a PDF), then choose **Services → New Jetfold Note with Selection**, from the app's own menu (*App name* → Services) or by right-clicking the selection. Jetfold opens a new note containing that text in its own window.
 
-These notes go into your **inbox folder**, `Inbox` by default. Change it in **Settings → Notes → Inbox folder**. The folder is created the first time it's needed, and it can be a subfolder such as `Notes/Inbox`.
+These notes go into your **inbox folder**, `Inbox` by default. Change it in **Settings → Notes → Inbox folder**. The folder is created the first time it's needed, and it can be a subfolder such as `Notes/Inbox`. Enter `/` to put new notes at the top of the notes folder.
 
 ### Giving it a keyboard shortcut
 

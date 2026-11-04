@@ -109,3 +109,23 @@ Every command is also in the command palette (⌘P), including the ones without 
 |---|---|
 | Rename and start writing | Return |
 | Cancel | Escape |
+
+## On a canvas
+
+| Action | Shortcut |
+|---|---|
+| New text card | Double-click empty space |
+| Edit the selected text card | Return, or start typing |
+| Edit the selected note card | Return |
+| Open a note card's note | ⌘-double-click |
+| Stop editing | Escape |
+| Delete the selection | ⌫ |
+| Duplicate the selection | ⌘D |
+| Select everything | ⌘A |
+| Undo / Redo | ⌘Z / ⇧⌘Z |
+| Nudge the selection | Arrow keys (⇧ for 10 points) |
+| Select the next or previous card | Tab / ⇧Tab |
+| Pan | Scroll, or Space-drag |
+| Zoom | Pinch, or ⌘-scroll |
+| Zoom to fit / to the selection / actual size | ⇧1 / ⇧2 / ⇧0 |
+| Move copies | ⌥-drag |

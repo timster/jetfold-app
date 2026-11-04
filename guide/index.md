@@ -15,11 +15,12 @@ Nothing is locked away in a database or some cloud service: every note is an ord
 5. [Finding Things](finding.md): Palettes, search, tags, dates and Note Info
 6. [Daily Notes, Templates and the Inbox](daily-notes-and-inbox.md): The calendar, templates and capture
 7. [Images and Attachments](images.md): Adding images and files, and tidying up
-8. [Git Integration](git.md): Status, changed lines, history and commits
-9. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle and plain text
-10. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, `jetfold://` links and the Service
-11. [Settings and Themes](settings.md): Every option in the Settings window
-12. [Keyboard Shortcuts](shortcuts.md): The complete list
+8. [Canvases](canvas.md): Cards, notes and images on a board, joined by arrows
+9. [Git Integration](git.md): Status, changed lines, history and commits
+10. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle and plain text
+11. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, `jetfold://` links and the Service
+12. [Settings and Themes](settings.md): Every option in the Settings window
+13. [Keyboard Shortcuts](shortcuts.md): The complete list
 
 ## The ideas behind Jetfold
 
