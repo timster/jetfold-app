@@ -21,7 +21,7 @@ Folders that contain any changed notes get a small dot, so you can find changes 
 
 ![Git letters M, A, and U beside notes in the list, and dots on folders with changes in the sidebar](screenshots/35-git-status.png)
 
-The badges update as you edit, when files change on disk, and whenever you switch back to Jetfold, so they pick up commits you make in Terminal or another git app.
+The badges update as you work, including after commits made in other apps.
 
 Turn them off with **View → Git Status**.
 
@@ -43,9 +43,9 @@ The marks update with every keystroke and disappear once you commit. Turn them o
 
 ![The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green](screenshots/37-history.png)
 
-The list on the left shows every commit that changed this note, newest first, with its date and commit message. Automatic messages that only repeat the date (such as "Update 2026-08-27 12:52:03") aren't shown, to keep the list tidy. If the note was renamed or moved since, the version says which name it had then.
+The list on the left shows every commit that changed this note, newest first.
 
-History follows the note through **renames and moves**, so you see its whole life, not just since it got its current name.
+History follows the note through **renames and moves**.
 
 Choose a version with the mouse or **↑ / ↓**, then pick a tab:
 
@@ -65,15 +65,12 @@ Click **Close** or press **Escape** to close the history.
 
 **File → Commit Changes…** (⇧⌘K, or **Git: Commit…** in the command palette) opens a palette listing every changed note with its status.
 
-![Commit Changes: the message field above the list of changed notes, each with an icon for how it changed](screenshots/38-commit.png)
+![Commit Changes: the message field above the list of changed notes, with icons for how they changed](screenshots/38-commit.png)
 
 Type a message and press **Return** to commit. If you leave the message empty, Jetfold uses the date and time, for example "Update 2026-10-06 14:32:05".
 
 - All changes in your notes folder are committed: edits, new notes, renames, and deletions. Your `.gitignore` is respected.
-- Only the notes folder is committed. If it's part of a bigger repository and something outside it is staged, Jetfold won't commit, rather than sweep it in.
 - Pending edits are saved first, so the commit always includes what you see.
-- The commit's author is the repository's own git user (`git config user.name` and `user.email` in the repository); without one, it's the author of the latest commit.
-- Git hooks don't run, and commits aren't signed.
 
 A short notice confirms the commit, or says **Nothing to commit**.
 

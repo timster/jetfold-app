@@ -15,7 +15,7 @@ Drag image files from Finder (or from most other apps) onto a note. Each image i
 
 ### Paste
 
-Copy an image (for example with ⌃⇧⌘4 for a screenshot to the clipboard) and paste it into a note with **⌘V**. Jetfold saves it to your images folder and inserts the link at the cursor. Pasted images with generic names are saved as "Pasted image.png".
+Copy an image (for example with ⌃⇧⌘4 for a screenshot to the clipboard) and paste it into a note with **⌘V**. Jetfold saves it to your images folder and inserts the link at the cursor.
 
 ### From your iPhone or iPad
 
@@ -52,11 +52,11 @@ Text inside `{curly braces}` is filled in; everything else is used as written, a
 | `{uuid}` | A random unique ID |
 | any date code, e.g. `{YYYY-MM-DD}` | The current date. Time codes `HH`, `mm`, `ss` work too |
 
-For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year under unique names. The extension is added for you. If a name is taken, Jetfold adds " 2", " 3", and so on rather than overwriting anything. Settings shows an example as you type.
+For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year under unique names. Settings shows an example as you type.
 
 ## Other files
 
-Drop any other file on a note, or paste one copied in Finder, and Jetfold copies it into the same folder as your images (`.assets` by default), **keeping its own name** ("Report.pdf", or "Report 2.pdf" if that's taken). A file already inside your notes folder is linked where it is.
+Drop any other file on a note, or paste one copied in Finder, and Jetfold copies it into the same folder as your images (`.assets` by default), **keeping the file name**. A file already inside your notes folder is linked where it is.
 
 It goes in the note as an ordinary Markdown link on its own line:
 
@@ -66,7 +66,7 @@ It goes in the note as an ordinary Markdown link on its own line:
 
 and shows as a card with the file name, file type, size, and a preview of the first page.
 
-![Three attachment cards in a note: an HTML page, a Python script, and a PDF, each with its kind, size, and a thumbnail](screenshots/58-attachments.png)
+![Three attachment cards in a note: an HTML page, a Python script, and a PDF, showing kind, size, and a thumbnail](screenshots/58-attachments.png)
 
 - **Click** a card to open the file in its app; **⌘-click** shows it in Finder.
 - Put the cursor on the line to edit the link; the card comes back when you move away.
@@ -79,22 +79,19 @@ Jetfold reads the words in your pictures and PDFs (a whiteboard, a receipt, a pa
 
 ![Search in Notes with a result found in a picture, its snippet starting with the image's name](screenshots/63-search-image-text.png)
 
-- Right-click a picture or a PDF card and choose **Copy Text from Image** (or **Copy Text from PDF**) to put its words on the clipboard. On a canvas, right-click its card.
-- The text is read on your Mac, in the background, and is never written into your notes folder. The first time, a folder full of pictures can take a few minutes; search gets better as it goes. After that only new or changed files are read.
-- A PDF's own text is used when it has some; a scanned one is read page by page (the first 30 pages).
+- Right-click a picture or a PDF card and choose **Copy Text from Image** (or **Copy Text from PDF**) to put its words on the clipboard. This works on canvas cards too.
+- The text is read on your Mac, in the background, and never written into your notes folder.
 - Turn it off in [Settings → Notes → Find text in images and PDFs](settings.md#find-text-in-images-and-pdfs).
 
 ![The right-click menu on a picture in a note, with Copy Text from Image at the top](screenshots/64-copy-text-from-image.png)
 
 ## Unused attachments
 
-Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size, and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**. They go where deleted notes go ([Settings → Notes → Deleted notes](settings.md#deleted-notes)), so you can move any you want back.
+Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more. Tick the ones to go (or **Select All**) and choose **Move to Trash**. They go where deleted notes go ([Settings → Notes → Deleted notes](settings.md#deleted-notes)), so you can move any you want back.
 
 ![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes, and dates, two of them ticked](screenshots/59-unused-attachments.png)
 
 - It looks in your attachments folder (`.assets`, or wherever your image path puts files). Turn on **Include files elsewhere in the notes folder** to check everywhere; files you keep beside your notes on purpose will show up then, so look before trashing.
-- It's careful: a file counts as used if any note (or template) mentions its name anywhere, even outside a link, so it may miss a few but won't offer one that a note still uses.
-- Notes, hidden files, and Jetfold's and git's own folders are never listed.
 
 ## Supported formats
 

@@ -2,13 +2,13 @@
 
 A canvas is a board for thinking in space: cards of text, your notes, images, and files laid out on an endless surface and joined by arrows. Use one to plan a project, brainstorm, collect research, or sketch how things connect.
 
-A canvas is a file in your notes folder like any note, ending in `.canvas`. It's written in the open [JSON Canvas](https://jsoncanvas.org) format, so other apps that read the format can open it, and each card is a line of its own, so its history in git reads cleanly.
+A canvas is a file in your notes folder like any note, ending in `.canvas`. It's written in the open [JSON Canvas](https://jsoncanvas.org) format, so other apps that read the format can open it.
 
 ## Making a canvas
 
 Choose **File → New Canvas**, right-click a folder in the sidebar and choose **New Canvas**, or use **New Canvas** in the command palette (⌘P). The canvas appears in the note list (with a small canvas icon), its name ready to edit there: type a name and press Return.
 
-A canvas fills the editor without a title of its own. To rename it, choose **Note → Rename…** (or **Rename…** when you right-click it in the note list) and type the new name in its row. Canvases are moved, duplicated, pinned, made read-only, and moved to the trash just like notes, and they save automatically.
+A canvas fills the editor without a title of its own. To rename it, choose **Note → Rename…** (or **Rename…** when you right-click it in the note list) and type the new name in its row. Canvases can be moved, duplicated, and pinned like notes, and they save automatically.
 
 ## Adding cards
 
@@ -23,9 +23,9 @@ A canvas fills the editor without a title of its own. To rename it, choose **Not
 
 Text cards are written in Markdown and look just like a note: headings, lists, tasks, links, `#tags`, math and diagrams all work. A new card grows as you type; press **Escape** or click outside it when you're done. A new card left empty disappears.
 
-Note cards show the note itself, and you can edit it right there: double-click the card (or select it and press Return) and type. Your changes are saved to the note, like any edit, and the card keeps up with changes made elsewhere. Select a card to scroll through a long note. To open the note in its own right, ⌘-double-click the card or click the open button above it. A read-only note's card opens the note when you double-click it.
+Note cards show the note itself, and you can edit it right there: double-click the card (or select it and press Return) and type. Your changes are saved to the note, like any edit, and the card keeps up with changes made elsewhere. Select a card to scroll through a long note. To open the note in its own right, ⌘-double-click the card or click the open button above it.
 
-Image cards show the picture; other files show their name, kind, size, and a preview (just the name when the card is small), and open in their own app when you double-click them. Files you add are copied into your attachments folder, as they are for notes (see [Images and Attachments](images.md)).
+Image cards show the picture; other files show their name, kind, size, and a preview, and open in their own app when you double-click them. Files you add are copied into your attachments folder, as they are for notes (see [Images and Attachments](images.md)).
 
 ## Arranging
 
@@ -68,10 +68,7 @@ Click an arrow to select it. Double-click it (or press Return) to give it a labe
 
 ## More from the right-click menu
 
-- **Convert to Note** turns a text card into a note of its own, in the canvas's folder and named after its first line, and puts that note in its place.
-- **Bring to Front** and **Send to Back** change which cards are on top.
-- **Show in Finder** shows a file card's file.
-- **Copy Text from Image** (or **from PDF**) copies the words in an image or PDF card (see [Text in images and PDFs](images.md#text-in-images-and-pdfs)).
+Right-click a card for more, such as **Convert to Note**, which turns a text card into a note in the canvas's folder, and [Copy Text from Image](images.md#text-in-images-and-pdfs).
 
 ## Canvases and the rest of Jetfold
 

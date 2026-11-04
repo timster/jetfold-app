@@ -2,7 +2,7 @@
 
 Open Settings with **Jetfold → Settings…** (⌘,). Changes take effect immediately; there's no Save button.
 
-Every setting belongs to the open [workspace](getting-started.md#choosing-your-notes-folder): it's kept in the notes folder, in `.jetfold/settings.json`, so each folder has its own and they travel with it (and get committed with it, if it's a git repository). With no workspace open, Settings is greyed out.
+Settings belong to the open [workspace](getting-started.md#choosing-your-notes-folder) and are saved in the notes folder, so they travel with it.
 
 ## General
 
@@ -10,7 +10,7 @@ Every setting belongs to the open [workspace](getting-started.md#choosing-your-n
 
 ### Appearance and theme
 
-**Appearance** is **System**, **Light**, or **Dark**. System follows your Mac's setting and switches automatically. The choice applies to every Jetfold window, its menus, and dialogs.
+**Appearance** is **System**, **Light**, or **Dark**. System follows your Mac's setting and switches automatically.
 
 **Theme** picks Jetfold's colors:
 
@@ -22,11 +22,11 @@ Every setting belongs to the open [workspace](getting-started.md#choosing-your-n
 | **Catppuccin** | Soft lavender grey (Latte) | Dark blue-grey with pastels (Mocha) |
 | **High Contrast** | Black on white | White on black |
 
-Every theme has a light and a dark look, and **Appearance** decides which one you see, so a theme works the same with System, Light, or Dark.
+Every theme has a light and a dark look, and **Appearance** picks which one you see.
 
 A theme colors the whole window, not just the note: the sidebar, the note list, the palettes, and everything in between. Jetfold keeps the standard Mac sidebar look; the other themes fill the sidebar with their own color so it reads as one surface with the note list.
 
-The Jetfold theme also takes your Mac's accent color, the **Color** under **System Settings → Appearance → Theme**: links, selected rows, and buttons follow it, and change when you change it. Where a color is too light for white text or links to stay readable (yellow, for instance), Jetfold uses a slightly deeper shade of it. The other themes keep their own accent.
+The Jetfold theme also takes your Mac's accent color, the **Color** under **System Settings → Appearance → Theme**: links, selected rows, and buttons follow it, and change when you change it. The other themes keep their own accent.
 
 ![The main window in the Catppuccin theme, light: sidebar, note list, and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
@@ -59,9 +59,9 @@ A workspace theme starts from a built-in theme and changes only the colors you l
 - **`name`** (optional) is shown in the menu.
 - **`base`** (optional) is the built-in theme it starts from: `jetfold` (the default), `solarized`, `nord`, `catppuccin` or `high-contrast`.
 - **`light`** and **`dark`** (both optional) are the colors to change in each appearance. Anything you leave out comes from the base theme, including colors added in future versions of Jetfold.
-- **colors** are CSS colors: `#2f7d4f`, `#2f7d4f80` (with transparency), `rgb(47, 125, 79)`, `rgba(0, 0, 0, 0.08)`, `hsl(145, 45%, 34%)`, or a name like `teal`.
+- **colors** can be any CSS color, like `#2f7d4f` or `teal`.
 
-Save the file and switch back to Jetfold, and the new colors show straight away. Settings points out a file it can't read, and any color it skipped (a misspelled name, or a value that isn't a color).
+Save the file and switch back to Jetfold, and the new colors show straight away. Settings points out anything it can't read.
 
 The file travels with the notes folder, like `settings.json`, so anyone who opens the folder can pick the same theme. Jetfold doesn't check that your colors are readable together the way it checks the built-in themes, so try the theme in both Light and Dark.
 
@@ -87,7 +87,6 @@ The file travels with the notes folder, like `settings.json`, so anyone who open
 | `git-added`, `git-modified`, `git-removed` | Git letters, folder dots, and changed-line marks |
 | `syn-keyword`, `syn-string`, `syn-comment`, `syn-number`, `syn-function`, `syn-type`, `syn-property` | Code highlighting; strings, numbers, types, and so on |
 
-
 ### Workspace
 
 The notes folder Jetfold is showing. Click **Open Folder…** to open another one; switch between folders you've opened with **File → Open Workspace**. Any unsaved edits are saved first.
@@ -108,7 +107,7 @@ Click **Restore default fonts** to go back to System 16 and System 14.
 
 ### Text width
 
-How wide lines of text get before they wrap: **Narrow**, **Medium**, **Wide** (the default) or **Full**. The text sits in the middle of the editor, with the space shared on both sides. The widths follow the font size, so a line holds about the same number of words whatever size you pick; **Full** uses the whole width of the editor.
+How wide lines of text get before they wrap: **Narrow**, **Medium**, **Wide** (the default) or **Full**.
 
 ### Fill in link titles when pasting a URL
 
@@ -136,7 +135,7 @@ Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`
 
 ### Image path
 
-Where dropped and pasted images are saved, as a template. The default is `.assets/{original}`: a hidden `.assets` folder at the top of your notes folder, with each image keeping its own name. An example is shown as you type. See [Images](images.md#where-images-are-saved) for the placeholders.
+Where dropped and pasted images are saved, as a template. The default is `.assets/{original}`, a hidden folder at the top of your notes folder. See [Images](images.md#where-images-are-saved) for the placeholders.
 
 ### Find text in images and PDFs
 

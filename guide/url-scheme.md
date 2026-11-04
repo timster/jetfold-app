@@ -14,7 +14,7 @@ The easiest way to get a link to a note is **Note → Copy Link**, which copies 
 
 | Link | Does |
 |---|---|
-| `open?note=Name` | Opens a note, resolved like a `[[wikilink]]` (by name, or by path from the notes folder when it contains `/`). `&heading=Tasks` or `Name%23Tasks` puts the cursor on a heading. `&create=true[&text=…]` makes the note first if it's missing (placed as `new` would); without it an unknown name shows an error. `&at=N[&length=M]` puts the cursor N characters in (UTF-16 code units), selecting M. |
+| `open?note=Name` | Opens a note, resolved like a `[[wikilink]]` (by name, or by path from the notes folder when it contains `/`). `&heading=Tasks` or `Name%23Tasks` puts the cursor on a heading. `&create=true[&text=…]` makes the note first if it's missing (placed as `new` would); without it an unknown name shows an error. `&at=N[&length=M]` puts the cursor N characters in, selecting M. |
 | `new?note=…&text=…` | Makes a note. `Name` goes in the inbox folder (Settings, default `Inbox`), `folder/Name` in that folder, `folder/` makes `Untitled` there. Missing folders are created; a taken name becomes `Name 2`. The note opens in its own window. |
 | `new?…&append=true` | If that exact note exists, adds `text` on a line of its own; otherwise creates it. |
 | `new?…&overwrite=true` | If that exact note exists, replaces its text, after a confirmation (always, even with `silent`). Otherwise creates it. |
@@ -57,17 +57,15 @@ Some actions are ready to use without building a shortcut. Ask Siri or type them
 - “Open a note in Jetfold”
 - “Get my tasks from Jetfold”
 
-Actions that change notes need Jetfold unlocked, and leave read-only notes alone. A note that's open in Jetfold saves first and then shows the added text.
+Actions that change notes need Jetfold unlocked.
 
 ## Today widget
 
 Add Jetfold's **Today** widget from the desktop (right-click it and choose **Edit Widgets…**) or Notification Center. It shows what's due in your open workspace, as the Agenda does:
 
-- **Small:** the date, how many tasks are overdue, and the next thing due.
-- **Medium:** the date beside the next few tasks and events.
-- **Large:** Overdue, Today, Tomorrow, and Coming Up, each with its tasks and events.
+It comes in small, medium, and large sizes, from just what's next to the days ahead.
 
-Click a task or event to open its note at that line, or anywhere else to open today's note. The widget updates when your notes change, and moves on to the next day at midnight by itself. It shows the workspace that's open in Jetfold.
+Click a task or event to open its note at that line, or anywhere else to open today's note. The widget updates when your notes change.
 
 ![The medium Today widget on the desktop: the date beside an open task and an event due today](screenshots/66-today-widget.png)
 
@@ -80,7 +78,7 @@ A Focus can open a workspace for as long as it's on: your work notes during Work
 - **Workspace** is the one to open. It's one of the workspaces you've opened in Jetfold.
 - **Show** is optional: today's note, Tasks, Agenda, one of your own views, a tag, or a folder from that workspace.
 
-When the Focus turns on, Jetfold saves your edits and switches. When it turns off, it goes back to the workspace you had open before, unless you've switched to another one yourself in the meantime. If Jetfold isn't running when the Focus changes, it catches up the next time you open it.
+When the Focus turns off, Jetfold goes back to the workspace you had open before.
 
 ## Share menu
 
@@ -90,6 +88,6 @@ If Jetfold isn't in the menu, turn it on in System Settings → General → Logi
 
 ## Service: New Jetfold Note with Selection
 
-Select text in any app, then use the app menu → Services → New Jetfold Note with Selection (or the text context menu). It creates `Untitled.md` in the inbox folder holding the text and opens it in a note window. To enable it or give it a shortcut: System Settings → Keyboard → Keyboard Shortcuts → Services → Text → New Jetfold Note with Selection.
+Select text in any app and choose **Services → New Jetfold Note with Selection** to save it as a note in your inbox. To give it a keyboard shortcut, see [The Inbox](daily-notes-and-inbox.md#giving-it-a-keyboard-shortcut).
 
 Next: [Settings and Themes](settings.md)
