@@ -24,7 +24,6 @@ Right-click a folder for:
 | Item | What it does |
 |---|---|
 | **New Note** | Creates a new note inside this folder |
-| **New Canvas** | Creates an empty canvas in this folder, ready to rename (see [Canvases](canvas.md)) |
 | **New Folder** | Creates "New Folder" inside this folder, ready to rename |
 | **Rename** | Renames the folder in place (or select it and press **Return**) |
 | **Reveal in Finder** | Shows the folder in a Finder window |
@@ -34,7 +33,7 @@ Right-click a folder for:
 
 **Moving folders:** drag a folder onto another folder. You can't move a folder into itself or one of its own subfolders, and Jetfold won't move a folder somewhere that already has one with the same name.
 
-Folders deleted with **Move to Trash** go to the trash folder (`.trash` in your notes folder), or to the macOS Trash if you chose that in [Settings → Notes → Deleted notes](settings.md#deleted-notes).
+Folders deleted with **Move to Trash** go to the macOS Trash, so you can use Finder's **Put Back** to restore them.
 
 > Renaming or moving a folder updates every [wikilink](links.md) that points into it, so your links keep working.
 
@@ -184,7 +183,7 @@ Everything you can do with a note is in the **Note** menu, in the **⋯** menu a
 | Item | What it does |
 |---|---|
 | **Open in New Window** | Opens the note in its own window (see below) |
-| **Rename…** | Puts the cursor in the note's title (for a canvas, or a note that isn't open, in its row in the note list) |
+| **Rename…** | Puts the cursor in the note's title |
 | **Duplicate** | Makes a copy next to the original, named "Name copy" (then "Name copy 2" and so on) |
 | **Pin to Top** / **Unpin** | Keeps the note at the top of its list |
 | **Make Read-Only** / **Make Editable** | Protects the note from edits |
@@ -225,7 +224,7 @@ Jetfold checks every note before moving any, so a name clash in the destination 
 
 ## Deleting notes
 
-Choose **Move to Trash**, or select notes in the list and press **⌘⌫**. Notes move into the trash folder, `.trash` in your notes folder, keeping their place, so you can move them back in Finder. To use the macOS Trash and Finder's **Put Back** instead, change [Settings → Notes → Deleted notes](settings.md#deleted-notes). Jetfold doesn't ask for confirmation, because nothing is permanently deleted.
+Choose **Move to Trash**, or select notes in the list and press **⌘⌫**. Notes go to the macOS Trash, so you can restore them with Finder's **Put Back**. Jetfold doesn't ask for confirmation, because nothing is permanently deleted.
 
 ## Note windows
 

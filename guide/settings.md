@@ -132,15 +132,11 @@ The folder holding your templates, for **File → New Note from Template…**. T
 
 ### Inbox folder
 
-Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`; `/` is the notes folder itself. See [The Inbox](daily-notes-and-inbox.md#the-inbox-capturing-text-from-any-app).
+Where **New Jetfold Note with Selection** puts new notes. The default is `Inbox`. See [The Inbox](daily-notes-and-inbox.md#the-inbox-capturing-text-from-any-app).
 
 ### Image path
 
 Where dropped and pasted images are saved, as a template. The default is `.assets/{original}`: a hidden `.assets` folder at the top of your notes folder, with each image keeping its own name. An example is shown as you type. See [Images](images.md#where-images-are-saved) for the placeholders.
-
-### Deleted notes
-
-Where deleted notes, folders and attachments go. **Trash folder** (the default) moves them into a folder inside your notes folder, `.trash` unless you change it, keeping their place: `Ideas/Plan.md` goes to `.trash/Ideas/Plan.md`, and a name that's taken there gets a number. A folder name starting with `.` stays out of the sidebar. To restore something, move it back in Finder. **System Trash** sends them to the macOS Trash instead, where Finder's **Put Back** restores them.
 
 ## The View menu
 
