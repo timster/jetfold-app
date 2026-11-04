@@ -1,6 +1,6 @@
 # Opening Jetfold from Other Apps
 
-Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events and other apps. From Terminal:
+Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events, and other apps. From Terminal:
 
 ```sh
 open 'jetfold://daily'
@@ -33,7 +33,7 @@ open 'jetfold://search?q=load%20test'
 
 Problems (unknown note, invalid name or folder, read-only note) show in Jetfold's error alert.
 
-## Shortcuts, Siri and Spotlight
+## Shortcuts, Siri, and Spotlight
 
 Jetfold's actions are in the Shortcuts app, under Apps → Jetfold. They work on the notes folder that's open in Jetfold, and like links, an action that arrives while Jetfold isn't running starts it first.
 
@@ -45,7 +45,7 @@ Jetfold's actions are in the Shortcuts app, under Apps → Jetfold. They work on
 | **Open Note** / **Open Today's Note** / **Open Daily Note** | Opens a note, today's note, or yesterday's or tomorrow's, in the main window. |
 | **Get Note Text** | Returns a note's Markdown. |
 | **Find Notes** | Returns the notes containing all the words, best matches first, like Search in Notes. |
-| **Get Open Tasks** | Returns the unticked tasks as the Tasks view lists them: all, or just the overdue, due today, upcoming or undated ones. |
+| **Get Open Tasks** | Returns the unticked tasks as the Tasks view lists them: all, or just the overdue, due today, upcoming, or undated ones. |
 
 When an action asks for a note, you can pick one from a list of recent notes or type to search by name. A note returned by one action can go straight into the next: Find Notes → Get Note Text, or Create Note → Open Note.
 
@@ -65,7 +65,7 @@ Add Jetfold's **Today** widget from the desktop (right-click it and choose **Edi
 
 - **Small:** the date, how many tasks are overdue, and the next thing due.
 - **Medium:** the date beside the next few tasks and events.
-- **Large:** Overdue, Today, Tomorrow and Coming Up, each with its tasks and events.
+- **Large:** Overdue, Today, Tomorrow, and Coming Up, each with its tasks and events.
 
 Click a task or event to open its note at that line, or anywhere else to open today's note. The widget updates when your notes change, and moves on to the next day at midnight by itself. It shows the workspace that's open in Jetfold.
 
@@ -78,7 +78,7 @@ A Focus can open a workspace for as long as it's on: your work notes during Work
 ![The Jetfold Focus filter in System Settings, with Workspace and Show set](screenshots/65-focus-filter.png)
 
 - **Workspace** is the one to open. It's one of the workspaces you've opened in Jetfold.
-- **Show** is optional: today's note, Tasks, Agenda, one of your own views, a tag or a folder from that workspace.
+- **Show** is optional: today's note, Tasks, Agenda, one of your own views, a tag, or a folder from that workspace.
 
 When the Focus turns on, Jetfold saves your edits and switches. When it turns off, it goes back to the workspace you had open before, unless you've switched to another one yourself in the meantime. If Jetfold isn't running when the Focus changes, it catches up the next time you open it.
 

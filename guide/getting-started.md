@@ -14,13 +14,13 @@ The first time you open Jetfold, it asks for a folder. Choose any folder: an exi
 
 Each notes folder is a **workspace** with its own settings, kept inside it in `.jetfold/settings.json`, so they travel with the folder (and get committed if it's a git repository). Open another folder with **File → Open Folder…**, and switch between the ones you've opened with **File → Open Workspace** or the command palette. **File → Open Workspace → Forget Workspace** removes one from the list; its notes and settings are left untouched.
 
-> **Tip:** Jetfold reads `.md` and `.txt` files. Other files in the folder (PDFs, images and so on) are left alone and don't appear in the note list.
+> **Tip:** Jetfold reads `.md` and `.txt` files. Other files in the folder (PDFs, images, and so on) are left alone and don't appear in the note list.
 
 ## The free trial
 
 Everything in Jetfold works for 14 days, free. The first time you open it, Jetfold offers the trial; start it from **Start Free Trial**. After 14 days, unlock Jetfold with a single purchase to keep writing. There's no subscription.
 
-If you haven't started the trial, or it has ended, nothing is taken away: you can still open, read, search and export every note. Editing, creating, moving and deleting notes wait until you unlock. Your notes are ordinary files, so they're always yours either way.
+If you haven't started the trial, or it has ended, nothing is taken away: you can still open, read, search, and export every note. Editing, creating, moving, and deleting notes wait until you unlock. Your notes are ordinary files, so they're always yours either way.
 
 **Jetfold → Unlock Jetfold…** and **Settings → General** show how many trial days are left and have the unlock. **Restore Purchases** there brings back an unlock bought on another Mac with the same Apple Account.
 
@@ -31,7 +31,7 @@ The main window has three columns:
 | Column | What it shows |
 |---|---|
 | **Sidebar** | Your notes folder and every folder inside it, as a tree, and your tags underneath |
-| **Notes** | The notes in the selected folder or tag, with titles, dates and a short preview |
+| **Notes** | The notes in the selected folder or tag, with titles, dates, and a short preview |
 | **Editor** | The selected note (or notes), ready to edit |
 
 ![The three columns under the toolbar: the window buttons and the folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor](screenshots/03-columns.png)
@@ -42,7 +42,7 @@ The toolbar along the top keeps each column's buttons over it:
 - **Note list:** the name of the folder or tag you're looking at, a **Sort** menu, and a **New Note** button.
 - **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note. A small status icon also appears there if a save is taking a while.
 
-To change the toolbar, choose **View → Customize Toolbar…** (or right-click the toolbar). Drag buttons out to remove them, or drag in more: Back and Forward, Search, Command Palette, Today's Note, New Canvas, New Folder, Pin, History, Export, Focus Mode and Move to Trash. Each column keeps the buttons you put over it. Drag the default set back in to reset it. Without the **ⓘ** button, **⌥⌘O** still opens Note Info, at the top right of the editor.
+To change the toolbar, choose **View → Customize Toolbar…** (or right-click the toolbar) and drag buttons in or out. Each column keeps the buttons you put over it, and dragging the default set back in resets it. Without the **ⓘ** button, **⌥⌘O** still opens Note Info.
 
 You can hide columns when you want to focus:
 
@@ -54,7 +54,7 @@ The number is how many columns you'll see. Drag the borders between columns to r
 
 ### As simple as you like
 
-Everything beyond your folders and notes is a switch. Turn off Tasks, Agenda, Tags, the calendar and your own views under **View → Sidebar**, and the sidebar is just your folders. **Note Counts** is there too, and turning off **Previews** and **Dates** under **View → Note List** leaves just the titles. Jetfold is then a folder of notes and an editor. It's all configurable: every switch turns its part back on, right where it was.
+Everything beyond your folders and notes is a switch. Turn off Tasks, Agenda, Tags, the calendar, and your own views under **View → Sidebar**, and the sidebar is just your folders. **Note Counts** is there too, and turning off **Previews** and **Dates** under **View → Note List** leaves just the titles. Jetfold is then a folder of notes and an editor. It's all configurable: every switch turns its part back on, right where it was.
 
 ![Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note](screenshots/61-minimal.png)
 

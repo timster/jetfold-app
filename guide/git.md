@@ -19,7 +19,7 @@ Notes that have changed since the last commit get a letter beside their date in 
 
 Folders that contain any changed notes get a small dot, so you can find changes without opening every folder. The colors come from your [theme](settings.md#appearance-and-theme).
 
-![Git letters M, A and U beside notes in the list, and dots on folders with changes in the sidebar](screenshots/35-git-status.png)
+![Git letters M, A, and U beside notes in the list, and dots on folders with changes in the sidebar](screenshots/35-git-status.png)
 
 The badges update as you edit, when files change on disk, and whenever you switch back to Jetfold, so they pick up commits you make in Terminal or another git app.
 
@@ -69,7 +69,7 @@ Click **Close** or press **Escape** to close the history.
 
 Type a message and press **Return** to commit. If you leave the message empty, Jetfold uses the date and time, for example "Update 2026-10-06 14:32:05".
 
-- All changes in your notes folder are committed: edits, new notes, renames and deletions. Your `.gitignore` is respected.
+- All changes in your notes folder are committed: edits, new notes, renames, and deletions. Your `.gitignore` is respected.
 - Only the notes folder is committed. If it's part of a bigger repository and something outside it is staged, Jetfold won't commit, rather than sweep it in.
 - Pending edits are saved first, so the commit always includes what you see.
 - The commit's author is the repository's own git user (`git config user.name` and `user.email` in the repository); without one, it's the author of the latest commit.
