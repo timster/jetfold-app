@@ -1,6 +1,6 @@
 # Links and Wikilinks
 
-## Wikilinks: links between notes
+## Wikilinks
 
 Type a note's name in double square brackets to link to it:
 
@@ -8,101 +8,60 @@ Type a note's name in double square brackets to link to it:
 See [[Project Plan]] for the details.
 ```
 
-The brackets are hidden, so it reads "See Project Plan for the details", with the name shown as a link. **⌘-click** it, or put the cursor in it and press **⌃Return**, to open that note.
-
-To get a ready-made link to the note you're in, choose **Note → Copy Wiki Link** and paste it wherever you like.
-
-### Wikilink forms
+The brackets are hidden, so it reads "See Project Plan for the details". **⌘-click** the link to open that note.
 
 | You type | It links to | It shows |
 |---|---|---|
 | `[[Project Plan]]` | the note named "Project Plan" | Project Plan |
 | `[[Project Plan\|the plan]]` | the note named "Project Plan" | the plan |
-| `[[work/Project Plan]]` | `Project Plan` in the `work` folder (from the top of your notes folder) | work/Project Plan |
+| `[[work/Project Plan]]` | `Project Plan` in the `work` folder | work/Project Plan |
 | `[[Project Plan#Budget]]` | the "Budget" heading in Project Plan | Project Plan#Budget |
 | `[[#Budget]]` | the "Budget" heading in the **same** note | #Budget |
 
-The `|` form lets you show different text from the note's name. It works with headings too: `[[Project Plan#Budget|the budget]]`.
+### Autocomplete
 
-### How names are matched
+Type `[[` and a list of notes pops up, recent ones first. Keep typing to narrow it down: `[[prpl` finds "Project Plan". After a note name, type `#` to pick a heading.
 
-Names are matched without caring about upper or lower case. If several notes share a name, include the folder to pick one: `[[archive/Project Plan]]`.
+![Wikilink autocomplete after typing \[\[Or: Orbital Mechanics, or a new note called Or](screenshots/21-wikilink-autocomplete.png)
+
+### Previewing a linked note
+
+Rest the pointer on a link and the note pops up beside it, so you can check it without leaving the one you're in.
+
+![The pointer resting on a wikilink, with the linked note shown rendered in a preview beside it](screenshots/20-link-preview.png)
 
 ### Embedding a note
 
-Put a `!` in front of a wikilink, alone on its line, to show that note right inside this one:
+Put a `!` in front of a wikilink, on a line by itself, to show that note right inside this one. With a heading, just that section shows.
 
 ```markdown
 ![[Q3 Plan]]
 ![[Q3 Plan#Budget]]
 ```
 
-The note appears in a box, fully rendered. With a heading, just that section shows. Click the name to open the note.
-
 ![A meeting note embedding the Budget section of Q3 Plan in a box headed "Q3 Plan › Budget"](screenshots/51-embed.png)
-
-
-### Previewing a linked note
-
-Rest the pointer on a link to another note and the note pops up beside it, so you can check it without leaving the one you're in. Click the name at the top to open it.
-
-![The pointer resting on a wikilink, with the linked note shown rendered in a preview beside it](screenshots/20-link-preview.png)
-
 
 ### Links to notes that don't exist yet
 
-If you follow a wikilink to a note that doesn't exist, Jetfold **creates it** (in the folder the link names, or next to the current note) and opens it. That makes it easy to sketch out a set of notes: write the links first, then click through and fill them in.
-
-### Autocomplete
-
-Type `[[` and a list of notes pops up. Keep typing to narrow it down (the matching is fuzzy, so `[[prpl` finds "Project Plan"). Notes you edited recently are listed first, so `[[` on its own shows your recent notes.
-
-- **↑ / ↓** choose, **Return** or **Tab** inserts the link, **Escape** dismisses the list.
-- If nothing matches exactly, the list offers to link to a **new note** with the name you typed.
-
-
-![Wikilink autocomplete after typing \[\[Or: Orbital Mechanics, or a new note called Or](screenshots/21-wikilink-autocomplete.png)
-
-After a note name, type `#` to choose one of that note's headings: `[[Project Plan#` lists Project Plan's headings in order. `[[#` lists the headings of the note you're in.
+Follow a link to a note that doesn't exist, and Jetfold creates it. That makes it easy to sketch out a set of notes: write the links first, then click through and fill them in.
 
 ### Links stay up to date
 
-When you **rename or move** a note or a folder in Jetfold, every wikilink that points to it is updated across all your notes.
-
-> Changes made outside Jetfold (for example, renaming a file in Finder) can't be tracked, so links to it won't be updated.
-
-### Removing a link
-
-Put the cursor in a wikilink and press **⌘K**. The brackets are removed and the shown text stays.
+When you rename or move a note or folder in Jetfold, every link to it is updated across all your notes.
 
 ### Extracting part of a note
 
-When a section outgrows its note, select it and choose **Note → Extract Selection to New Note** (or find it in the command palette). The text moves into a new note in the same folder, and a link to that note takes its place.
-
-- If the selection starts with a heading, the heading names the new note.
-
-- Want the text to still show here? Put a `!` in front of the link to [embed](#embedding-a-note) the new note.
+When a section gets too big, select it and choose **Note → Extract Selection to New Note**. The text moves into a new note, and a link to the new note is left behind.
 
 ## Backlinks
 
-[Note Info](finding.md#note-info) (**ⓘ**, or ⌥⌘O) has a **Backlinks** tab listing every note that links to this one, with the text around each link. Click a snippet to open that note at the link.
+[Note Info](finding.md#note-info) (**ⓘ**, or ⌥⌘O) has a **Backlinks** tab listing every note that links to this one, with the text around each link.
 
-![Note Info open on its Backlinks tab: two notes that link here, with snippets](screenshots/22-backlinks.png)
+![Note Info open on the Backlinks tab: two notes that link here, with snippets](screenshots/22-backlinks.png)
 
 ## Web links
 
-Standard Markdown links work too:
-
-```markdown
-[Jetfold](https://example.com)
-<https://example.com>
-```
-
-- **⌘K** makes the selected text into a link (or removes the link under the cursor).
-- **⌥⌘K** (Link and Fill Title) makes a link to the selected URL, or to the URL on the clipboard, and fills in the page's title for you.
-- **⌘-click** or **⌃Return** opens a link in your browser.
-
-Links to Markdown files (`[Plan](work/plan.md)`) open in Jetfold.
+Standard Markdown links work too, like `[Jetfold](https://example.com)`. **⌥⌘K** (Link and Fill Title) makes a link from a URL and fills in the page title for you.
 
 ## Links from outside Jetfold
 

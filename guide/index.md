@@ -4,22 +4,24 @@ Jetfold is a fast, native notes app for macOS that works with a folder of plain 
 
 Nothing is locked away in a database or some cloud service: every note is an ordinary `.md` or `.txt` file you can open in any other editor, sync with any service, or keep in a git repository.
 
-![The main window in its three-column layout: the sidebar with views, folders, and the calendar, the notes in the Projects folder, and the Garden Redesign note with a picture, a task list, and a tag](screenshots/01-main-window.png)
+![The main window in three-column layout: the sidebar with views, folders, and the calendar, the notes in the Projects folder, and the Garden Redesign note with a picture, a task list, and a tag](screenshots/01-main-window.png)
 
 ## Contents
 
 1. [Getting Started](getting-started.md): Choose a folder and write your first note
-2. [Organizing Notes](organizing-notes.md): Folders, views, tags, the note list, and windows
-3. [Writing and Formatting](writing.md): The live-preview editor and every format
-4. [Links and Wikilinks](links.md): Links between notes, embeds, and backlinks
-5. [Finding Things](finding.md): Palettes, search, tags, dates, and Note Info
-6. [Daily Notes, Templates, and the Inbox](daily-notes-and-inbox.md): The calendar, templates, and capture
-7. [Images and Attachments](images.md): Adding images and files, and tidying up
-8. [Git Integration](git.md): Status, changed lines, history, and commits
-9. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle, and plain text
-10. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, `jetfold://` links and the Service
-11. [Settings and Themes](settings.md): Every option in the Settings window
-12. [Keyboard Shortcuts](shortcuts.md): The complete list
+2. [Folders and Notes](organizing-notes.md): Folders, the note list, and note windows
+3. [Views and Tags](views-and-tags.md): Tasks, Agenda, your own views, and tags
+4. [Writing](writing.md): The live-preview editor, selection, and find
+5. [Formatting](formatting.md): Headings, lists, tables, math, and more
+6. [Links and Wikilinks](links.md): Links between notes, embeds, and backlinks
+7. [Finding Things](finding.md): Palette, search, tags, dates, and Note Info
+8. [Daily Notes, Templates, and the Inbox](daily-notes-and-inbox.md): The calendar, templates, and capture
+9. [Images and Attachments](images.md): Adding images and files, and tidying up
+10. [Git Integration](git.md): Status, changed lines, history, and commits
+11. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle, and plain text
+12. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, the Service, and `jetfold://` links
+13. [Settings and Themes](settings.md): Themes, fonts, and where things go
+14. [Keyboard Shortcuts](shortcuts.md): Every Jetfold shortcut
 
 ## The ideas behind Jetfold
 

@@ -9,7 +9,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 03 | full app | The three columns under the toolbar: the window buttons and the folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor | getting-started.md |
 | 04 | partial | The "This note changed on disk." bar above a note, with the Keep Mine and Use Disk Version buttons | getting-started.md |
 | 05 | partial | The sidebar: the notes folder expanded into its folders with note counts, a collapsed folder with a dimmed total, dots on folders with uncommitted changes, and the Tags group below | organizing-notes.md |
-| 06 | partial | The Tags group in the sidebar, expanded: tags with their note counts, and a nested tag opened under its parent | organizing-notes.md |
+| 06 | partial | The Tags group in the sidebar, expanded: tags with their note counts, and a nested tag opened under its parent | views-and-tags.md |
 | 07 | partial | The note list header (folder name, sort menu, New Note button) and rows with bold titles, dates on the right, two-line previews, a pinned note and git status letters | organizing-notes.md |
 | 08 | full app | Three daily notes selected in the list and shown one after another in the editor, each with its own title | organizing-notes.md |
 | 09 | partial | The ⋯ menu open at the top of the editor: Open in New Window, Rename…, Duplicate, Pin to Top, Make Read-Only, Copy Link, Copy Wiki Link, Show History…, Reveal in Finder and Move to Trash | organizing-notes.md |
@@ -17,9 +17,9 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 11 | partial | The cursor inside bold text, with its ** markers shown dimmed while the rest of the line stays formatted | writing.md |
 | 12 | partial | The Format menu open, with an icon beside every command and the Headings and Table submenus | writing.md |
 | 13 | partial | Atlas Launch Plan with its Milestones section folded into a ••• pill and the fold chevron beside the heading | writing.md |
-| 14 | partial | Git Cheatsheet: code blocks with syntax colors and small language labels | writing.md |
-| 15 | partial | The Sourdough recipe with a rendered ingredients table, right-aligned numbers and a numbered method below | writing.md, home |
-| 16 | partial | Statistics Basics with inline math in a sentence and a display formula below it | writing.md |
+| 14 | partial | Git Cheatsheet: code blocks with syntax colors and small language labels | formatting.md |
+| 15 | partial | The Sourdough recipe with a rendered ingredients table, right-aligned numbers and a numbered method below | formatting.md, home |
+| 16 | partial | Statistics Basics with inline math in a sentence and a display formula below it | formatting.md |
 | 17 | partial | The calculator offering 71572 after "geostationary * 2 =", with a variable defined on the line above | writing.md |
 | 18 | partial | The Selection menu: Expand and Shrink Selection, Expand Selection to Line, the occurrence commands and the multiple-cursor commands | writing.md |
 | 19 | partial | The find and replace bar over a Python code block, showing "2 of 5" for "row" and the Aa, W and .* options | writing.md |
@@ -45,23 +45,29 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 41 | full app | The main window in the Catppuccin theme, light: sidebar, note list and editor in matching soft lavender greys with mauve selections | settings.md |
 | 42 | full app | The same window in the Nord theme, dark | settings.md |
 | 43 | partial | Settings → Editor: the editor and monospace fonts with Change… buttons, Text width, Fill in link titles, and the live preview note below | settings.md |
-| 44 | partial | Atlas Launch Plan exported as EPUB and open in a book reader: a heading, a quote, a list, a table and tasks across two pages | exporting.md |
-| 45 | partial | Note, tip, warning and caution callouts one after another, each a tinted box with its icon and title | writing.md |
+| 44 | partial | Atlas Launch Plan exported as EPUB and open in a book reader: a heading, a quote, a list, a table and tasks across two pages | features |
+| 45 | partial | Note, tip, warning and caution callouts one after another, each a tinted box with its icon and title | formatting.md |
 | 46 | partial | A paragraph with two raised footnote numbers, one hovered to show its note, and the footnotes in smaller type at the end of the note | writing.md |
 | 47 | partial | Typing "@fr" in a task offers "@friday" with its date, "Fri, Oct 16", in a small list | finding.md |
 | 48 | partial | The slash menu open under "/", grouped into Text, Lists, Callouts, Blocks, Insert and Templates, each item with its Markdown on the right | writing.md |
 | 49 | full app | Focus mode in the editor-only layout: the paragraph being written in full color in the middle of the window, the rest of the note faded | writing.md |
-| 50 | partial | A note's front matter drawn as a properties panel: status, tags as chips, aliases and a due date | writing.md |
+| 50 | partial | A note's front matter drawn as a properties panel: status, tags as chips, aliases and a due date | formatting.md |
 | 51 | partial | A meeting note embedding the Budget section of Q3 Plan in a box headed "Q3 Plan › Budget" | links.md |
-| 53 | full app | The Tasks view in the middle column: overdue, today's and upcoming tasks with their dates and notes, and the selected task's note open in the editor beside it | organizing-notes.md |
+| 53 | full app | The Tasks view in the middle column: overdue, today's and upcoming tasks with their dates and notes, and the selected task's note open in the editor beside it | views-and-tags.md |
 | 54 | partial | New Note from Template open, listing Meeting, Book Review and Weekly Plan from the Templates folder | daily-notes-and-inbox.md |
-| 55 | partial | A flowchart drawn from a mermaid block, in the theme's colors, beside the same block being edited with its preview underneath | writing.md |
+| 55 | partial | A flowchart drawn from a mermaid block, in the theme's colors, beside the same block being edited with its preview underneath | formatting.md |
 | 56 | partial | The sidebar calendar under the folders: October with dots under days that have daily notes, accent dots under days with dated tasks, today highlighted, and a picked day's daily note, tasks and events in the middle column | daily-notes-and-inbox.md |
-| 57 | partial | The sidebar with Work, This Week, Reading and Active views under Tasks and Agenda, each with its icon and count | organizing-notes.md |
+| 57 | partial | The sidebar with Work, This Week, Reading and Active views under Tasks and Agenda, each with its icon and count | views-and-tags.md |
 | 58 | partial | Three attachment cards in a note: an HTML page, a Python script and a PDF, each with its kind, size and a thumbnail | images.md |
 | 59 | partial | The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked | images.md |
-| 60 | partial | The view editor: an icon and name, Tasks / Agenda / Notes, tag and folder chips, and a live preview listing the matching tasks with a count | organizing-notes.md |
+| 60 | partial | The view editor: an icon and name, Tasks / Agenda / Notes, tag and folder chips, and a live preview listing the matching tasks with a count | views-and-tags.md |
 | 61 | full app | Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note | getting-started.md |
+| 62 | partial | The lower part of the right-click menu over the whiteboard photo in Design Principles: Writing Tools, Spelling and Grammar, Share…, AutoFill, then Take Photo, Scan Documents and Add Sketch under the iPhone's name (needs a nearby iPhone or iPad signed in to the same Apple Account) | images.md, features |
+| 63 | partial | Search in Notes for "dark mode": Meeting Notes, Beta Announcement and a daily note match by their text, Design Principles by its whiteboard photo ("whiteboard.jpg: 4. Dark mode by default"), and the Launch Board canvas | images.md |
+| 64 | partial | The right-click menu on the whiteboard photo in Design Principles, with Copy Text from Image at the top and the iPhone's Take Photo, Scan Documents and Add Sketch at the bottom (cropped below the image's revealed markup line) | images.md |
+| 65 | partial | System Settings → Focus → a Focus → Jetfold's filter sheet, with Workspace set to a workspace and Show set to Tasks (a system window: take it by hand and crop to the sheet) | url-scheme.md, features |
+| 66 | partial | The medium Today widget on the desktop, with a little of the wallpaper around it: the date (WED 4) beside an open task and an event due today, and the workspace name. Take it by hand (desktop widgets must be on: System Settings → Desktop & Dock → Show Widgets) | url-scheme.md, features |
+| 67 | partial | The Launch Board canvas (Projects/Atlas), fitted with ⇧1: the Atlas beta text card joined to the Atlas Launch Plan note card ("the plan"), and the From the design review group holding the whiteboard photo and a checklist, joined to the Meeting Notes card ("discussed in"); the editor column only | features |
 
 ## Themes page
 
