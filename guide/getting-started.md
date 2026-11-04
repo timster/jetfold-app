@@ -52,7 +52,7 @@ The number is how many columns you'll see. Drag the borders between columns to r
 
 ### As simple as you like
 
-Everything beyond your folders and notes is a switch. Turn off Tasks, Agenda, Tags, the calendar, and your own views under **View → Sidebar**, and the sidebar is just your folders. **Note Counts** is there too, and turning off **Previews** and **Dates** under **View → Note List** leaves just the titles. Jetfold is then a folder of notes and an editor. It's all configurable: every switch turns its part back on, right where it was.
+Everything beyond your folders and notes can be switched off. Turn off sections under **View → Sidebar** and details under **View → Note List**, and Jetfold is just a folder of notes and an editor. Every switch turns its part back on, right where it was.
 
 ![Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note](screenshots/61-minimal.png)
 

@@ -93,7 +93,7 @@ When a section outgrows its note, select it and choose **Note → Extract Select
 
 ## Backlinks
 
-[Note Info](finding.md#note-info) (**ⓘ** at the top of the editor, or ⌥⌘O) has a **Backlinks** tab: every other note that links to the one you're in, newest first, with how many times each links to it and the text around each link. Click a snippet to open that note with the link selected. Click a note's name to collapse or expand its snippets.
+[Note Info](finding.md#note-info) (**ⓘ**, or ⌥⌘O) has a **Backlinks** tab listing every note that links to this one, with the text around each link. Click a snippet to open that note at the link.
 
 ![Note Info open on its Backlinks tab: two notes that link here, each with the snippets of text around its links](screenshots/22-backlinks.png)
 
