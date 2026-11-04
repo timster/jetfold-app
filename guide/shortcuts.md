@@ -47,7 +47,7 @@ Every command is also in the command palette (⌘P), including the ones without 
 |---|---|
 | Editor only | ⌘1 |
 | Editor and note list | ⌘2 |
-| Editor, note list and folders | ⌘3 |
+| Editor, note list, and folders | ⌘3 |
 | Focus mode | ⇧⌘J |
 | Fold / unfold section | ⌘' |
 

@@ -50,13 +50,13 @@ With no text selected, inline commands such as Bold insert an empty pair of mark
 
 Type `/` at the start of a line, or after a space, to insert a block without remembering its Markdown. Keep typing to narrow the list (`/tab` finds Table), then press **Return** or **Tab**; **Escape** leaves the `/` as typed.
 
-![The slash menu open under "/", grouped into Text, Lists, Callouts, Blocks, Insert and Templates, each item with its Markdown on the right](screenshots/48-slash-menu.png)
+![The slash menu open under "/", grouped into Text, Lists, Callouts, Blocks, Insert, and Templates, each item with its Markdown on the right](screenshots/48-slash-menu.png)
 
 | Group | Items |
 |---|---|
 | Text | Heading 1–3, Quote |
 | Lists | Bullet List, Numbered List, Task |
-| Callouts | Note, Tip, Important, Warning and Caution [callouts](#callouts) |
+| Callouts | Note, Tip, Important, Warning, and Caution [callouts](#callouts) |
 | Blocks | Code Block (the cursor waits for the language), Math Block, Diagram, Table, Divider, Comment |
 | Insert | Link to Note (opens the note list), Today's Date, Tomorrow's Date |
 | Templates | Your [templates](daily-notes-and-inbox.md#templates), by name: inserts the template's text, filled in, with the cursor at its `{{cursor}}` |
@@ -79,7 +79,7 @@ due: 2026-10-20
 
 Jetfold draws it as a tidy panel at the top of the note: each property on its own row, lists as chips, `tags` as tag chips and dates as date chips. Click the panel, or move the cursor into it, to edit the YAML itself.
 
-![A note's front matter drawn as a properties panel: status, tags as chips, aliases and a due date](screenshots/50-front-matter.png)
+![A note's front matter drawn as a properties panel: status, tags as chips, aliases, and a due date](screenshots/50-front-matter.png)
 
 Front matter is left out of the note list's previews and of plain-text exports. Jetfold reads the common forms (`key: value`, `key: [a, b]`, and `key:` followed by `- item` lines) and shows anything else as written. The properties are only displayed: `tags:` here aren't added to your `#tags`, and `aliases:` aren't used for links.
 
@@ -165,7 +165,7 @@ A callout is a quote that starts with a type in square brackets. It draws as a t
 
 The text after the type is the title; leave it out and the type's name is used ("Warning"). The type is shown as an icon until the cursor is on that line.
 
-![Note, tip, warning and caution callouts one after another, each a tinted box with its icon and title](screenshots/45-callouts.png)
+![Note, tip, warning, and caution callouts one after another, each a tinted box with its icon and title](screenshots/45-callouts.png)
 
 | Type | Color |
 |---|---|
@@ -176,7 +176,7 @@ The text after the type is the title; leave it out and the type's name is used (
 | `caution`, `danger`, `error`, `bug`, `failure` | red |
 | `quote`, `cite` | grey |
 
-Any other type draws as a note, so a typo still makes a box. Callouts are plain Markdown: in any other app they read as an ordinary quote. They keep their box in HTML, PDF and EPUB exports, and read as "Warning: Mind the gap" in plain text.
+Any other type draws as a note, so a typo still makes a box. Callouts are plain Markdown: in any other app they read as an ordinary quote. They keep their box in HTML, PDF, and EPUB exports, and read as "Warning: Mind the gap" in plain text.
 
 ## Horizontal rules
 
@@ -213,7 +213,7 @@ def greet(name):
 ```
 ````
 
-When the cursor is outside the block, the fences are hidden and the language is shown as a small label. Highlighting is available for dozens of languages, including JavaScript, TypeScript, Python, Go, Rust, Swift, SQL, HTML, CSS, JSON, YAML and shell. The colors follow your [theme](settings.md#appearance-and-theme).
+When the cursor is outside the block, the fences are hidden and the language is shown as a small label. Highlighting covers dozens of languages, from JavaScript and Python to SQL and shell. The colors follow your [theme](settings.md#appearance-and-theme).
 
 ![Git Cheatsheet: code blocks with syntax colors and small language labels](screenshots/14-code-blocks.png)
 
@@ -238,7 +238,7 @@ Tables show as a grid you edit in place. Click a cell and type; Markdown inside 
 | Arrow keys | Move between cells at the edge of a cell's text |
 | Return | The cell below |
 | ⇧Return | A line break inside the cell |
-| Drag across cells, or ⇧-arrows | Select several cells, to copy, cut, paste or clear them |
+| Drag across cells, or ⇧-arrows | Select several cells, to copy, cut, paste, or clear them |
 | Backspace or Delete on a selection | Clear the cells (empty rows and columns go) |
 | ⌘Z / ⇧⌘Z | Undo and redo, for the whole note |
 
@@ -252,7 +252,7 @@ Tables show as a grid you edit in place. Click a cell and type; Markdown inside 
 
 A table only lines its columns up when you first see it; that change is saved along with your next edit to the note, never on its own, so just opening a note doesn't change its file.
 
-![The Sourdough recipe with a rendered ingredients table, right-aligned numbers and a numbered method below](screenshots/15-table.png)
+![The Sourdough recipe with a rendered ingredients table, right-aligned numbers, and a numbered method below](screenshots/15-table.png)
 
 ## Math
 
@@ -275,7 +275,7 @@ Ordinary dollar amounts aren't mistaken for math: "It costs $5 and $10" stays pl
 
 ## Diagrams
 
-A code block in the `mermaid` language is drawn as a diagram: flowcharts, sequence diagrams, timelines, pie charts, Gantt charts and more, written as text.
+A code block in the `mermaid` language is drawn as a diagram: flowcharts, sequence diagrams, timelines, pie charts, Gantt charts, and more, written as text.
 
 ````markdown
 ```mermaid
@@ -291,7 +291,7 @@ flowchart LR
 - **Click a diagram** to edit its code. While you edit, the diagram stays visible underneath and redraws as you type; a mistake shows what's wrong instead.
 - Diagrams take your theme's colors and the editor's font, and follow light and dark.
 - **/Diagram** in the [slash menu](#the-slash-menu) starts one with a small example.
-- Exports to HTML, PDF and EPUB include the drawn diagram; plain text keeps the code.
+- Exports to HTML, PDF, and EPUB include the drawn diagram; plain text keeps the code.
 - The file keeps exactly what you wrote, so the diagram is plain text other Markdown apps (and many code hosts) can draw too.
 
 See the [Mermaid documentation](https://mermaid.js.org/intro/) for every kind of diagram and its syntax.
@@ -308,7 +308,7 @@ Type a sum followed by `=` and Jetfold offers the answer. Press **Return** to in
 - If you typed commas, the answer has them too.
 - **Variables:** a line like `x=265,000` or `rate = 0.5` defines one. Later lines can use it: `x+43534=` offers `308,534`. Definitions can build on earlier ones (`y = x * 2`), a later definition of the same name wins, and only lines above the cursor count. A list marker before the name is fine.
 - `x` between two values still means multiply.
-- A lone number or name (`5=`, `x=`) offers nothing, which is how a definition starts. Nothing is offered inside code, math or links.
+- A lone number or name (`5=`, `x=`) offers nothing, which is how a definition starts. Nothing is offered inside code, math, or links.
 
 ![The calculator offering 71572 after "geostationary * 2 =", with a variable defined on the line above](screenshots/17-calculator.png)
 
@@ -331,7 +331,7 @@ Plain text lasts[^1] and reads well everywhere[^why].
 - Definitions show in smaller type, with their number in front. A definition runs on to the next blank line or the next definition.
 - **Hover** over a reference to read its note. **Click** a reference to jump to its note, and click the number in front of a note to jump back.
 - **Format → Footnote** adds the next number at the cursor and starts its note at the end, with the cursor there.
-- In HTML, PDF and EPUB exports, footnotes are numbered links with the notes listed at the end; in plain text they read `[1]`.
+- In HTML, PDF, and EPUB exports, footnotes are numbered links with the notes listed at the end; in plain text they read `[1]`.
 
 ![A paragraph with two raised footnote numbers, one hovered to show its note, and the footnotes in smaller type at the end of the note](screenshots/46-footnotes.png)
 
@@ -341,7 +341,7 @@ Plain text lasts[^1] and reads well everywhere[^why].
 
 ## Pasting from other apps
 
-Text copied with formatting, from a web page, an email or a word processor, pastes as Markdown: bold, italic, strikethrough, headings, links, lists, task lists, quotes, code blocks and tables come along, written the way you'd type them (`-` bullets, tables with their columns lined up). Pictures from the web come in as image links; other pictures in the copy are left out.
+Text copied with formatting, from a web page, an email, or a word processor, pastes as Markdown, with its formatting, lists, tables, and code intact. Pictures from the web come in as image links; other pictures in the copy are left out.
 
 Text without formatting pastes exactly as copied, and so does anything copied from a code editor, or pasted into a code block or math.
 
@@ -349,13 +349,13 @@ To paste just the words, with no formatting, use **⌥⇧⌘V** (Edit → Paste 
 
 ## Clear Formatting
 
-**⌥⌘⌫** removes bold, italic, strikethrough, highlight, code, math and links from the selected text (or the current line if nothing is selected), leaving just the words. Headings, lists and quotes are kept.
+**⌥⌘⌫** removes bold, italic, strikethrough, highlight, code, math, and links from the selected text (or the current line if nothing is selected), leaving just the words. Headings, lists, and quotes are kept.
 
 ## The Selection menu
 
-The **Selection** menu grows, shrinks and multiplies your selection.
+The **Selection** menu grows, shrinks, and multiplies your selection.
 
-![The Selection menu: Expand and Shrink Selection, Expand Selection to Line, the occurrence commands and the multiple-cursor commands](screenshots/18-selection-menu.png)
+![The Selection menu: Expand and Shrink Selection, Expand Selection to Line, the occurrence commands, and the multiple-cursor commands](screenshots/18-selection-menu.png)
 
 ### Expand and shrink
 
@@ -386,13 +386,13 @@ Jetfold can edit in several places at once.
 | Rectangular (column) selection | ⌥-drag |
 | Back to one cursor | Escape |
 
-Typing, deleting, Bold, Italic, list and heading commands, and Tab in lists all work at every cursor.
+Typing, deleting, and formatting will apply to every cursor.
 
 ## Find and replace
 
 Press **⌘F** to open the find bar at the top of the note. It stays visible as you scroll.
 
-![The find and replace bar over a Python code block, showing "2 of 5" for "row" and the Aa, W and .* options](screenshots/19-find-replace.png)
+![The find and replace bar over a Python code block, showing "2 of 5" for "row" and the Aa, W, and .* options](screenshots/19-find-replace.png)
 
 - The bar shows how many matches there are ("5 found"), or which one is selected ("3 of 12").
 - **Aa** matches case, **W** matches whole words only, **.\*** uses regular expressions.
@@ -416,7 +416,7 @@ To search across *all* notes, use **Search in Notes** (⇧⌘F); see [Finding Th
 
 ## Spelling
 
-Misspelled words get the usual red underline. Right-click one for suggestions, **Learn Spelling** and the rest of the standard macOS spelling menu; **Edit → Spelling and Grammar** has the rest, including turning checking off. Nothing is ever corrected automatically.
+Misspelled words get the usual red underline. Right-click one for suggestions, **Learn Spelling**, and the rest of the standard macOS spelling menu; **Edit → Spelling and Grammar** has the rest, including turning checking off. Nothing is ever corrected automatically.
 
 Code, web addresses, wikilinks, `#tags`, `@dates`, math and tables aren't checked, so names and code don't fill your notes with red.
 
@@ -424,7 +424,7 @@ Code, web addresses, wikilinks, `#tags`, `@dates`, math and tables aren't checke
 
 **View → Focus Mode** (⇧⌘J) helps you concentrate on what you're writing:
 
-- Everything except the paragraph you're in (or the heading, list item, code block or table) fades back. Move on and the focus moves with you.
+- Everything except the paragraph you're in (or the heading, list item, code block, or table) fades back. Move on and the focus moves with you.
 - As you type or move with the keyboard, the line you're on stays in the middle of the window, like paper in a typewriter. Clicking somewhere doesn't scroll, so the text stays under the pointer.
 - The fading only shows while you're typing in the note; click elsewhere and the whole note is back.
 

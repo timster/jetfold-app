@@ -1,4 +1,4 @@
-# Daily Notes, Templates and the Inbox
+# Daily Notes, Templates, and the Inbox
 
 ## Daily notes
 
@@ -22,7 +22,7 @@ At the bottom of the sidebar, a small month calendar shows your daily notes at a
 - **Double-click a day** to write in its daily note, starting it (from your [daily template](#a-template-for-daily-notes), if you have one) if there isn't one yet. A day with nothing on it also offers **New Daily Note**.
 - **‹ ›** step through the months; **Today** comes back to this one.
 
-![The sidebar calendar under the folders: October with dots under days that have daily notes, accent dots under days with dated tasks, today highlighted, and a picked day's daily note, tasks and events in the middle column](screenshots/56-calendar.png)
+![The sidebar calendar under the folders: October with dots under days that have daily notes, accent dots under days with dated tasks, today highlighted, and a picked day's daily note, tasks, and events in the middle column](screenshots/56-calendar.png)
 
 Don't need it? Turn off **View → Sidebar → Calendar**.
 
@@ -67,7 +67,7 @@ To use one, choose **File → New Note from Template…** (⌥⌘N) and pick it.
 
 To add a template to the note you're in, type `/` and its name: templates are listed last in the [slash menu](writing.md#the-slash-menu).
 
-![New Note from Template open, listing Meeting, Book Review and Weekly Plan from the Templates folder](screenshots/54-templates.png)
+![New Note from Template open, listing Meeting, Book Review, and Weekly Plan from the Templates folder](screenshots/54-templates.png)
 
 A template can hold placeholders that fill in when it's used:
 

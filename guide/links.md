@@ -45,7 +45,7 @@ The note appears in a box headed by its name, fully rendered. With a heading, ju
 
 - The embedded text is read when the note is shown, so after editing the embedded note, it updates the next time you open this one.
 - An embedded note's own embeds show as links, not boxes within boxes.
-- Embeds come along in HTML, PDF and EPUB exports (one level deep); plain text says `[Embedded: Q3 Plan]`.
+- Embeds come along in HTML, PDF, and EPUB exports (one level deep); plain text says `[Embedded: Q3 Plan]`.
 - An embed is a wikilink, so it counts as a backlink and follows renames.
 
 ### Previewing a linked note

@@ -44,7 +44,7 @@ Text inside `{curly braces}` is filled in; everything else is used as written, a
 | `{uuid}` | A random unique ID |
 | any date code, e.g. `{YYYY-MM-DD}` | The current date. Time codes `HH`, `mm`, `ss` work too |
 
-For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year under unique names. The extension is added for you. If a name is taken, Jetfold adds " 2", " 3" and so on rather than overwriting anything. Settings shows an example as you type.
+For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year under unique names. The extension is added for you. If a name is taken, Jetfold adds " 2", " 3", and so on rather than overwriting anything. Settings shows an example as you type.
 
 ## Other files
 
@@ -56,9 +56,9 @@ It goes in the note as an ordinary Markdown link on its own line:
 [Report.pdf](</.assets/Report.pdf>)
 ```
 
-and shows as a card: the file's name, what kind of file it is and its size, and a preview of its first page.
+and shows as a card with the file name, file type, size, and a preview of the first page.
 
-![Three attachment cards in a note: an HTML page, a Python script and a PDF, each with its kind, size and a thumbnail](screenshots/58-attachments.png)
+![Three attachment cards in a note: an HTML page, a Python script, and a PDF, each with its kind, size, and a thumbnail](screenshots/58-attachments.png)
 
 - **Click** a card to open the file in its app; **⌘-click** shows it in Finder.
 - Put the cursor on the line to edit the link; the card comes back when you move away.
@@ -67,9 +67,9 @@ and shows as a card: the file's name, what kind of file it is and its size, and 
 
 ## Unused attachments
 
-Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**; Finder's **Put Back** restores any you want back.
+Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more, with a preview, folder, size, and date for each. Tick the ones to go (or **Select All**) and choose **Move to Trash**; Finder's **Put Back** restores any you want back.
 
-![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes and dates, two of them ticked](screenshots/59-unused-attachments.png)
+![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes, and dates, two of them ticked](screenshots/59-unused-attachments.png)
 
 - It looks in your attachments folder (`.assets`, or wherever your image path puts files). Turn on **Include files elsewhere in the notes folder** to check everywhere; files you keep beside your notes on purpose will show up then, so look before trashing.
 - It's careful: a file counts as used if any note (or template) mentions its name anywhere, even outside a link, so it may miss a few but won't offer one that a note still uses.
@@ -77,6 +77,6 @@ Deleting a note leaves its images and files behind. **File → Find Unused Attac
 
 ## Supported formats
 
-PNG, JPEG, HEIC, GIF, WebP, SVG, AVIF, TIFF, BMP and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size).
+PNG, JPEG, HEIC, GIF, WebP, SVG, AVIF, TIFF, BMP, and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size).
 
 Next: [Git Integration](git.md)

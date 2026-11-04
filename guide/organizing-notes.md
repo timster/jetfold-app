@@ -42,9 +42,9 @@ Folders deleted with **Move to Trash** go to the macOS Trash, so you can use Fin
 At the top of the sidebar, **Tasks** and **Agenda** gather things from all your notes, with how many there are beside each.
 
 - **Tasks:** every open task (`- [ ] …`), grouped **Overdue**, **Today**, **Upcoming** (by their `@date`, soonest first) and **No Date**.
-- **Agenda:** every dated line, grouped **Overdue**, **Today**, **Tomorrow**, **Next 7 days** and **Later**. An open task's date is a deadline; any other date is an event that drops off once its day is over.
+- **Agenda:** every dated line, grouped **Overdue**, **Today**, **Tomorrow**, **Next 7 days**, and **Later**. An open task's date is a deadline; any other date is an event that drops off once its day is over.
 
-![The Tasks view in the middle column: overdue, today's and upcoming tasks with their dates and notes, and the selected task's note open in the editor beside it](screenshots/53-tasks-view.png)
+![The Tasks view in the middle column: overdue, today's, and upcoming tasks with their dates and notes, and the selected task's note open in the editor beside it](screenshots/53-tasks-view.png)
 
 Pick a view and its rows fill the middle column in place of a folder's notes. Click a row, or move through them with ↑ and ↓, and its note opens in the editor at that line, while the view stays, so you can work down a list. Click a task's circle, or press **Space**, to tick it off; it saves like any edit, and leaves the list. Views update as your notes change.
 
@@ -54,7 +54,7 @@ Pick a folder or a tag to go back to notes. **Go → Tasks** (⌥⌘L) and **Go 
 
 ### Arranging the sidebar
 
-**Drag** Tasks, Agenda, your own views, the notes folder's row or Tags onto another of them to move it there; a line shows where it will land. Don't use something? Turn it off under **View → Sidebar** (Tasks, Agenda, Folders, Tags, the [calendar](daily-notes-and-inbox.md#the-calendar) and each of [your own views](#your-own-views) have a switch), or right-click it and choose **Hide**; turned back on, it returns to its usual place. With everything off but your folders, the sidebar is just your notes.
+**Drag** the sidebar's sections to reorder them; a line shows where each will land. Don't use something? Turn it off under **View → Sidebar**, or right-click it and choose **Hide**; turned back on, it returns to its usual place. With everything off but your folders, the sidebar is just your notes.
 
 The order is saved with the workspace's settings, in `.jetfold/settings.json`, as a list: `"sidebar": ["tasks", "agenda", "notes", "tags"]`. Anything left out of it is hidden, and your own views appear there as `"view:work"`. Views you haven't placed show after the other views; ones you hide are listed under `"hiddenViews"`.
 
@@ -79,7 +79,7 @@ The editor has:
 - **Options:** for tasks and dates, only the next few days or weeks; for tasks, done ones too; for notes, their own order.
 - **A live preview** of what the view will list, with a count, updating as you type.
 
-Right-click one of your views for **Edit View…**, **Duplicate**, **Hide** and **Delete View…**. Right-click Tasks or Agenda and choose **Duplicate as New View…** to start from one of them. Your views are listed under **View → Sidebar** too, to show or hide each one.
+Right-click one of your views for **Edit View…**, **Duplicate**, **Hide**, and **Delete View…**. Right-click Tasks or Agenda and choose **Duplicate as New View…** to start from one of them. Your views are listed under **View → Sidebar** too, to show or hide each one.
 
 ### views.json
 
@@ -96,13 +96,13 @@ Views are saved in **`.jetfold/views.json`** in your notes folder, so they sync 
 }
 ```
 
-![The sidebar with Work, This Week, Reading and Active views under Tasks and Agenda, each with its icon and count](screenshots/57-custom-views.png)
+![The sidebar with Work, This Week, Reading, and Active views under Tasks and Agenda, each with its icon and count](screenshots/57-custom-views.png)
 
 **`show`** says what the view lists:
 
 | `show` | Lists | Like |
 |---|---|---|
-| `tasks` | Tasks, grouped Overdue, Today, Upcoming and No Date | the Tasks view |
+| `tasks` | Tasks, grouped Overdue, Today, Upcoming, and No Date | the Tasks view |
 | `agenda` | Dated lines, from overdue to later | the Agenda view |
 | `notes` (the default) | Whole notes, as an ordinary note list | a tag's notes |
 
@@ -143,13 +143,13 @@ Your [#tags](finding.md#tags) are listed in the sidebar, under your folders, in 
 
 The middle column lists the notes in the selected folder or tag. Each row shows the note's title and, on the right, the date it was last edited. With previews on, a line or two of the note's text sits under the title.
 
-![The note list header (folder name, sort menu, New Note button) and rows with bold titles, dates on the right, two-line previews, a pinned note and git status letters](screenshots/07-note-list.png)
+![The note list header (folder name, sort menu, New Note button) and rows with bold titles, dates on the right, two-line previews, a pinned note, and git status letters](screenshots/07-note-list.png)
 
 ### Sorting and display
 
 Everything here is in the **View → Note List** section of the View menu:
 
-- **Sort By** sorts by **Title**, **Date Edited** or **Date Created**, **Ascending** or **Descending**. The default is Date Edited, newest first. The **sort** button above the list has the same choices. The date beside each note is the one the list is sorted by.
+- **Sort By** sorts by **Title**, **Date Edited**, or **Date Created**, **Ascending** or **Descending**. The default is Date Edited, newest first. The **sort** button above the list has the same choices. The date beside each note is the one the list is sorted by.
 
   > Date Created is the file's own creation date, which Jetfold keeps when it saves. Copying notes to a new Mac, cloning them with git, or editing them in some other apps can reset it.
 - **Previews** shows or hides the text under each title.
@@ -178,7 +178,7 @@ This is handy for reviewing a week of daily notes, or comparing two drafts.
 
 Everything you can do with a note is in the **Note** menu, in the **⋯** menu at the top of the editor, and when you right-click a note in the list. With several notes selected, the actions apply to all of them.
 
-![The ⋯ menu open at the top of the editor: Open in New Window, Rename…, Duplicate, Pin to Top, Make Read-Only, Copy Link, Copy Wiki Link, Show History…, Reveal in Finder and Move to Trash](screenshots/09-note-menu.png)
+![The ⋯ menu open at the top of the editor: Open in New Window, Rename…, Duplicate, Pin to Top, Make Read-Only, Copy Link, Copy Wiki Link, Show History…, Reveal in Finder, and Move to Trash](screenshots/09-note-menu.png)
 
 | Item | What it does |
 |---|---|
@@ -202,7 +202,7 @@ Pins are stored in the workspace's settings, not in your notes, so they don't ad
 
 ## Read-only notes
 
-**Make Read-Only** protects a note you don't want to change by accident, such as a finished document or a reference. A read-only note shows a lock in the list, and its text can be read, selected and copied but not edited. Tagging by dragging, removing tags, and other changes that would edit the note leave it alone. Choose **Make Editable** to unlock it.
+**Make Read-Only** protects a note you don't want to change by accident, such as a finished document or a reference. A read-only note shows a lock in the list, and its text can be read, selected, and copied but not edited. Tagging by dragging, removing tags, and other changes that would edit the note leave it alone. Choose **Make Editable** to unlock it.
 
 Like pins, this is stored in the workspace's settings; the file itself isn't changed.
 
@@ -235,7 +235,7 @@ Double-click a note (or choose **Open in New Window**) to open it in a window of
 - Each note gets at most one window. Opening it again brings that window to the front.
 - Edits in a note window appear in the main window at once, and the other way round.
 - Following a link from a note window opens the linked note in another note window.
-- The palettes (⌘P, ⌘O and the rest) work in note windows too.
+- The palettes (⌘P, ⌘O, and the rest) work in note windows too.
 - **Window → Keep on Top** keeps the note window in front of other apps' windows, even a full-screen one. An icon in its title bar shows it's on; click the icon to turn it off.
 - **⌘W** saves and closes the note window.
 

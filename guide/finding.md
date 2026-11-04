@@ -21,14 +21,14 @@ Every command in the app, including ones that aren't in any menu. With nothing t
 
 ![The command palette open over a note, listing commands with their shortcuts](screenshots/23-command-palette.png)
 
-The list depends on what you're doing:
+It offers different commands depending on what you have selected:
 
-- **With a note selected:** Open Note in New Window, Rename Note…, Pin/Unpin Note, Make Note Read-Only/Editable, Duplicate Note, Move Note to Folder…, Move Note to Trash, Reveal Note in Finder, Export Note as HTML…/PDF…/EPUB…/TextBundle…/Plain Text…, Show Note History….
-- **With several notes selected:** Pin, Duplicate, Move to Folder… and Move to Trash for all of them ("Duplicate 3 Notes").
-- **With a folder selected:** New Note, New Folder, Rename Folder…, Move Folder to Trash, Reveal Folder in Finder.
-- **When opened from inside a note:** every Format command ("Format: Bold", "Format: Heading 2" and so on) and the folding commands ("View: Fold All"). When the cursor is on a task, **Complete Task** or **Uncomplete Task** is listed first.
-- **In a git repository:** Git: Commit…, and showing or hiding the git status and changed lines.
-- **Always:** Go to Note, Search in Notes, Go to Tasks, Go to Agenda, Open Today's / Yesterday's / Tomorrow's Note, Open Random Note, Show/Hide Note Info, the layouts, sorting and View options, and opening or forgetting your other workspaces.
+- **With a note selected:** commands for that note.
+- **With several notes selected:** commands for all of them at once.
+- **With a folder selected:** commands for that folder.
+- **When opened from inside a note:** formatting and folding.
+- **In a git repository:** git commands.
+- **Always:** going to notes and views, daily notes, and the View menu's options.
 
 ## Go to Note (⌘O)
 
@@ -92,7 +92,7 @@ You don't have to type the date out. Type `@` and a word, and Jetfold offers the
 
 Pick one from the list with **Return** or **Tab**. For one-word dates you don't even need the list: type `@tomorrow` and a space (or punctuation), and it turns into the date as you go. The note only ever holds the real date, so it means the same thing tomorrow as it does today.
 
-**Go → Agenda** (⌥⌘A) shows the sidebar's **Agenda** view: every date in your notes, grouped as **Overdue**, **Today**, **Tomorrow**, **Next 7 days** and **Later** (see [Views](organizing-notes.md#views-tasks-and-agenda)). **Click a date** in a note to see everything on that day: its daily note, tasks and events, with the note you were in staying open.
+**Go → Agenda** (⌥⌘A) shows the sidebar's **Agenda** view: every date in your notes, grouped as **Overdue**, **Today**, **Tomorrow**, **Next 7 days**, and **Later** (see [Views](organizing-notes.md#views-tasks-and-agenda)). **Click a date** in a note to see everything on that day: its daily note, tasks, and events, with the note you were in staying open.
 
 - **On a task**, the date is a deadline: `- [ ] Send the invoice @2026-10-10` is **Overdue** once the day has passed, until you tick it. Ticked tasks leave the agenda.
 - **Anywhere else**, the date is an event (a meeting, a trip). It shows until its day is over, then drops out.
@@ -111,7 +111,7 @@ Pick one from the list with **Return** or **Tab**. For one-word dates you don't 
 
 ## Back and forward
 
-**Go → Back** (⌘[) returns to the note you were in before, scrolled where you left it with the cursor where it was, and **Go → Forward** (⌘]) goes the other way. It works however you moved on: picking another note in the list, following a link, the palettes, a view or the calendar. Handy after following a [[link]] to check something.
+**Go → Back** (⌘[) returns to the note you were in before, scrolled where you left it with the cursor where it was, and **Go → Forward** (⌘]) goes the other way. It works however you moved on: picking another note in the list, following a link, the palettes, a view, or the calendar. Handy after following a [[link]] to check something.
 
 If the note is in the list or view showing now, it's picked there; otherwise Jetfold goes to its folder. Notes trashed since are skipped.
 
@@ -119,7 +119,7 @@ If the note is in the list or view showing now, it's picked there; otherwise Jet
 
 Click **ⓘ** at the top of the editor, or press **⌥⌘O** (Note → Note Info), to open a panel about the note you're in. It has three tabs:
 
-- **Statistics:** words, characters, paragraphs and an estimated reading time, plus when the note was created and last modified. Markdown symbols aren't counted as words.
+- **Statistics:** words, characters, paragraphs, and an estimated reading time, plus when the note was created and last modified. Markdown symbols aren't counted as words.
 - **Table of Contents:** the note's headings, indented by level, with the one the cursor is in highlighted. Click one to jump to it.
 - **Backlinks:** the notes that [link to this one](links.md#backlinks), with a snippet of each link. Click one to open it.
 
@@ -133,4 +133,4 @@ Note Info follows whichever note you last typed in or clicked, which is useful w
 
 **Go → Random Note** opens a note chosen at random. It's a nice way to rediscover old notes.
 
-Next: [Daily Notes, Templates and the Inbox](daily-notes-and-inbox.md)
+Next: [Daily Notes, Templates, and the Inbox](daily-notes-and-inbox.md)

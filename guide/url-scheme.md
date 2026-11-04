@@ -1,6 +1,6 @@
 # Opening Jetfold from Other Apps
 
-Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events and other apps. From Terminal:
+Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events, and other apps. From Terminal:
 
 ```sh
 open 'jetfold://daily'
@@ -33,7 +33,7 @@ open 'jetfold://search?q=load%20test'
 
 Problems (unknown note, invalid name or folder, read-only note) show in Jetfold's error alert.
 
-## Shortcuts, Siri and Spotlight
+## Shortcuts, Siri, and Spotlight
 
 Jetfold's actions are in the Shortcuts app, under Apps → Jetfold. They work on the notes folder that's open in Jetfold, and like links, an action that arrives while Jetfold isn't running starts it first.
 
@@ -45,7 +45,7 @@ Jetfold's actions are in the Shortcuts app, under Apps → Jetfold. They work on
 | **Open Note** / **Open Today's Note** / **Open Daily Note** | Opens a note, today's note, or yesterday's or tomorrow's, in the main window. |
 | **Get Note Text** | Returns a note's Markdown. |
 | **Find Notes** | Returns the notes containing all the words, best matches first, like Search in Notes. |
-| **Get Open Tasks** | Returns the unticked tasks as the Tasks view lists them: all, or just the overdue, due today, upcoming or undated ones. |
+| **Get Open Tasks** | Returns the unticked tasks as the Tasks view lists them: all, or just the overdue, due today, upcoming, or undated ones. |
 
 When an action asks for a note, you can pick one from a list of recent notes or type to search by name. A note returned by one action can go straight into the next: Find Notes → Get Note Text, or Create Note → Open Note.
 

@@ -10,7 +10,7 @@ Every setting belongs to the open [workspace](getting-started.md#choosing-your-n
 
 ### Appearance and theme
 
-**Appearance** is **System**, **Light** or **Dark**. System follows your Mac's setting and switches automatically. The choice applies to every Jetfold window, its menus and dialogs.
+**Appearance** is **System**, **Light**, or **Dark**. System follows your Mac's setting and switches automatically. The choice applies to every Jetfold window, its menus, and dialogs.
 
 **Theme** picks Jetfold's colors:
 
@@ -22,13 +22,13 @@ Every setting belongs to the open [workspace](getting-started.md#choosing-your-n
 | **Catppuccin** | Soft lavender grey (Latte) | Dark blue-grey with pastels (Mocha) |
 | **High Contrast** | Black on white | White on black |
 
-Every theme has a light and a dark look, and **Appearance** decides which one you see, so a theme works the same with System, Light or Dark.
+Every theme has a light and a dark look, and **Appearance** decides which one you see, so a theme works the same with System, Light, or Dark.
 
-A theme colors the whole window, not just the note: the sidebar, the note list and its selection, the column dividers, the palettes, Note Info, the history window, the git badges and changed-line marks, and the conflict bar. Jetfold keeps the standard Mac sidebar look; the other themes fill the sidebar with their own color so it reads as one surface with the note list.
+A theme colors the whole window, not just the note: the sidebar, the note list, the palettes, and everything in between. Jetfold keeps the standard Mac sidebar look; the other themes fill the sidebar with their own color so it reads as one surface with the note list.
 
-The Jetfold theme also takes your Mac's accent color, the **Color** under **System Settings → Appearance → Theme**: links, selected rows and buttons follow it, and change when you change it. Where a color is too light for white text or links to stay readable (yellow, for instance), Jetfold uses a slightly deeper shade of it. The other themes keep their own accent.
+The Jetfold theme also takes your Mac's accent color, the **Color** under **System Settings → Appearance → Theme**: links, selected rows, and buttons follow it, and change when you change it. Where a color is too light for white text or links to stay readable (yellow, for instance), Jetfold uses a slightly deeper shade of it. The other themes keep their own accent.
 
-![The main window in the Catppuccin theme, light: sidebar, note list and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
+![The main window in the Catppuccin theme, light: sidebar, note list, and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
 ![The same window in the Nord theme, dark](screenshots/42-theme-nord.png)
 
@@ -69,7 +69,7 @@ The file travels with the notes folder, like `settings.json`, so anyone who open
 
 | Key | Used for |
 |---|---|
-| `surface` | The note, the note list and the window behind them |
+| `surface` | The note, the note list, and the window behind them |
 | `sidebar` | The sidebar's fill (in the default theme, see-through to the system's sidebar) |
 | `bg` | The find bar's text fields |
 | `text`, `muted` | Text, and quieter text (previews, dates, counts, Markdown symbols) |
@@ -80,12 +80,12 @@ The file travels with the notes folder, like `settings.json`, so anyone who open
 | `selection`, `on-selection` | A selected row (sidebar, note list, palettes) and its text |
 | `selection-blur` | A selected row while another part of the window has the keyboard, and selected text |
 | `highlight-bg` | `==highlights==` |
-| `code-bg` | Code, code blocks and table headers |
+| `code-bg` | Code, code blocks, and table headers |
 | `find-match`, `find-current` | Find results in the note, and the current one |
 | `danger` | Errors, deletions |
 | `warn`, `warn-soft` | Warnings, and the "changed on disk" bar |
-| `git-added`, `git-modified`, `git-removed` | Git letters, folder dots and changed-line marks |
-| `syn-keyword`, `syn-string`, `syn-comment`, `syn-number`, `syn-function`, `syn-type`, `syn-property` | Code highlighting; strings, numbers, types and so on |
+| `git-added`, `git-modified`, `git-removed` | Git letters, folder dots, and changed-line marks |
+| `syn-keyword`, `syn-string`, `syn-comment`, `syn-number`, `syn-function`, `syn-type`, `syn-property` | Code highlighting; strings, numbers, types, and so on |
 
 
 ### Workspace
@@ -140,7 +140,7 @@ Where dropped and pasted images are saved, as a template. The default is `.asset
 
 ## The View menu
 
-The View menu's choices are saved with the workspace too: the column layout and widths, Sort By, focus mode, and whether to show note counts, previews, dates, git status and changed lines, and the sidebar's sections and their order. Jetfold also remembers, for each workspace, which folders are expanded and which notes were open.
+The View menu's choices, such as the layout, sorting, and what the sidebar and note list show, are saved with the workspace too. Jetfold also remembers, for each workspace, which folders are expanded and which notes were open.
 
 ## About
 
