@@ -202,6 +202,7 @@ kbd {
 
 /* Screenshots of windows carry their own rounded corners, so the shadow follows the image. */
 .shot { width: 100%; filter: drop-shadow(0 10px 26px var(--shadow)); }
+.shot.small { width: var(--w, 240px); }
 figure { margin: 0; }
 figcaption { margin-top: 12px; font: 14px/1.45 var(--sans); color: var(--muted); }
 
