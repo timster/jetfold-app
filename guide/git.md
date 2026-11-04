@@ -1,14 +1,12 @@
 # Git Integration
 
-If your notes folder is a **git repository** (or inside one), Jetfold shows what has changed since your last commit, lets you browse and restore older versions of any note, and can commit for you.
-
-None of this is required. If your folder isn't a git repository, the git features stay switched off and out of the way.
+If your notes folder is a **git repository**, Jetfold shows what has changed since your last commit, lets you browse and restore older versions of any note, and can commit for you. If it isn't, the git features stay out of the way.
 
 > Git is built into Jetfold, so you don't need git installed. To share your notes with another Mac, push and pull them with git in Terminal or a git app; Jetfold picks up whatever arrives.
 
 ## Status badges
 
-Notes that have changed since the last commit get a letter beside their date in the note list:
+Notes that have changed since the last commit get a letter in the note list, and folders with changes get a dot:
 
 | Badge | Meaning |
 |---|---|
@@ -17,61 +15,26 @@ Notes that have changed since the last commit get a letter beside their date in 
 | **R** | Renamed (staged) |
 | **U** | New and not yet tracked by git |
 
-Folders that contain any changed notes get a small dot, so you can find changes without opening every folder. The colors come from your [theme](settings.md#appearance-and-theme).
-
 ![Git letters M, A, and U beside notes in the list, and dots on folders with changes in the sidebar](screenshots/35-git-status.png)
-
-The badges update as you work, including after commits made in other apps.
-
-Turn them off with **View → Git Status**.
 
 ## Changed lines in the editor
 
-While you edit, colored marks in the left margin show how the note differs from its last committed version:
-
-- **Green bar:** added lines
-- **Orange bar:** changed lines
-- **Red triangle:** lines were deleted here
+While you edit, colored marks in the margin show how the note differs from the last commit: green for added lines, orange for changed ones, and a red triangle where lines were deleted.
 
 ![Changed-line marks in the margin: an orange bar beside a modified line, a green bar beside an added one, and a red triangle where lines were deleted](screenshots/36-changed-lines.png)
 
-The marks update with every keystroke and disappear once you commit. Turn them off with **View → Git Changes**.
-
 ## Note history
 
-**Note → Show History…** (⇧⌘H) opens the full history of the current note.
+**Note → Show History…** (⇧⌘H) shows every version of the note, even across renames and moves. Pick a version to see what changed since then, or the note as it was.
 
 ![The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green](screenshots/37-history.png)
 
-The list on the left shows every commit that changed this note, newest first.
-
-History follows the note through **renames and moves**.
-
-Choose a version with the mouse or **↑ / ↓**, then pick a tab:
-
-| Tab | Shows |
-|---|---|
-| **Changes Since** | Everything that has changed between that version and the note as it is now |
-| **This Commit** | Just what that commit changed |
-| **This Version** | The complete note as it was at that time. You can select and copy from it |
-
-### Restoring a version
-
-Click **Restore This Version** to replace the note's text with the selected version. This is an ordinary edit: it's saved like any other change, and **⌘Z** undoes it. Nothing in git is changed or rewritten.
-
-Click **Close** or press **Escape** to close the history.
+**Restore This Version** brings back the selected version.
 
 ## Committing
 
-**File → Commit Changes…** (⇧⌘K, or **Git: Commit…** in the command palette) opens a palette listing every changed note with its status.
+**File → Commit Changes…** (⇧⌘K) lists every changed note. Type a message and press **Return** to commit, or leave the message empty to use the date and time.
 
 ![Commit Changes: the message field above the list of changed notes, with icons for how they changed](screenshots/38-commit.png)
-
-Type a message and press **Return** to commit. If you leave the message empty, Jetfold uses the date and time, for example "Update 2026-10-06 14:32:05".
-
-- All changes in your notes folder are committed: edits, new notes, renames, and deletions. Your `.gitignore` is respected.
-- Pending edits are saved first, so the commit always includes what you see.
-
-A short notice confirms the commit, or says **Nothing to commit**.
 
 Next: [Exporting](exporting.md)

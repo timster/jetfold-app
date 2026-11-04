@@ -2,87 +2,54 @@
 
 ## Choosing your notes folder
 
-The first time you open Jetfold, it asks for a folder. Choose any folder: an existing collection of Markdown files, a folder synced with iCloud Drive, a git repository, or a brand-new empty folder.
+The first time you open Jetfold, it asks for a folder. Choose any folder: an existing collection of Markdown files, a folder synced with iCloud Drive, a git repository, or a brand-new empty one. Nothing is changed or imported.
 
 ![The welcome screen in a small window: the origami jet floating above "Choose the folder that holds your notes." and the Open Folder… button](screenshots/02-welcome.png)
 
 > **Tip:** click the jet.
 
-- If the folder is **empty**, Jetfold creates a short `Welcome.md` note to get you started. You can delete it whenever you like; it won't come back.
-- If the folder **already has notes**, Jetfold shows them straight away. Nothing is changed or imported.
-- Hidden files and folders (names starting with `.`, such as `.git`) are ignored.
-
 Each notes folder is a **workspace**, with settings that travel with the folder. Open another with **File → Open Folder…**, and switch between them with **File → Open Workspace**.
-
-> **Tip:** Jetfold reads `.md` and `.txt` files. Other files in the folder (PDFs, images, and so on) are left alone and don't appear in the note list.
 
 ## The free trial
 
-Everything in Jetfold works for 14 days, free. The first time you open it, Jetfold offers the trial; start it from **Start Free Trial**. After 14 days, unlock Jetfold with a single purchase to keep writing. There's no subscription.
+Everything in Jetfold works for 14 days, free. After that, unlock Jetfold with a single purchase to keep writing. There's no subscription.
 
-If you haven't started the trial, or it has ended, nothing is taken away: you can still open, read, search, and export every note. Editing, creating, moving, and deleting notes wait until you unlock. Your notes are ordinary files, so they're always yours either way.
+Without the trial or the unlock, nothing is taken away: you can still open, read, search, and export every note. Your notes are ordinary files, so they're always yours either way.
 
-**Jetfold → Unlock Jetfold…** and **Settings → General** show how many trial days are left and have the unlock. **Restore Purchases** there brings back an unlock bought on another Mac with the same Apple Account.
+**Restore Purchases** in **Settings → General** brings back an unlock bought on another Mac.
 
 ## The main window
 
-The main window has three columns:
-
-| Column | What it shows |
-|---|---|
-| **Sidebar** | Your notes folder and every folder inside it, as a tree, and your tags underneath |
-| **Notes** | The notes in the selected folder or tag, with titles, dates, and a short preview |
-| **Editor** | The selected note (or notes), ready to edit |
+The main window shows your folders, the notes in the selected folder, and the editor.
 
 ![The three columns under the toolbar: the window buttons and the folders button over the sidebar, the folder name with the sort and New Note buttons over the note list, and the Note Info and ⋯ buttons over the editor](screenshots/03-columns.png)
 
-The toolbar along the top keeps each column's buttons over it:
+To change the toolbar, choose **View → Customize Toolbar…** and drag buttons in or out.
 
-- **Sidebar:** the **◧** button next to the window buttons hides the folders, and shows them again.
-- **Note list:** the name of the folder or tag you're looking at, a **Sort** menu, and a **New Note** button.
-- **Editor:** **ⓘ** opens [Note Info](finding.md#note-info) and **⋯** has everything you can do with the note.
-
-To change the toolbar, choose **View → Customize Toolbar…** (or right-click the toolbar) and drag buttons in or out. Each column keeps the buttons you put over it, and dragging the default set back in resets it. Without the **ⓘ** button, **⌥⌘O** still opens Note Info.
-
-You can hide columns when you want to focus:
-
-- **View → Editor** (⌘1) shows only the editor.
-- **View → Editor, Files** (⌘2) shows the note list and the editor.
-- **View → Editor, Files, Folders** (⌘3) shows all three.
-
-Drag the borders between columns to resize them. When the window is too narrow for all three, the folders step aside until there's room.
+**⌘1**, **⌘2**, and **⌘3** show one, two, or all three columns, so you can hide the rest when you want to focus.
 
 ### As simple as you like
 
-Everything beyond your folders and notes can be switched off. Turn off sections under **View → Sidebar** and details under **View → Note List**, and Jetfold is just a folder of notes and an editor. Every switch turns its part back on, right where it was.
+Everything beyond your folders and notes can be switched off. Turn off sections under **View → Sidebar** and details under **View → Note List**, and Jetfold is just a folder of notes and an editor.
 
-![Jetfold with everything turned off but the folders: the notes folder and its subfolders, a list of plain note titles, and the Garden Redesign note](screenshots/61-minimal.png)
+![Jetfold with everything turned off but the folders: the notes folder and subfolders, a list of plain note titles, and the Garden Redesign note](screenshots/61-minimal.png)
 
 ## Creating your first note
 
-Press **⌘N** (File → New Note) or click the **New Note** button above the note list. Jetfold creates `Untitled.md` in the current folder and puts your cursor in its title so you can name it straight away. Type a title, press **Return**, and the cursor moves into the note so you can start writing.
+Press **⌘N** and type a title. Press **Return**, and start writing.
 
-There's no Save button to remember. Jetfold saves automatically a moment after you stop typing, and again whenever you switch notes, switch apps, or quit. **⌘S** saves right away if you like. If a save is ever slow or fails, an icon appears in the toolbar over the editor; hover over it for details.
+There's no Save button to remember. Jetfold saves automatically as you type.
 
 ## Saving and outside changes
 
-Jetfold watches your notes folder. If a note changes on disk (because you edited it in another app, or a sync service brought in a new version), the open note updates by itself.
+Jetfold watches your notes folder. If a note changes on disk, because you edited it in another app or a sync service brought in a new version, the open note updates by itself.
 
-If a note changes on disk **while you have unsaved edits in Jetfold**, it won't silently overwrite either version. A bar appears above the note asking which version to keep:
-
-- **Keep Mine** saves your version over the one on disk.
-- **Use Disk Version** throws away your unsaved edits and loads the file.
+If a note changes on disk **while you have unsaved edits**, Jetfold won't silently overwrite either version. A bar above the note asks which one to keep.
 
 ![The "This note changed on disk." bar above a note, with the Keep Mine and Use Disk Version buttons](screenshots/04-conflict.png)
 
-## Quitting and closing
-
-- **⌘W** closes the current window. Closing the main window just hides it; Jetfold keeps running. Click the Dock icon or press **⌘0** (Window → Notes) to bring it back.
-- Right-click the Dock icon for **New Note** and **Open Today's Note**.
-- **⌘Q** quits. Any unsaved edits in every window are saved first.
-
 ## Appearance
 
-Jetfold follows your Mac's Light or Dark mode by default, in its own color theme. To pick a mode or another theme, go to **Settings → General**. See [Settings and Themes](settings.md#appearance-and-theme).
+Jetfold follows your Mac's Light or Dark mode. To pick another theme, go to **Settings → General**. See [Settings and Themes](settings.md#appearance-and-theme).
 
-Next: [Organizing Notes](organizing-notes.md)
+Next: [Folders and Notes](organizing-notes.md)

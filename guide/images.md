@@ -1,100 +1,68 @@
 # Images and Attachments
 
-Jetfold shows images right inside your notes, and other files (a PDF, some code, a spreadsheet) as cards you can open.
+Jetfold shows images right inside your notes, and other files, like a PDF or a spreadsheet, as cards you can open.
 
 ![The Garden Redesign note with a garden layout picture shown inline under a heading](screenshots/34-garden-image.png)
 
 ## Adding images
 
-### Drag and drop
-
-Drag image files from Finder (or from most other apps) onto a note. Each image is added on its own line, at the point where you drop it.
-
-- If the image is **already inside your notes folder**, Jetfold links to it where it is.
-- Otherwise, Jetfold **copies** it into your images folder (see below) and links to the copy. The original isn't touched.
-
-### Paste
-
-Copy an image (for example with ⌃⇧⌘4 for a screenshot to the clipboard) and paste it into a note with **⌘V**. Jetfold saves it to your images folder and inserts the link at the cursor.
+Drag images onto a note, or paste one with **⌘V**. Jetfold copies them into your images folder (see below) and links to the copy, so the original isn't touched. An image already inside your notes folder is linked where it is.
 
 ### From your iPhone or iPad
 
-Control-click in a note, or on an empty spot on a canvas, and choose **Take Photo**, **Scan Documents**, or **Add Sketch** under your device's name. The result appears where you clicked and is saved to your images folder.
+Right-click in a note, or on an empty spot on a canvas, and choose **Take Photo**, **Scan Documents**, or **Add Sketch** under your device's name. The result appears right where you clicked.
 
 ![The right-click menu in a note, with Take Photo, Scan Documents, and Add Sketch under the iPhone's name](screenshots/62-insert-from-iphone.png)
 
-Your iPhone or iPad needs to be nearby, signed in to the same Apple Account, with Wi‑Fi and Bluetooth on.
+Your iPhone or iPad needs to be nearby and signed in to the same Apple Account.
 
 ### By hand
 
-Write a standard Markdown image:
+Write a standard Markdown image. A path starting with `/` is from the top of your notes folder, and paths with spaces go in `< >`:
 
 ```markdown
 ![A description](</.assets/My Screenshot.png>)
 ```
 
-- A path starting with `/` is from the top of your notes folder. Other paths are relative to the note.
-- Wrap paths that contain spaces in `< >`, as above, or write spaces as `%20`.
-- Web images (`https://…`) work too.
-
-When the cursor is on an image's line, the Markdown source appears above the picture so you can edit it.
-
 ## Where images are saved
 
-**Settings → Notes → Image path** says where images you drop or paste are saved, as a template like the [daily note path](daily-notes-and-inbox.md#where-daily-notes-go). The default, `.assets/{original}`, keeps each image under its own name in `.assets`. Folders starting with `.` are hidden from Jetfold's sidebar (and from Finder), which keeps them out of the way.
-
-Text inside `{curly braces}` is filled in; everything else is used as written, and `/` separates folders:
+By default, images go in a hidden `.assets` folder at the top of your notes folder, under their own names. To change that, set **Settings → Notes → Image path**, a template where text inside `{curly braces}` is filled in:
 
 | Placeholder | Becomes |
 |---|---|
-| `{original}` or `{name}` | The image's original file name (without extension) |
+| `{original}` or `{name}` | The image's original file name |
 | `{note}` | The title of the note you dropped it on |
 | `{uuid}` | A random unique ID |
 | any date code, e.g. `{YYYY-MM-DD}` | The current date. Time codes `HH`, `mm`, `ss` work too |
 
-For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year under unique names. Settings shows an example as you type.
+For example, `.assets/{note}/{original}` keeps each note's images in a folder of their own, and `media/{YYYY}/{uuid}` sorts them by year.
 
 ## Other files
 
-Drop any other file on a note, or paste one copied in Finder, and Jetfold copies it into the same folder as your images (`.assets` by default), **keeping the file name**. A file already inside your notes folder is linked where it is.
+Drop any other file on a note and it shows as a card with a preview. Click a card to open the file; **⌘-click** shows it in Finder.
 
-It goes in the note as an ordinary Markdown link on its own line:
+![Three attachment cards in a note: an HTML page, a Python script, and a PDF, showing kind, size, and a thumbnail](screenshots/58-attachments.png)
+
+In the file, a card is an ordinary Markdown link on a line by itself, so other Markdown apps see a plain link:
 
 ```markdown
 [Report.pdf](</.assets/Report.pdf>)
 ```
 
-and shows as a card with the file name, file type, size, and a preview of the first page.
-
-![Three attachment cards in a note: an HTML page, a Python script, and a PDF, showing kind, size, and a thumbnail](screenshots/58-attachments.png)
-
-- **Click** a card to open the file in its app; **⌘-click** shows it in Finder.
-- Put the cursor on the line to edit the link; the card comes back when you move away.
-- Any line holding only a link to a file in your notes folder becomes a card, so you can also add one by hand. A link in the middle of a sentence stays a link (**⌘-click** it to open the file).
-- Other Markdown apps see a plain link, and exports keep it as one.
-
 ## Text in images and PDFs
 
-Jetfold reads the words in your pictures and PDFs (a whiteboard, a receipt, a page you scanned from your iPhone), so [Search in Notes](finding.md#search-in-notes-f) finds the notes that show them.
+Jetfold reads the words in your pictures and PDFs, like a whiteboard, a receipt, or a page you scanned from your iPhone, so [Search in Notes](finding.md#search-in-notes-f) finds the notes that show them. It all happens on your Mac.
 
-![Search in Notes with a result found in a picture, its snippet starting with the image's name](screenshots/63-search-image-text.png)
+![Search in Notes with a result found in a picture](screenshots/63-search-image-text.png)
 
-- Right-click a picture or a PDF card and choose **Copy Text from Image** (or **Copy Text from PDF**) to put its words on the clipboard. This works on canvas cards too.
-- The text is read on your Mac, in the background, and never written into your notes folder.
-- Turn it off in [Settings → Notes → Find text in images and PDFs](settings.md#find-text-in-images-and-pdfs).
+Right-click a picture or PDF and choose **Copy Text from Image** to put the words on the clipboard.
 
 ![The right-click menu on a picture in a note, with Copy Text from Image at the top](screenshots/64-copy-text-from-image.png)
 
 ## Unused attachments
 
-Deleting a note leaves its images and files behind. **File → Find Unused Attachments…** lists the ones no note mentions any more. Tick the ones to go (or **Select All**) and choose **Move to Trash**. They go where deleted notes go ([Settings → Notes → Deleted notes](settings.md#deleted-notes)), so you can move any you want back.
+Deleting a note leaves the images and files behind. **File → Find Unused Attachments…** lists the ones no note uses any more, so you can tidy them up.
 
 ![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes, and dates, two of them ticked](screenshots/59-unused-attachments.png)
-
-- It looks in your attachments folder (`.assets`, or wherever your image path puts files). Turn on **Include files elsewhere in the notes folder** to check everywhere; files you keep beside your notes on purpose will show up then, so look before trashing.
-
-## Supported formats
-
-PNG, JPEG, HEIC, GIF, WebP, SVG, AVIF, TIFF, BMP, and ICO show as images; anything else is an attachment. Images and files up to 50 MB can be pasted (dropped files can be any size).
 
 Next: [Canvases](canvas.md)
