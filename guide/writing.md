@@ -108,16 +108,14 @@ These are the commands Jetfold adds, and what they do:
 | Command | Does |
 |---|---|
 | `:w` | Saves the note |
-| `:q`, `:wq`, `:x` | Closes a note window |
+| `:q`, `:wq`, `:x`, `ZZ` | Closes a note window |
 | `:e` | Opens Go to Note |
 | `:e name` | Opens the note with that name, or lists the notes that match |
 | `:sp`, `:vs` | Opens the note in a separate window |
+| `gf`, `Ctrl-]` | Follows the link under the cursor |
 | `:bn`, `:bp` | Moves to the next or previous note in the list, or in a stack of notes |
 | `:grep words` | Searches all your notes |
 | `:f name` | Renames the note |
-| `:today` | Opens today's note |
-| `:tasks`, `:agenda` | Shows your tasks, or what's coming up |
-| `:pin`, `:unpin` | Pins the note to the top of the list, or unpins it |
 | `:history` | Shows the note's history |
 | `:commit` | Commits your changes |
 | `:set nu`, `:set rnu` | Shows line numbers, or numbers relative to the cursor |
