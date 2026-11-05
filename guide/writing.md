@@ -95,6 +95,10 @@ To search across *all* notes, use **Search in Notes** (⇧⌘F); see [Finding Th
 
 **View → Focus Mode** (⇧⌘J) fades everything but the paragraph you're writing, and keeps your line in the middle of the window, like paper in a typewriter. It pairs well with **View → Editor** (⌘1), which hides the other columns.
 
+## Line numbers
+
+Turn on **View → Line Numbers** to number the lines beside your text, in every workspace. A wrapped paragraph is one line, so it gets one number.
+
 ## Vim mode
 
 Turn on **View → Vim Mode** to edit notes with Vim's keys, in every workspace. Notes open in Normal mode, and a badge at the bottom of the window shows the mode. Motions, text objects, macros, and `:s` work as they do in Vim.
@@ -111,12 +115,12 @@ These are the commands Jetfold adds, and what they do:
 | `:bn`, `:bp` | Moves to the next or previous note in the list, or in a stack of notes |
 | `:grep words` | Searches all your notes |
 | `:f name` | Renames the note |
-| `:Ex` | Shows your folders |
 | `:today` | Opens today's note |
 | `:tasks`, `:agenda` | Shows your tasks, or what's coming up |
 | `:pin`, `:unpin` | Pins the note to the top of the list, or unpins it |
 | `:history` | Shows the note's history |
 | `:commit` | Commits your changes |
+| `:set nu`, `:set rnu` | Shows line numbers, or numbers relative to the cursor |
 | `:help` | Opens this page |
 
 There might be a few other commands ;)
