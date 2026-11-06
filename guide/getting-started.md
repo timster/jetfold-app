@@ -14,7 +14,7 @@ Each notes folder is a **workspace**, with settings that travel with the folder.
 
 Everything in Jetfold works for 14 days, free. After that, unlock Jetfold with a single purchase to keep writing. There's no subscription.
 
-Without the trial or the unlock, nothing is taken away: you can still open, read, search, and export every note. Your notes are ordinary files, so they're always yours either way.
+When the trial ends, you can still open, read, search, and export every note. Your notes are ordinary files, so they're always yours either way.
 
 **Restore Purchases** in **Settings → General** brings back an unlock bought on another Mac.
 
