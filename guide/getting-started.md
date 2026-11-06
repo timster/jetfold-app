@@ -2,7 +2,7 @@
 
 ## Choosing your notes folder
 
-The first time you open Jetfold, it asks for a folder. Choose any folder: an existing collection of Markdown files, a folder synced with iCloud Drive, a git repository, or a brand-new empty one. Nothing is changed or imported.
+The first time you open Jetfold, it asks for a folder. Choose any folder: an existing collection of Markdown files, a folder synced with iCloud Drive, a git repository, or a brand-new empty one. Your files stay exactly as they are.
 
 ![The welcome screen in a small window: the origami jet floating above "Choose the folder that holds your notes." and the Open Folder… button](screenshots/02-welcome.png)
 
