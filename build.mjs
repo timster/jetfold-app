@@ -90,6 +90,23 @@ ${pager(slug)}
   }, body)
 }
 
+// /docs is another name for the guide: each of its pages sends the browser on to the guide's
+// (GitHub Pages can't redirect), keeping any #anchor.
+for (const slug of ['', ...chapters.map(c => c.slug)]) {
+  const to = `/guide/${slug ? slug + '/' : ''}`
+  const file = join(out, 'docs', slug, 'index.html')
+  mkdirSync(dirname(file), { recursive: true })
+  writeFileSync(file, `<!doctype html>
+<meta charset="utf-8">
+<title>Jetfold Guide</title>
+<link rel="canonical" href="https://${config.domain}${to}">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=${to}">
+<script>location.replace('${to}' + location.hash)</script>
+<a href="${to}">Jetfold Guide</a>
+`)
+}
+
 // ---- the pages ----
 
 for (const file of readdirSync(join(root, 'src/pages'))) {

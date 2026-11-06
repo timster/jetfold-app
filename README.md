@@ -22,6 +22,7 @@ GitHub Pages (Settings → Pages → Source: GitHub Actions; custom domain `jetf
 - `guide/`: the user guide, in Markdown. `index.md` is its contents page, and its numbered list is
   the order of the chapters in the sidebar. Links between chapters (`writing.md#tables`) and
   screenshots (`screenshots/15-table.png`) are written as they would be next to the files.
+  `/docs/` (and `/docs/<chapter>/`) are made by the build too, and send the browser on to `/guide/`.
 - `assets/`: the stylesheet, the home page's script, the icon, the jet and the screenshots.
   `SCREENSHOTS.md` lists every screenshot and where it's used.
 - `data/themes.json`: the app's themes (a copy of the app's `Editor/src/themes.json`), for the
