@@ -1,6 +1,6 @@
 # Canvases
 
-A canvas is a board for thinking in space: text, your notes, images, and files laid out on an endless surface and joined by arrows. Use one to plan a project, brainstorm, collect research, or sketch how things connect.
+A canvas is an endless board for thinking in space. Lay out text, notes, images, and files, and connect them to show how they relate. Use one to plan a project, brainstorm, collect research, or sketch how things connect.
 
 A canvas is a `.canvas` file in your notes folder, in the open [JSON Canvas](https://jsoncanvas.org) format, so other apps that read the format can open it too.
 

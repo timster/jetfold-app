@@ -17,7 +17,7 @@ Nothing is locked away in a database or some cloud service: every note is an ord
 7. [Finding Things](finding.md): Palette, search, tags, dates, and Note Info
 8. [Daily Notes, Templates, and the Inbox](daily-notes-and-inbox.md): The calendar, templates, and capture
 9. [Images and Attachments](images.md): Adding images and files, and tidying up
-10. [Canvases](canvas.md): Cards, notes, and images on a board, joined by arrows
+10. [Canvases](canvas.md): Spread your ideas out on a board
 11. [Git Integration](git.md): Status, changed lines, history, and commits
 12. [Exporting](exporting.md): HTML, PDF, EPUB, TextBundle, and plain text
 13. [Opening Jetfold from Other Apps](url-scheme.md): Shortcuts, the Share menu, the Today widget, Focus filters, the Service, and `jetfold://` links
