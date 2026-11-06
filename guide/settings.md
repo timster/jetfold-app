@@ -8,17 +8,7 @@ Settings belong to the open [workspace](getting-started.md#choosing-your-notes-f
 
 ### Appearance and theme
 
-**Theme** picks Jetfold's colors, and every theme has a light and a dark look:
-
-| Theme | Light | Dark |
-|---|---|---|
-| **Jetfold** (the default) | Crisp white, with the standard Mac sidebar | Near-black, with the standard Mac sidebar |
-| **Solarized** | Warm cream | Deep teal |
-| **Nord** | Cool frost grey | Polar night blue |
-| **Catppuccin** | Soft lavender grey (Latte) | Dark blue-grey with pastels (Mocha) |
-| **High Contrast** | Black on white | White on black |
-
-A theme colors the whole window, not just the note. The Jetfold theme also follows your Mac's accent color, set in **System Settings → Appearance**.
+**Theme** picks Jetfold's colors, and every theme has a light and a dark look ([see them all](/themes/)). A theme colors the whole window, not just the note. The Jetfold theme also follows your Mac's accent color, set in **System Settings → Appearance**.
 
 ![The main window in the Catppuccin theme, light: sidebar, note list, and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
