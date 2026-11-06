@@ -61,7 +61,7 @@ Right-click a picture or PDF and choose **Copy Text from Image** to put the word
 
 ## Unused attachments
 
-Deleting a note leaves the images and files behind. **File → Find Unused Attachments…** lists the ones no note uses any more, so you can tidy them up.
+Deleting a note leaves the images and files behind. **File → Find Unused Attachments…** lists the ones that aren't in any of your notes, so you can tidy them up.
 
 ![The Unused Attachments sheet listing three images and a PDF with thumbnails, sizes, and dates, two of them ticked](screenshots/59-unused-attachments.png)
 
