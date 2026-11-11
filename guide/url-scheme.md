@@ -45,7 +45,7 @@ Select text in any app and choose **Services → New Jetfold Note with Selection
 
 ## jetfold:// links
 
-Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events, and other apps. **Note → Copy Link** copies a link to the note you're in, ready to paste anywhere.
+Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events, and other apps. **Note → Copy Link** copies a link to the note you're in, ready to paste anywhere. Right-click a view in the sidebar and choose **Copy Link** for a link to the view.
 
 | Link | Does |
 |---|---|
@@ -57,6 +57,7 @@ Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events,
 | `daily?offset=N` | Today's note, or N days away (`-1` yesterday). Created if missing. |
 | `daily?…&text=…` | Adds `text` at the end of that day's note. |
 | `search?q=text` | Opens Search in Notes with `text` typed in. |
+| `view?name=Tasks` | Opens a view: Tasks, Agenda, or one of your own, by name. |
 
 `note` may also be written `path`. Encode spaces as `%20`, `#` as `%23`, `&` as `%26`, newlines as `%0A`.
 
@@ -64,6 +65,7 @@ Jetfold answers to `jetfold://` links, from scripts, bookmarks, calendar events,
 open 'jetfold://open?note=Atlas%20Launch%20Plan&heading=Tasks'
 open 'jetfold://new?note=Journal/Log&append=true&silent=true&text=Ran%205k'
 open 'jetfold://search?q=load%20test'
+open 'jetfold://view?name=Waiting%20On'
 ```
 
 Next: [Settings and Themes](settings.md)
