@@ -28,5 +28,5 @@ Your notes aren't locked in a database or a cloud service. They're ordinary `.md
 
 - **Your files belong to you.** Jetfold reads and writes the Markdown files in your folder exactly as you typed them. It never rewrites your formatting, adds hidden metadata, or changes the file format.
 - **What you see is what you wrote.** The editor hides Markdown symbols while you read and shows them again as soon as your cursor is inside them, so a note looks finished but is still easy to edit.
-- **Turn off what you don't use.** Hide tasks, the agenda, tags, the calendar, and your views. With all of them off, you see only your folders, your notes and the editor.
+- **Turn off what you don't use.** Hide tasks, the agenda, tags, the calendar, and your views. With all of them off, you see only your folders, your notes, and the editor.
 - **Everything is a keystroke away.** Almost all actions are in the menus with a shortcut, and you can run any of them from the command palette (⌘P).
