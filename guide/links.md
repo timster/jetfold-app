@@ -2,15 +2,15 @@
 
 ## Wikilinks
 
-Type a note's name in double square brackets to link to it:
+To link to a note, type its name in double square brackets:
 
 ```markdown
 See [[Project Plan]] for the details.
 ```
 
-The brackets are hidden, so it reads "See Project Plan for the details". **⌘-click** the link to open that note.
+The brackets are hidden, so you see "See Project Plan for the details." **⌘-click** the link to open the note.
 
-| You type | It links to | It shows |
+| You type | Links to | You see |
 |---|---|---|
 | `[[Project Plan]]` | the note named "Project Plan" | Project Plan |
 | `[[Project Plan\|the plan]]` | the note named "Project Plan" | the plan |
@@ -20,19 +20,19 @@ The brackets are hidden, so it reads "See Project Plan for the details". **⌘-c
 
 ### Autocomplete
 
-Type `[[` and a list of notes pops up, recent ones first. Keep typing to narrow it down: `[[prpl` finds "Project Plan". After a note name, type `#` to pick a heading.
+Type `[[` to see a list of notes, with recent notes first. Keep typing to narrow the list: `[[prpl` finds "Project Plan". After a note name, type `#` to pick a heading.
 
-![Wikilink autocomplete after typing \[\[Or: Orbital Mechanics, or a new note called Or](screenshots/21-wikilink-autocomplete.png)
+![Wikilink autocomplete after typing \[\[Or, suggesting Orbital Mechanics or a new note called Or](screenshots/21-wikilink-autocomplete.png)
 
 ### Previewing a linked note
 
-Rest the pointer on a link and the note pops up beside it, so you can check it without leaving the one you're in.
+Rest the pointer on a link to preview the linked note without leaving the note you're editing.
 
-![The pointer resting on a wikilink, with the linked note shown rendered in a preview beside it](screenshots/20-link-preview.png)
+![A preview of a linked note beside the wikilink under the pointer](screenshots/20-link-preview.png)
 
 ### Embedding a note
 
-Put a `!` in front of a wikilink, on a line by itself, to show that note right inside this one. With a heading, just that section shows.
+To show another note inside the current one, put a `!` in front of a wikilink on a line by itself. If the link includes a heading, only that section is shown.
 
 ```markdown
 ![[Q3 Plan]]
@@ -43,28 +43,28 @@ Put a `!` in front of a wikilink, on a line by itself, to show that note right i
 
 ### Links to notes that don't exist yet
 
-Follow a link to a note that doesn't exist, and Jetfold creates it. That makes it easy to sketch out a set of notes: write the links first, then click through and fill them in.
+When you follow a link to a note that doesn't exist, Jetfold creates the note. To sketch out a set of notes, write the links first, then click through and fill in the notes.
 
-### Links stay up to date
+### Updating links when you rename or move notes
 
-When you rename or move a note or folder in Jetfold, every link to it is updated across all your notes.
+When you rename or move a note or folder in Jetfold, links to it are updated everywhere.
 
 ### Extracting part of a note
 
-When a section gets too big, select it and choose **Note → Extract Selection to New Note**. The text moves into a new note, and a link to the new note is left behind.
+When a section gets too big, select it and choose **Note → Extract Selection to New Note**. Jetfold moves the text into a new note and puts a link to the new note where the text was.
 
 ## Backlinks
 
-[Note Info](finding.md#note-info) (**ⓘ**, or ⌥⌘O) has a **Backlinks** tab listing every note that links to this one, with the text around each link.
+The **Backlinks** tab in [Note Info](finding.md#note-info) (**ⓘ**, or ⌥⌘O) lists the notes that link to the current note, with the text around each link.
 
-![Note Info open on the Backlinks tab: two notes that link here, with snippets](screenshots/22-backlinks.png)
+![Note Info on the Backlinks tab, listing two linking notes with snippets](screenshots/22-backlinks.png)
 
 ## Web links
 
-Standard Markdown links work too, like `[Jetfold](https://example.com)`. **⌥⌘K** (Link and Fill Title) makes a link from a URL and fills in the page title for you.
+Standard Markdown links also work, like `[Jetfold](https://example.com)`. Press **⌥⌘K** (Link and Fill Title) to make a link from a URL with the page title filled in.
 
 ## Links from outside Jetfold
 
-**Note → Copy Link** copies a `jetfold://` link to the note. Paste it into a calendar event, a task in another app, or a document, and clicking it opens the note in Jetfold. See [Opening Jetfold from Other Apps](url-scheme.md).
+Choose **Note → Copy Link** to copy a `jetfold://` link to the note. Paste the link into a calendar event, a task in another app, or a document, and click it to open the note in Jetfold. See [Opening Jetfold from Other Apps](url-scheme.md).
 
 Next: [Finding Things](finding.md)

@@ -1,14 +1,14 @@
 # Settings and Themes
 
-Settings belong to the open [workspace](getting-started.md#choosing-your-notes-folder) and are saved in the notes folder, so they travel with it.
+Settings are saved in the notes folder of the open [workspace](getting-started.md#choosing-your-notes-folder), so they apply wherever you open that folder.
 
 ## General
 
-![Settings → General: the Appearance switch and a preview of each theme to pick from, Jetfold picked](screenshots/40-settings-general.png)
+![Settings → General: the Appearance switch and theme previews, with Jetfold selected](screenshots/40-settings-general.png)
 
 ### Appearance and theme
 
-**Theme** picks Jetfold's colors: click a theme's preview to use it. Every theme has a light and a dark look ([see them all](/themes/)). A theme colors the whole window, not just the note. The Jetfold theme also follows your Mac's accent color, set in **System Settings → Appearance**.
+Under **Theme**, choose one of eight built-in themes from the previews. The themes have light and dark versions ([see them all](/themes/)) and color the whole window, including the sidebar and note list. The Jetfold theme also uses the accent color you set in **System Settings → Appearance**.
 
 ![The main window in the Catppuccin theme, light: sidebar, note list, and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
@@ -16,7 +16,7 @@ Settings belong to the open [workspace](getting-started.md#choosing-your-notes-f
 
 ### Your own theme
 
-A workspace can have a custom theme: a file called `theme.json` in the notes folder's `.jetfold` folder. It starts from a built-in theme and changes only the colors you list, so it can be as short as one color:
+To give a workspace a custom theme, add a file called `theme.json` to the `.jetfold` folder inside the notes folder. The file names a built-in theme to start from and lists only the colors to change, so it can be as short as one color:
 
 ```json
 {
@@ -36,22 +36,22 @@ A workspace can have a custom theme: a file called `theme.json` in the notes fol
 }
 ```
 
-**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, `rose-pine`, `gruvbox`, `tokyo-night`, or `high-contrast`. Colors can be any CSS color. The theme shows up among the others as **Workspace**, with a preview that updates as you edit the file, and since the file travels with the notes folder, anyone who opens the folder can use it.
+**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, `rose-pine`, `gruvbox`, `tokyo-night`, or `high-contrast`. Colors can be any CSS color. Your theme appears as **Workspace**, and the preview updates as you edit the file. Anyone who opens the notes folder can use the theme.
 
 #### The colors
 
 | Key | Used for |
 |---|---|
 | `surface` | The note, the note list, and the window behind them |
-| `sidebar` | The sidebar's fill (in the default theme, see-through to the system's sidebar) |
-| `bg` | The find bar's text fields |
+| `sidebar` | The sidebar background (transparent in the Jetfold theme, so the system sidebar shows through) |
+| `bg` | Text fields in the find bar |
 | `text`, `muted` | Text, and quieter text (previews, dates, counts, Markdown symbols) |
 | `border` | Column dividers, table lines, quote bars, rules |
-| `hover` | The find bar's buttons under the pointer |
+| `hover` | Buttons in the find bar when the pointer is over them |
 | `accent`, `accent-text`, `on-accent` | The accent color; links and accent-colored text; text on the accent |
 | `accent-soft` | Light accent backgrounds: `#tags`, `@dates`, selected table cells |
 | `selection`, `on-selection` | A selected row (sidebar, note list, palette) and the text on it |
-| `selection-blur` | A selected row while another part of the window has the keyboard, and selected text |
+| `selection-blur` | A selected row while you're typing in another part of the window, and selected text |
 | `highlight-bg` | `==highlights==` |
 | `code-bg` | Code, code blocks, and table headers |
 | `find-match`, `find-current` | Find results in the note, and the current one |
@@ -64,20 +64,20 @@ A workspace can have a custom theme: a file called `theme.json` in the notes fol
 
 ![Settings → Editor: the editor and monospace fonts with Change… buttons, Text width, Fill in link titles, and the live preview note below](screenshots/43-settings-editor.png)
 
-Choose the fonts for your writing and for code, and how wide lines get before they wrap. A sample note below the settings shows your choices as you make them.
+Choose the fonts for writing and for code, and how wide lines get before they wrap. You can see your changes in a sample note below the settings.
 
-**Fill in link titles when pasting a URL** turns a pasted web address into a link named after the page.
+When **Fill in link titles when pasting a URL** is on, a web address you paste becomes a link with the page title as its text.
 
 ## Notes
 
-The **Notes** settings say where things go: the [daily note path](daily-notes-and-inbox.md#where-daily-notes-go) and [daily template](daily-notes-and-inbox.md#a-template-for-daily-notes), the [templates folder](daily-notes-and-inbox.md#templates), the [inbox folder](daily-notes-and-inbox.md#the-inbox), and the [image path](images.md#where-images-are-saved).
+In the **Notes** settings, you can set the [daily note path](daily-notes-and-inbox.md#where-daily-notes-are-saved) and [daily template](daily-notes-and-inbox.md#a-template-for-daily-notes), the [templates folder](daily-notes-and-inbox.md#templates), the [inbox folder](daily-notes-and-inbox.md#the-inbox), and the [image path](images.md#where-images-are-saved).
 
 ### Find text in images and PDFs
 
-On by default. Jetfold reads the words in your pictures and PDFs, on your Mac, so search finds notes by them. See [Text in images and PDFs](images.md#text-in-images-and-pdfs).
+When this setting is on (the default), you can search for words in the images and PDFs in your notes. Text is recognized on your Mac. See [Text in images and PDFs](images.md#text-in-images-and-pdfs).
 
 ### Deleted notes
 
-**System Trash** (the default) sends deleted notes to the macOS Trash. **Trash folder** keeps them in a `.trash` folder in your notes folder instead, where you and your sync can see them.
+With **System Trash** (the default), deleted notes are moved to the macOS Trash. With **Trash folder**, they are kept in a `.trash` folder in your notes folder, where you can see them and your sync service syncs them.
 
 Next: [Keyboard Shortcuts](shortcuts.md)

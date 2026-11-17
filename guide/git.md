@@ -1,12 +1,12 @@
 # Git Integration
 
-If your notes folder is a **git repository**, Jetfold shows what has changed since your last commit, lets you browse and restore older versions of any note, and can commit for you. If it isn't, the git features stay out of the way.
+If your notes folder is a **git repository**, you can see what has changed since your last commit, browse and restore older versions of any note, and commit from Jetfold. Otherwise, the git features are hidden.
 
-> Git is built into Jetfold, so you don't need git installed. To share your notes with another Mac, push and pull them with git in Terminal or a git app; Jetfold picks up whatever arrives.
+> Git is built into Jetfold, so you don't need git installed. To share your notes with another Mac, push and pull them with git in Terminal or a git app. Changes you pull appear in Jetfold automatically.
 
 ## Status badges
 
-Notes that have changed since the last commit get a letter in the note list, and folders with changes get a dot:
+In the note list, notes that have changed since the last commit are marked with a letter. In the sidebar, folders with changes are marked with a dot.
 
 | Badge | Meaning |
 |---|---|
@@ -19,22 +19,22 @@ Notes that have changed since the last commit get a letter in the note list, and
 
 ## Changed lines in the editor
 
-While you edit, colored marks in the margin show how the note differs from the last commit: green for added lines, orange for changed ones, and a red triangle where lines were deleted.
+While you edit, the margin is marked where the note differs from the last commit. Added lines have a green bar, changed lines have an orange bar, and a red triangle marks where lines were deleted.
 
 ![Changed-line marks in the margin: an orange bar beside a modified line, a green bar beside an added one, and a red triangle where lines were deleted](screenshots/36-changed-lines.png)
 
 ## Note history
 
-**Note → Show History…** (⇧⌘H) shows every version of the note, even across renames and moves. Pick a version to see what changed since then, or the note as it was.
+Choose **Note → Show History…** (⇧⌘H) to see all versions of the current note, including those from before a rename or move. Select a version to see what has changed since then, or the note as it was.
 
 ![The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green](screenshots/37-history.png)
 
-**Restore This Version** brings back the selected version.
+To bring back the selected version, click **Restore This Version**.
 
 ## Committing
 
-**File → Commit Changes…** (⇧⌘K) lists every changed note. Type a message and press **Return** to commit, or leave the message empty to use the date and time.
+Choose **File → Commit Changes…** (⇧⌘K) to see the notes you've changed. Type a message and press **Return** to commit. If you leave the message empty, the date and time are used instead.
 
-![Commit Changes: the message field above the list of changed notes, with icons for how they changed](screenshots/38-commit.png)
+![Commit Changes: the message field above the list of changed notes, with icons for the kind of change](screenshots/38-commit.png)
 
 Next: [Exporting](exporting.md)

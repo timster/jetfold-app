@@ -1,6 +1,6 @@
 # Formatting
 
-Everything you can write in a note, and how Jetfold shows it. Type any of it by hand, or use the [Format menu](writing.md#the-format-menu) and the [slash menu](writing.md#the-slash-menu).
+This page lists the Markdown you can write in a note and how Jetfold displays it. Type any of it by hand, or use the [Format menu](writing.md#the-format-menu) and the [slash menu](writing.md#the-slash-menu).
 
 ## Headings
 
@@ -20,20 +20,20 @@ Start a line with one to six `#` characters and a space:
 | `*italic*` or `_italic_` | *italic* |
 | `***bold italic***` | ***bold italic*** |
 | `~~strikethrough~~` | ~~strikethrough~~ |
-| `==highlight==` | a highlight in the theme's highlight color |
+| `==highlight==` | highlighted text in your theme color |
 | `` `inline code` `` | `inline code` in monospace |
 
 ## Lists
 
-Start a line with `- ` for a bullet, or `1. ` for a numbered list. **Return** continues the list, and **Tab** and **⇧Tab** change the level.
+Start a line with `- ` for a bullet, or `1. ` for a numbered list. Press **Return** to continue the list, and **Tab** or **⇧Tab** to change the indent level.
 
-**⌥↑** and **⌥↓** move a list item up or down, together with any sub-items.
+Press **⌥↑** or **⌥↓** to move a list item and its sub-items up or down.
 
 ## Tasks
 
 Start a line with `- [ ] ` for a task, or `- [x] ` for a completed one. Click the checkbox, or press **⌘.**, to tick it off.
 
-Tasks from every note show up in the [Tasks view](views-and-tags.md#tasks-and-agenda), and a task with an [@date](finding.md#dates-and-the-agenda) has a deadline.
+Tasks from all your notes appear in the [Tasks view](views-and-tags.md#tasks-and-agenda). To give a task a deadline, add an [@date](finding.md#dates-and-the-agenda).
 
 ## Quotes
 
@@ -46,7 +46,7 @@ Start a line with `> `.
 
 ## Callouts
 
-A callout is a quote that starts with a type in square brackets, drawn as a tinted box with an icon:
+A callout is a quote that starts with a type in square brackets. Jetfold displays it as a tinted box with an icon:
 
 ```markdown
 > [!warning] Mind the gap
@@ -55,19 +55,19 @@ A callout is a quote that starts with a type in square brackets, drawn as a tint
 
 ![Note, tip, warning, and caution callouts one after another](screenshots/45-callouts.png)
 
-The main types are `note`, `tip`, `important`, `warning`, and `caution`. Callouts are plain Markdown, so other apps show them as ordinary quotes.
+The main types are `note`, `tip`, `important`, `warning`, and `caution`. Callouts are plain Markdown, so other apps display them as ordinary quotes.
 
 ## Horizontal rules
 
-A line containing just `---` becomes a horizontal divider.
+A line containing only `---` is displayed as a horizontal divider.
 
 ## Links
 
-`[text](https://example.com)` shows as a link reading "text". **⌘-click** a link to open it.
+`[text](https://example.com)` is displayed as a link labeled "text". **⌘-click** a link to open it.
 
-- **⌘K** turns the selected text into a link.
-- **Paste a web address** and Jetfold links it under the page title.
-- **Paste a URL over selected text** to link that text to it.
+- Press **⌘K** to turn the selected text into a link.
+- **Paste a web address** to insert a link that uses the page title as its text.
+- **Paste a URL over selected text** to link that text to the URL.
 
 For links between notes, [wikilinks](links.md) are usually more convenient.
 
@@ -95,7 +95,7 @@ Jetfold renders Markdown tables as a grid you edit in place:
 | Banana | Yellow | 0.50  |
 ```
 
-Click a cell and type, and **Tab** moves to the next one. Hover over a row or column edge for a grip: click it to sort, align, or delete, or drag it to move the row or column. The file keeps an ordinary Markdown table that reads well in any editor.
+Click a cell to type in it, and press **Tab** to move to the next cell. Hover over the edge of a row or column to see a grip. Click the grip to sort, align, or delete, or drag it to move the row or column. The file contains an ordinary Markdown table, readable in any editor.
 
 ![The Sourdough recipe with a rendered ingredients table, right-aligned numbers, and a numbered method below](screenshots/15-table.png)
 
@@ -109,13 +109,13 @@ $$
 $$
 ```
 
-Click a formula to edit it, and watch the result change as you type. Ordinary dollar amounts like "$5 and $10" stay plain text.
+Click a formula to edit it. The rendered formula updates as you type. Ordinary dollar amounts like "$5 and $10" remain plain text.
 
 ![Statistics Basics with inline math in a sentence and a display formula below it](screenshots/16-math.png)
 
 ## Diagrams
 
-A code block in the `mermaid` language is drawn as a diagram: flowcharts, sequence diagrams, timelines, pie charts, and more, written as text.
+Jetfold draws a code block in the `mermaid` language as a diagram. Write flowcharts, sequence diagrams, timelines, pie charts, and other diagrams as text.
 
 ````markdown
 ```mermaid
@@ -126,17 +126,17 @@ flowchart LR
 ```
 ````
 
-![A flowchart drawn from a mermaid block, in the theme's colors, beside the same block being edited with preview underneath](screenshots/55-diagram.png)
+![A flowchart drawn from a mermaid block, beside the same block being edited with a preview underneath](screenshots/55-diagram.png)
 
-Click a diagram to edit it; it redraws as you type. See the [Mermaid documentation](https://mermaid.js.org/intro/) for every kind of diagram.
+Click a diagram to edit it, and Jetfold redraws it as you type. For all diagram types, see the [Mermaid documentation](https://mermaid.js.org/intro/).
 
 ## Images
 
-`![description](path/to/image.png)` shows the image right in the note. The easiest way to add one is to drop or paste it; see [Images](images.md).
+Jetfold displays `![description](path/to/image.png)` as an image in the note. To add one, drop or paste it; see [Images](images.md).
 
 ## Footnotes
 
-Put `[^1]` where a footnote belongs, and write the footnote on a line starting `[^1]:`, usually at the end. Hover over a footnote number to read it.
+Put `[^1]` where a footnote belongs, and write the footnote on a line starting with `[^1]:`, usually at the end of the note. Hover over a footnote number to read it.
 
 ```markdown
 Plain text lasts[^1] and reads well everywhere.
@@ -146,11 +146,11 @@ Plain text lasts[^1] and reads well everywhere.
 
 ## Comments
 
-`<!-- like this -->` stays in the file but is hidden in exports. Press **⌘/** to comment out the selection or the current line.
+Text inside `<!-- like this -->` remains in the file but is hidden in exports. Press **⌘/** to comment out the selection or the current line.
 
 ## Properties
 
-A note can start with properties between two `---` lines, in YAML, as many Markdown tools write it. Jetfold shows them as a tidy panel at the top of the note.
+A note can start with properties in YAML between two `---` lines, the format many Markdown tools use. Jetfold displays the properties as a panel at the top of the note.
 
 ```markdown
 ---
@@ -160,7 +160,7 @@ due: 2026-10-20
 ---
 ```
 
-![A note's front matter drawn as a properties panel: status, tags as chips, aliases, and a due date](screenshots/50-front-matter.png)
+![Front matter displayed as a properties panel: status, tags as chips, aliases, and a due date](screenshots/50-front-matter.png)
 
 ## A formatting cheat sheet
 

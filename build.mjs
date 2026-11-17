@@ -85,7 +85,7 @@ ${pager(slug)}
 </div>`
   page(slug === 'index' ? 'guide/index.html' : `guide/${slug}/index.html`, {
     title: slug === 'index' ? 'Guide' : title,
-    description: slug === 'index' ? 'How to use Jetfold, chapter by chapter.' : `${title}, from the Jetfold guide.`,
+    description: slug === 'index' ? 'Instructions for using Jetfold.' : `${title}, from the Jetfold guide.`,
     section: 'guide',
   }, body)
 }

@@ -1,16 +1,16 @@
 # Writing
 
-Jetfold's editor is a **live preview** Markdown editor. You write ordinary Markdown, and Jetfold shows it formatted as you go. The Markdown symbols are hidden until your cursor moves into them, so a note looks finished but is still easy to edit.
+Jetfold has a **live preview** Markdown editor. You write ordinary Markdown, and Jetfold formats it as you type. Markdown symbols are hidden until you move the cursor into them, so a note reads as formatted text and remains easy to edit.
 
-![The cursor inside bold text, with the ** markers shown dimmed while the rest of the line stays formatted](screenshots/11-reveal.png)
+![The cursor inside bold text, with the ** markers shown dimmed while the rest of the line remains formatted](screenshots/11-reveal.png)
 
-Your file always contains exactly the characters you typed, so it's safe to use alongside other editors, git, or any sync service.
+Jetfold saves exactly the characters you typed, so your files are safe to use with other editors, git, or any sync service.
 
-For the Markdown behind every format, from headings to math, see [Formatting](formatting.md).
+For the Markdown syntax of each format, see [Formatting](formatting.md).
 
 ## The Format menu
 
-Everything can be typed by hand, or applied from the **Format** menu. Every Format command is a **toggle**: run it again to remove the formatting.
+Type any format by hand or apply it from the **Format** menu. Format commands are **toggles**: run one again to remove the formatting.
 
 | Command | Shortcut | Markdown |
 |---|---|---|
@@ -36,43 +36,43 @@ Everything can be typed by hand, or applied from the **Format** menu. Every Form
 | Table | | a new table; see [Tables](formatting.md#tables) |
 | Clear Formatting | ⌥⌘⌫ | removes inline markup |
 
-![The Format menu open, with an icon beside every command and the Headings and Table submenus](screenshots/12-format-menu.png)
+![The Format menu open, with icons beside the commands and the Headings and Table submenus](screenshots/12-format-menu.png)
 
 ## The slash menu
 
-Type `/` at the start of a line to insert a heading, list, callout, table, diagram, date, or one of your [templates](daily-notes-and-inbox.md#templates) without remembering the Markdown. Keep typing to narrow the list: `/tab` finds Table.
+Type `/` at the start of a line to insert a heading, list, callout, table, diagram, date, or one of your [templates](daily-notes-and-inbox.md#templates) without remembering the Markdown. Keep typing to filter the menu: `/tab` narrows it to Table.
 
 ![The slash menu open under "/", grouped into Text, Lists, Callouts, Blocks, Insert, and Templates](screenshots/48-slash-menu.png)
 
 ## Folding sections
 
-Click the chevron beside a heading to fold the section under it. **⌘'** folds or unfolds the section the cursor is in.
+Click the chevron beside a heading to fold the section under it. Press **⌘'** to fold or unfold the section that contains the cursor.
 
 ![Atlas Launch Plan with the Milestones section folded into a ••• pill and the fold chevron beside the heading](screenshots/13-fold.png)
 
 ## Calculator
 
-Type a sum followed by `=` and Jetfold offers the answer. Press **Return** to insert it.
+Type a sum followed by `=`, and Jetfold suggests the answer. Press **Return** to insert it.
 
 ```markdown
 254,652+10348=265,000
 ```
 
-It remembers variables too: after a line like `x=265,000`, typing `x+43534=` offers `308,534`.
+Variables work too. After a line like `x=265,000`, type `x+43534=` and Jetfold suggests `308,534`.
 
 ## Pasting from other apps
 
-Text copied from a web page, an email, or a word processor pastes as Markdown, with formatting intact.
+When you paste text copied from a web page, an email, or a word processor, Jetfold converts it to Markdown with the formatting intact.
 
 ## Selecting
 
-**Expand Selection** (⌃⇧⌘→) selects the next bigger piece of text around the cursor: the word, then the sentence, the paragraph, the section, and finally the whole note. **Shrink Selection** (⌃⇧⌘←) steps back down.
+Use **Expand Selection** (⌃⇧⌘→) to select a larger piece of text around the cursor: first the word, then the sentence, the paragraph, the section, and finally the whole note. Use **Shrink Selection** (⌃⇧⌘←) to step back down.
 
 ![The Selection menu: Expand and Shrink Selection, Expand Selection to Line, the occurrence commands, and the multiple-cursor commands](screenshots/18-selection-menu.png)
 
 ### Multiple cursors
 
-Jetfold can edit in several places at once. Typing, deleting, and formatting apply at every cursor.
+With multiple cursors, you can edit several places at once. Typing, deleting, and formatting apply at all of the cursors.
 
 | Action | How |
 |---|---|
@@ -85,7 +85,7 @@ Jetfold can edit in several places at once. Typing, deleting, and formatting app
 
 ## Find and replace
 
-Press **⌘F** to find in the note, or **⌥⌘F** to find and replace. **⌥Return** selects every match as multiple cursors.
+Press **⌘F** to find in the note, or **⌥⌘F** to find and replace. Press **⌥Return** to put a cursor on all of the matches.
 
 ![The find and replace bar over a Python code block, showing "2 of 5" for "row" and the Aa, W, and .* options](screenshots/19-find-replace.png)
 
@@ -93,17 +93,17 @@ To search across *all* notes, use **Search in Notes** (⇧⌘F); see [Finding Th
 
 ## Focus mode
 
-**View → Focus Mode** (⇧⌘J) fades everything but the paragraph you're writing, and keeps your line in the middle of the window, like paper in a typewriter. It pairs well with **View → Editor** (⌘1), which hides the other columns.
+Turn on **View → Focus Mode** (⇧⌘J) to fade everything except the paragraph you're writing and keep the current line in the middle of the window, like paper in a typewriter. It works well with **View → Editor** (⌘1), which hides the other columns.
 
 ## Line numbers
 
-Turn on **View → Line Numbers** to number the lines beside your text, in every workspace. A wrapped paragraph is one line, so it gets one number.
+Turn on **View → Line Numbers** to number the lines in all workspaces. A wrapped paragraph counts as one line.
 
 ## Vim mode
 
-Turn on **View → Vim Mode** to edit notes with Vim's keys, in every workspace. Notes open in Normal mode, and a badge at the bottom of the window shows the mode. Motions, text objects, macros, and `:s` work as they do in Vim.
+Turn on **View → Vim Mode** to edit notes with Vim key bindings in all workspaces. Notes open in Normal mode, and a badge at the bottom of the window indicates the current mode. Motions, text objects, macros, and `:s` work as they do in Vim.
 
-These are the commands Jetfold adds, and what they do:
+Jetfold adds these commands:
 
 | Command | Does |
 |---|---|

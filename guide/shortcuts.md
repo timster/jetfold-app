@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-Every command is also in the command palette (⌘P), including the ones without a shortcut.
+Run any command from the command palette (⌘P), including commands without a shortcut.
 
 ## Notes and windows
 
