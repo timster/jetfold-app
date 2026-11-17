@@ -134,6 +134,7 @@ kbd {
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 36px; }
 .price { margin: 14px 0 0; font: 15px var(--sans); color: var(--muted); }
 .closing .price { margin-top: 14px; }
+.sale { margin: 6px 0 0; font: 600 15px var(--sans); color: var(--jet); }
 
 /* ---- home: the hero ---- */
 .hero {

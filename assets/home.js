@@ -140,3 +140,8 @@
     setTimeout(takeOff, 4300)
   }
 })()
+
+// Removes sale notes once the date in their data-until attribute has passed, so an old sale isn't advertised.
+document.querySelectorAll('.sale[data-until]').forEach(function (el) {
+  if (new Date() >= new Date(el.dataset.until + 'T00:00:00')) el.remove()
+})
