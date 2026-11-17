@@ -41,7 +41,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 37 | partial | The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green | git.md, home |
 | 38 | partial | Commit Changes: the message field above the list of changed notes, each with an icon for how it changed | git.md |
 | 39 | partial | Atlas Launch Plan exported as a PDF and open in a PDF viewer: headings, a quote, a table and a task list | exporting.md |
-| 40 | partial | Settings → General: the Appearance switch, a preview of each theme to pick from (Jetfold picked), and the Workspace folder with its Open Folder… button | settings.md |
+| 40 | partial | Settings → General: the Appearance switch and a preview of each theme to pick from (Jetfold picked), down to the end of the Theme section | settings.md |
 | 41 | full app | The main window in the Catppuccin theme, light: sidebar, note list and editor in matching soft lavender greys with mauve selections | settings.md |
 | 42 | full app | The same window in the Nord theme, dark | settings.md |
 | 43 | partial | Settings → Editor: the editor and monospace fonts with Change… buttons, Text width, Fill in link titles, and the live preview note below | settings.md |
@@ -71,4 +71,4 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 
 ## Themes page
 
-`assets/screenshots/themes/<theme>-<light|dark>.webp`, one for each theme in each appearance (ten in all), shown by the themes page's picker. The main window at 1024×640 with the Projects folder open and the Garden Redesign note selected in the list, the note list focused. For these shots, Garden Redesign's text is swapped for a short note without the picture: a sentence with a link, a highlight and a tag; a "This week" heading with three dated tasks, one ticked; a line with inline code; a quote. Git Status and Git Changes are off, and the app is relaunched for each theme, so no stale bold row shows in the sidebar. Saved from the PNG captures with `cwebp -q 90`. Restore the demo's note and settings afterwards.
+`assets/screenshots/themes/<theme>-<light|dark>.webp`, one for each theme in each appearance (sixteen in all), shown by the themes page's picker. The main window at 1024×640 with the Projects folder open and the Garden Redesign note selected in the list, the note list focused. For these shots, Garden Redesign's text is swapped for a short note without the picture: a sentence with a link, a highlight and a tag; a "This week" heading with three dated tasks, one ticked; a line with inline code; a quote. Git Status and Git Changes are off, and the app is relaunched for each theme, so no stale bold row shows in the sidebar. Saved from the PNG captures with `cwebp -q 90`. Restore the demo's note and settings afterwards.

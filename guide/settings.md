@@ -4,7 +4,7 @@ Settings belong to the open [workspace](getting-started.md#choosing-your-notes-f
 
 ## General
 
-![Settings → General: the Appearance switch, a preview of each theme to pick from, and the Workspace folder with the Open Folder… button](screenshots/40-settings-general.png)
+![Settings → General: the Appearance switch and a preview of each theme to pick from, Jetfold picked](screenshots/40-settings-general.png)
 
 ### Appearance and theme
 
@@ -36,7 +36,7 @@ A workspace can have a custom theme: a file called `theme.json` in the notes fol
 }
 ```
 
-**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, or `high-contrast`. Colors can be any CSS color. The theme shows up among the others as **Workspace**, with a preview that updates as you edit the file, and since the file travels with the notes folder, anyone who opens the folder can use it.
+**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, `rose-pine`, `gruvbox`, `tokyo-night`, or `high-contrast`. Colors can be any CSS color. The theme shows up among the others as **Workspace**, with a preview that updates as you edit the file, and since the file travels with the notes folder, anyone who opens the folder can use it.
 
 #### The colors
 
