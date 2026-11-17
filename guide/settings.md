@@ -4,11 +4,11 @@ Settings belong to the open [workspace](getting-started.md#choosing-your-notes-f
 
 ## General
 
-![Settings → General: the Appearance switch, the Theme menu, and the Workspace folder with the Open Folder… button](screenshots/40-settings-general.png)
+![Settings → General: the Appearance switch, a preview of each theme to pick from, and the Workspace folder with the Open Folder… button](screenshots/40-settings-general.png)
 
 ### Appearance and theme
 
-**Theme** picks Jetfold's colors, and every theme has a light and a dark look ([see them all](/themes/)). A theme colors the whole window, not just the note. The Jetfold theme also follows your Mac's accent color, set in **System Settings → Appearance**.
+**Theme** picks Jetfold's colors: click a theme's preview to use it. Every theme has a light and a dark look ([see them all](/themes/)). A theme colors the whole window, not just the note. The Jetfold theme also follows your Mac's accent color, set in **System Settings → Appearance**.
 
 ![The main window in the Catppuccin theme, light: sidebar, note list, and editor in matching soft lavender greys with mauve selections](screenshots/41-theme-catppuccin.png)
 
@@ -36,7 +36,7 @@ A workspace can have a custom theme: a file called `theme.json` in the notes fol
 }
 ```
 
-**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, or `high-contrast`. Colors can be any CSS color. The theme shows up in the Theme menu as **Workspace**, and since the file travels with the notes folder, anyone who opens the folder can use it.
+**`base`** is the built-in theme to start from: `jetfold`, `solarized`, `nord`, `catppuccin`, or `high-contrast`. Colors can be any CSS color. The theme shows up among the others as **Workspace**, with a preview that updates as you edit the file, and since the file travels with the notes folder, anyone who opens the folder can use it.
 
 #### The colors
 

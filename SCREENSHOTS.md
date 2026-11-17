@@ -41,7 +41,7 @@ Every screenshot the site needs, in order, kept in `assets/screenshots/`. The gu
 | 37 | partial | The history of Atlas Launch Plan: the list of versions on the left and, on the right, the lines changed since the selected version in red and green | git.md, home |
 | 38 | partial | Commit Changes: the message field above the list of changed notes, each with an icon for how it changed | git.md |
 | 39 | partial | Atlas Launch Plan exported as a PDF and open in a PDF viewer: headings, a quote, a table and a task list | exporting.md |
-| 40 | partial | Settings → General: the Appearance switch, the Theme menu, and the Workspace folder with its Open Folder… button | settings.md |
+| 40 | partial | Settings → General: the Appearance switch, a preview of each theme to pick from (Jetfold picked), and the Workspace folder with its Open Folder… button | settings.md |
 | 41 | full app | The main window in the Catppuccin theme, light: sidebar, note list and editor in matching soft lavender greys with mauve selections | settings.md |
 | 42 | full app | The same window in the Nord theme, dark | settings.md |
 | 43 | partial | Settings → Editor: the editor and monospace fonts with Change… buttons, Text width, Fill in link titles, and the live preview note below | settings.md |
